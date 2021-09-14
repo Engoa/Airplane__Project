@@ -19,6 +19,8 @@ async function loadPage(page, oldPage) {
   script.type = 'text/javascript';
   script.id = 'script_' + page;
   contentDiv.appendChild(script);
+
+  document.dispatchEvent(new CustomEvent('route-update', { to: page, from: oldPage }));
 }
 
 const capitallize = (str) => str[0].toUpperCase() + str.slice(1);
@@ -52,8 +54,6 @@ window.addEventListener(
     const oldPath = ev.oldURL.split('#')[1];
     // Load current entered page
     loadPage(newPath, oldPath);
-    // Dispatch global event
-    document.dispatchEvent(new CustomEvent('route-update', { newPath, oldPath }));
   },
   false
 );

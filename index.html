@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -26,9 +25,11 @@
     ></script>
 
     <!-- // KEEP FIRST -->
+
     <script src="/scripts/router.js" defer></script>
     <script src="/scripts/app.js" defer></script>
     <script src="/scripts/vendors/svg-inject.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,89 +41,108 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/vendors/locomotive.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
+
     <!-- // CDN HERE -->
   </head>
+
   <body>
-    <!-- <div class="background__video">
-      <video autoplay muted loop class="background--video__video">
-        <source src="/assets/videos/plane.gif" type="video/mp4" />
-      </video>
-    </div> -->
-    <div class="background__video">
-      <img
-        autoplay
-        muted
-        loop
-        class="background--video__video"
-        src="/assets/videos/plane.gif"
-      />
-    </div>
-    <div class="top--nav">
-      <ul class="top--nav__links">
-        <li>
-          <a href="#"
-            ><img onload="SVGInject(this)" src="/assets/images/youtube-s.svg" alt="logo"
-          /></a>
-        </li>
+    <div data-scroll-container>
+      <div class="app-bg">
+        <div class="airplane">
+          <img class="airplane__image" src="/assets/images/airplane.png" alt="Plane Image" />
+        </div>
+        <img src="/assets/images/clouds.png" class="app-bg__clouds" alt="clouds" />
+      </div>
 
-        <li>
-          <button href="" class="topnav--link">
-            <i class="fas fa-power-off"></i>
-          </button>
-        </li>
-        <li>
-          <button href="" class="topnav--link bulb">
-            <i class="far fa-lightbulb"></i>
-          </button>
-        </li>
-        <li>
-          <button href="" class="topnav--link volume">
-            <i class="fas fa-volume-up"></i>
-          </button>
-        </li>
-      </ul>
-    </div>
+      <div class="top--nav">
+        <ul class="top--nav__links">
+          <li>
+            <a href="#"
+              ><img onload="SVGInject(this)" src="/assets/images/youtube-s.svg" alt="logo"
+            /></a>
+          </li>
 
-    <div class="leftnav">
-      <nav>
-        <ul class="leftnav__links">
           <li>
-            <button type="button" class="link">
-              <i class="fas fa-plane"></i>
+            <button href="" class="topnav--link">
+              <i class="fas fa-power-off"></i>
             </button>
           </li>
           <li>
-            <button type="button" class="link">
-              <i class="fas fa-headphones"></i>
+            <button href="" class="topnav--link bulb">
+              <i class="far fa-lightbulb"></i>
             </button>
           </li>
           <li>
-            <button type="button" class="link">
-              <i class="fas fa-play"></i>
-            </button>
-          </li>
-          <li>
-            <button type="button" class="link">
-              <i class="fas fa-laugh"></i>
-            </button>
-          </li>
-          <li>
-            <button type="button" class="link">
-              <i class="fas fa-shopping-bag"></i>
-            </button>
-          </li>
-          <li>
-            <button type="button" class="link">
-              <i class="fas fa-bars"></i>
+            <button href="" class="topnav--link volume">
+              <i class="fas fa-volume-up"></i>
             </button>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
 
-    <!-- <div class="airplane">
-      <img class="airplane__image" src="/assets/images/airplane.png" alt="Plane Image" />
-    </div> -->
-    <div id="app"></div>
+      <div class="leftnav">
+        <nav>
+          <ul class="leftnav__links">
+            <li>
+              <button type="button" class="link">
+                <i class="fas fa-plane"></i>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="link">
+                <i class="fas fa-headphones"></i>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="link">
+                <i class="fas fa-play"></i>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="link">
+                <i class="fas fa-laugh"></i>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="link">
+                <i class="fas fa-shopping-bag"></i>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="link">
+                <i class="fas fa-bars"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="app" data-scroll-section></div>
+    </div>
+    <script src="/scripts/vendors/locomotive-scroll.min.js"></script>
+    <script>
+      (function () {
+        let scroll = null;
+
+        document.addEventListener('route-update', () => {
+          if (scroll) {
+            return scroll.update();
+          }
+
+          scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true,
+          });
+        });
+      })();
+    </script>
   </body>
 </html>

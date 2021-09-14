@@ -5,13 +5,10 @@
   --color-leftnav: rgba(255, 255, 255, 0.932);
   --color-lefticons: rgba(15, 14, 14, 0.87);
   --color-topicons: rgba(255, 255, 255, 0.932);
-  --color-red: rgba(219, 37, 37, 0.849);
+  --box-shadow-nav: drop-shadow(10px 5px 6px rgba(0, 0, 0, 0.01));
   --color-red: rgba(155, 49, 49, 0.849);
-  --box-shadow: -3px 6px 6px rgba(0, 0, 0, 0.253);
-  --box-shadow-wrapper: -7px 7px 6px rgba(0, 0, 0, 0.205);
   --color-btn: linear-gradient(to left, #b13c89, #bb4382, #c34c7c, #c95677, #d86c7e);
   --box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  --box-shadow-card: drop-shadow(-10px 5px 6px rgba(0, 0, 0, 0.01));
   --transition-500: all 500ms ease;
-;
-
 }

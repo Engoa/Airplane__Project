@@ -1,18 +1,3 @@
-:root {
-  --font-header: 'Poppins', sans-serif;
-  --color-bg: hsl(230, 17%, 14%);
-  --color-leftnav: rgba(255, 255, 255, 0.932);
-  --color-lefticons: rgba(15, 14, 14, 0.87);
-  --color-topicons: rgba(255, 255, 255, 0.932);
-  --color-red: rgba(219, 37, 37, 0.849);
-  --color-red: rgba(155, 49, 49, 0.849);
-  --box-shadow: -3px 6px 6px rgba(0, 0, 0, 0.253);
-  --box-shadow-wrapper: -7px 7px 6px rgba(0, 0, 0, 0.205);
-  --color-btn: linear-gradient(to left, #b13c89, #bb4382, #c34c7c, #c95677, #d86c7e);
-  --box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
-  --transition-500: all 500ms ease;
-}
-
 .whitecard {
   background-color: var(--color-leftnav);
   border-radius: 1rem;
@@ -22,6 +7,64 @@
   width: 100%;
   max-width: 500px;
   height: 280px;
+}
+
+@-webkit-keyframes PlaneAnim {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@keyframes PlaneAnim {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@-webkit-keyframes CloudsAnim {
+  0% {
+    -webkit-transform: translateX(-85%);
+            transform: translateX(-85%);
+  }
+  100% {
+    -webkit-transform: translateX(85%);
+            transform: translateX(85%);
+  }
+}
+
+@keyframes CloudsAnim {
+  0% {
+    -webkit-transform: translateX(-85%);
+            transform: translateX(-85%);
+  }
+  100% {
+    -webkit-transform: translateX(85%);
+            transform: translateX(85%);
+  }
+}
+
+:root {
+  --font-header: 'Poppins', sans-serif;
+  --color-bg: hsl(230, 17%, 14%);
+  --color-leftnav: rgba(255, 255, 255, 0.932);
+  --color-lefticons: rgba(15, 14, 14, 0.87);
+  --color-topicons: rgba(255, 255, 255, 0.932);
+  --box-shadow-nav: drop-shadow(10px 5px 6px rgba(0, 0, 0, 0.01));
+  --color-red: rgba(155, 49, 49, 0.849);
+  --color-btn: linear-gradient(to left, #b13c89, #bb4382, #c34c7c, #c95677, #d86c7e);
+  --box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  --box-shadow-card: drop-shadow(-10px 5px 6px rgba(0, 0, 0, 0.01));
+  --transition-500: all 500ms ease;
 }
 
 .cards--wrapper {
@@ -40,12 +83,8 @@
           flex-direction: column;
   width: 100%;
   max-width: 900px;
-  right: 2rem;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  position: absolute;
-  padding-top: 500px;
+  padding: 150px 0 100px;
+  margin-left: auto;
 }
 
 .cards--wrapper .homecards {
@@ -61,7 +100,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1rem;
+  gap: 3rem;
+  -webkit-filter: var(--box-shadow-card);
+          filter: var(--box-shadow-card);
 }
 
 .cards--wrapper .homecards__header {
@@ -168,6 +209,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 0.3rem;
+  min-width: 50px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .cards--wrapper .homecards__time--mid {
@@ -190,10 +235,15 @@
   font-size: 0.95rem;
   opacity: 0.4;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .cards--wrapper .homecards #pm {
   text-align: right;
+}
+
+.cards--wrapper .homecards #am {
+  margin-right: auto;
 }
 
 .cards--wrapper .homecards__weather,
@@ -332,37 +382,10 @@
   font-size: 1.1rem;
 }
 
-html {
-  scroll-behavior: smooth;
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
-}
-
 html input::-webkit-outer-spin-button,
 html input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-html::-webkit-scrollbar {
-  opacity: 0;
-}
-
-html::-webkit-scrollbar-corner {
-  opacity: 0;
-}
-
-html::-webkit-scrollbar-track {
-  opacity: 0;
-}
-
-html::-webkit-scrollbar-thumb {
-  opacity: 0;
-}
-
-html::-webkit-scrollbar-thumb:hover {
-  opacity: 0;
 }
 
 *,
@@ -380,37 +403,56 @@ body {
   margin: 0;
 }
 
-.background__video {
+.app-bg {
   height: 100vh;
   width: 100vw;
   position: fixed;
   z-index: -1;
 }
 
-.background__video::after {
+.app-bg::after {
   content: '';
-  opacity: 0.25;
+  opacity: 0.55;
   inset: 0;
   position: absolute;
   z-index: 1;
-  background: linear-gradient(-120deg, #bcffe5 10%, rgba(0, 0, 0, 0.329) 13%, #005dff 48%, rgba(229, 0, 240, 0.4) 90%);
-  mix-blend-mode: color-dodge;
+  background: linear-gradient(-120deg, rgba(255, 255, 255, 0.39) 5%, #bcffe5 20%, #005dff 60%, rgba(223, 0, 235, 0.1) 100%);
+  mix-blend-mode: overlay;
 }
 
-.background__video img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.app-bg .airplane {
   position: fixed;
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
-  -webkit-filter: contrast(120%);
-          filter: contrast(120%);
+  top: 50%;
+  height: 100vh;
+  left: 106px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-bg .airplane__image {
+  width: 100%;
+  max-height: 90%;
+  -webkit-animation: PlaneAnim 5s ease-in-out infinite alternate;
+          animation: PlaneAnim 5s ease-in-out infinite alternate;
+}
+
+.app-bg__clouds {
+  position: fixed;
+  bottom: -5rem;
+  -webkit-animation: CloudsAnim 25s linear infinite;
+          animation: CloudsAnim 25s linear infinite;
 }
 
 .leftnav {
   position: relative;
+  z-index: 999;
 }
 
 .leftnav nav {
@@ -509,7 +551,7 @@ body {
   position: fixed;
   top: 2rem;
   left: 2rem;
-  width: 20%;
+  width: 15%;
   z-index: 999;
 }
 
@@ -520,10 +562,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .top--nav__links li {
@@ -547,6 +588,12 @@ body {
   background: transparent;
   outline: none;
   border: none;
+  -webkit-transition: var(--transition-500);
+  transition: var(--transition-500);
+}
+
+.top--nav__links .topnav--link:hover {
+  color: var(--color-red);
 }
 
 .top--nav__links .volume {
@@ -556,10 +603,14 @@ body {
 .top--nav__links .volume::before {
   content: '';
   position: absolute;
+  inset: 0;
   left: -1rem;
-  height: 100%;
-  width: 1px;
-  background: rgba(153, 141, 141, 0.829);
+  height: 200%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 2px;
+  background: rgba(153, 141, 141, 0.541);
 }
 
 .top--nav__links .bulb {
@@ -569,22 +620,13 @@ body {
 .top--nav__links .bulb::before {
   content: '';
   position: absolute;
+  inset: 0;
   left: -1rem;
-  height: 100%;
-  width: 1px;
-  background: rgba(153, 141, 141, 0.829);
-}
-
-.airplane {
-  position: fixed;
+  height: 200%;
   top: 50%;
-  left: 10rem;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.airplane__image {
-  width: 100%;
-  max-width: 1340px;
+  width: 2px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background: rgba(153, 141, 141, 0.541);
 }
 /*# sourceMappingURL=main.css.map */

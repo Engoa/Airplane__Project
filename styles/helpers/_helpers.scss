@@ -1,0 +1,28 @@
+.whitecard {
+  background-color: var(--color-leftnav);
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  height: 280px;
+}
+
+
+
+@keyframes PlaneAnim {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+@keyframes CloudsAnim {
+  0% {
+    transform: translateX(-85%);
+  }
+  100% {
+    transform: translateX(85%);
+  }
+}
