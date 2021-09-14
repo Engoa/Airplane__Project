@@ -33,23 +33,23 @@
 
 @-webkit-keyframes CloudsAnim {
   0% {
-    -webkit-transform: translateX(-85%);
-            transform: translateX(-85%);
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
   }
   100% {
-    -webkit-transform: translateX(85%);
-            transform: translateX(85%);
+    -webkit-transform: translateY(60%);
+            transform: translateY(60%);
   }
 }
 
 @keyframes CloudsAnim {
   0% {
-    -webkit-transform: translateX(-85%);
-            transform: translateX(-85%);
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
   }
   100% {
-    -webkit-transform: translateX(85%);
-            transform: translateX(85%);
+    -webkit-transform: translateY(60%);
+            transform: translateY(60%);
   }
 }
 
@@ -57,7 +57,7 @@
   --font-header: 'Poppins', sans-serif;
   --color-bg: hsl(230, 17%, 14%);
   --color-leftnav: rgba(255, 255, 255, 0.932);
-  --color-lefticons: rgba(15, 14, 14, 0.87);
+  --color-lefticons: rgba(9, 9, 32, 0.918);
   --color-topicons: rgba(255, 255, 255, 0.932);
   --box-shadow-nav: drop-shadow(10px 5px 6px rgba(0, 0, 0, 0.01));
   --color-red: rgba(155, 49, 49, 0.849);
@@ -67,7 +67,7 @@
   --transition-500: all 500ms ease;
 }
 
-.cards--wrapper {
+.page__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,9 +87,29 @@
   margin-left: auto;
 }
 
-.cards--wrapper .homecards {
+.page__content {
   max-width: 500px;
   width: 100%;
+}
+
+.page__header {
+  color: rgba(9, 9, 32, 0.918);
+  max-width: 480px;
+  text-align: left;
+}
+
+.page__header h1 {
+  font-family: var(--font-header);
+  font-size: 5.5rem;
+  font-weight: bold;
+}
+
+.page__header p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.homecards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,24 +125,7 @@
           filter: var(--box-shadow-card);
 }
 
-.cards--wrapper .homecards__header {
-  color: rgba(9, 9, 32, 0.918);
-  max-width: 480px;
-  text-align: left;
-}
-
-.cards--wrapper .homecards__header h1 {
-  font-family: var(--font-header);
-  font-size: 5.5rem;
-  font-weight: bold;
-}
-
-.cards--wrapper .homecards__header p {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.cards--wrapper .homecards__flight__destination {
+.homecards__flight__destination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,22 +141,22 @@
   font-family: var(--font-header);
 }
 
-.cards--wrapper .homecards__flight__destination .country {
+.homecards__flight__destination .country {
   font-size: 1.2rem;
 }
 
-.cards--wrapper .homecards__flight__destination .shorthand--country {
+.homecards__flight__destination .shorthand--country {
   font-size: 2.3rem;
   text-transform: uppercase;
   font-weight: bolder;
   text-align: left;
 }
 
-.cards--wrapper .homecards__flight__destination .rtl {
+.homecards__flight__destination .rtl {
   text-align: right;
 }
 
-.cards--wrapper .homecards__duration {
+.homecards__duration {
   border-radius: 2rem;
   background-color: var(--color-red);
   height: 0.5rem;
@@ -170,16 +173,16 @@
   position: relative;
 }
 
-.cards--wrapper .homecards__duration .fa-plane {
+.homecards__duration .fa-plane {
   color: var(--color-red);
   font-size: 3rem;
   z-index: 2;
 }
 
-.cards--wrapper .homecards__duration::after {
+.homecards__duration::after {
   position: absolute;
   content: '';
-  background-color: #8f8c8c;
+  background-color: rgba(192, 191, 191, 0.986);
   width: 50%;
   height: 0.6rem;
   right: 0rem;
@@ -187,7 +190,7 @@
   border: 1px solid #8f8c8c;
 }
 
-.cards--wrapper .homecards__times {
+.homecards__times {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,7 +203,7 @@
   width: 100%;
 }
 
-.cards--wrapper .homecards__time {
+.homecards__time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,39 +218,39 @@
           align-items: flex-end;
 }
 
-.cards--wrapper .homecards__time--mid {
+.homecards__time--mid {
   text-align: center;
 }
 
-.cards--wrapper .homecards__time--mid span:first-of-type {
+.homecards__time--mid span:first-of-type {
   color: white;
   background-color: rgba(23, 175, 23, 0.753);
   border-radius: 1.5rem;
   padding: 0.1rem 1rem;
 }
 
-.cards--wrapper .homecards__top--text {
+.homecards__top--text {
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-.cards--wrapper .homecards__bottom--text {
+.homecards__bottom--text {
   font-size: 0.95rem;
   opacity: 0.4;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.cards--wrapper .homecards #pm {
+.homecards #pm {
   text-align: right;
 }
 
-.cards--wrapper .homecards #am {
+.homecards #am {
   margin-right: auto;
 }
 
-.cards--wrapper .homecards__weather,
-.cards--wrapper .homecards .smallcard {
+.homecards__weather,
+.homecards .smallcard {
   height: 180px;
   position: relative;
   overflow: hidden;
@@ -256,8 +259,8 @@
   padding: 1rem;
 }
 
-.cards--wrapper .homecards__weather::after,
-.cards--wrapper .homecards .smallcard::after {
+.homecards__weather::after,
+.homecards .smallcard::after {
   position: absolute;
   content: '';
   background: -webkit-gradient(linear, left top, left bottom, from(#00c3ff), to(#2e5d9bee));
@@ -270,8 +273,8 @@
           transform: translate(0, -50%);
 }
 
-.cards--wrapper .homecards__weather__temperature,
-.cards--wrapper .homecards .smallcard__temperature {
+.homecards__weather__temperature,
+.homecards .smallcard__temperature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,8 +287,8 @@
   width: 100%;
 }
 
-.cards--wrapper .homecards__weather__degrees,
-.cards--wrapper .homecards .smallcard__degrees {
+.homecards__weather__degrees,
+.homecards .smallcard__degrees {
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,8 +305,8 @@
   margin: 0 auto;
 }
 
-.cards--wrapper .homecards__weather__degrees .degree,
-.cards--wrapper .homecards .smallcard__degrees .degree {
+.homecards__weather__degrees .degree,
+.homecards .smallcard__degrees .degree {
   font-weight: bold;
   font-size: 4rem;
   font-size: clamp(1.5rem, 5vw, 4rem);
@@ -315,8 +318,8 @@
   display: flex;
 }
 
-.cards--wrapper .homecards__weather__degrees .degree--description,
-.cards--wrapper .homecards .smallcard__degrees .degree--description {
+.homecards__weather__degrees .degree--description,
+.homecards .smallcard__degrees .degree--description {
   font-weight: bold;
   font-size: 1.5rem;
   width: 100%;
@@ -327,25 +330,25 @@
   display: flex;
 }
 
-.cards--wrapper .homecards__weather__image,
-.cards--wrapper .homecards .smallcard__image {
+.homecards__weather__image,
+.homecards .smallcard__image {
   z-index: 1;
   width: 40%;
 }
 
-.cards--wrapper .homecards__weather__image img,
-.cards--wrapper .homecards .smallcard__image img {
+.homecards__weather__image img,
+.homecards .smallcard__image img {
   width: 100%;
   max-width: 300px;
 }
 
-.cards--wrapper .homecards__player::after {
+.homecards__player::after {
   background: var(--color-red) !important;
   right: unset;
   left: 0%;
 }
 
-.cards--wrapper .homecards__player__music {
+.homecards__player__music {
   height: 200px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -356,29 +359,29 @@
   gap: 0.5rem;
 }
 
-.cards--wrapper .homecards__player__music .music--name {
+.homecards__player__music .music--name {
   font-size: 2.2rem;
 }
 
-.cards--wrapper .homecards__player__music .music--description {
+.homecards__player__music .music--description {
   font-size: 1.2rem;
 }
 
-.cards--wrapper .homecards__player__music .card--icon {
+.homecards__player__music .card--icon {
   font-size: 1.7rem;
 }
 
-.cards--wrapper .homecards__movies::after {
+.homecards__movies::after {
   background: rgba(9, 9, 32, 0.918) !important;
   left: unset;
   right: 0%;
 }
 
-.cards--wrapper .homecards__movies .movie--name {
+.homecards__movies .movie--name {
   font-size: 1.5rem;
 }
 
-.cards--wrapper .homecards__movies .movie--duration {
+.homecards__movies .movie--duration {
   font-size: 1.1rem;
 }
 
@@ -434,6 +437,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 
 .app-bg .airplane__image {
@@ -446,8 +450,21 @@ body {
 .app-bg__clouds {
   position: fixed;
   bottom: -5rem;
+}
+
+.app-bg__clouds:first-of-type {
+  opacity: 0.6;
+  z-index: 3;
   -webkit-animation: CloudsAnim 25s linear infinite;
           animation: CloudsAnim 25s linear infinite;
+}
+
+.app-bg__clouds:last-of-type {
+  left: 20%;
+  opacity: 0.46;
+  z-index: 1;
+  -webkit-animation: CloudsAnim 55s linear infinite;
+          animation: CloudsAnim 55s linear infinite;
 }
 
 .leftnav {
@@ -604,7 +621,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  left: -1rem;
+  left: -1.5rem;
   height: 200%;
   top: 50%;
   -webkit-transform: translate(0, -50%);
@@ -621,7 +638,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  left: -1rem;
+  left: -1.5rem;
   height: 200%;
   top: 50%;
   width: 2px;

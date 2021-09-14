@@ -2,6 +2,7 @@
 @import 'helpers/helpers';
 @import 'helpers/variables';
 @import 'pages/home';
+@import 'pages/media';
 
 html {
   // scroll-behavior: smooth;
@@ -55,6 +56,7 @@ body {
     pointer-events: none;
     display: flex;
     align-items: center;
+    z-index: 2;
     &__image {
       width: 100%;
       max-height: 90%;
@@ -65,7 +67,17 @@ body {
   &__clouds {
     position: fixed;
     bottom: -5rem;
-    animation: CloudsAnim 25s linear infinite;
+    &:first-of-type {
+      opacity: 0.6;
+      z-index: 3;
+      animation: CloudsAnim 25s linear infinite;
+    }
+    &:last-of-type {
+      left: 20%;
+      opacity: 0.46;
+      z-index: 1;
+      animation: CloudsAnim 55s linear infinite;
+    }
   }
 }
 .leftnav {
@@ -187,7 +199,7 @@ body {
         content: '';
         position: absolute;
         inset: 0;
-        left: -1rem;
+        left: -1.5rem;
         height: 200%;
         top: 50%;
         transform: translate(0, -50%);
@@ -202,7 +214,7 @@ body {
         content: '';
         position: absolute;
         inset: 0;
-        left: -1rem;
+        left: -1.5rem;
         height: 200%;
         top: 50%;
         width: 2px;

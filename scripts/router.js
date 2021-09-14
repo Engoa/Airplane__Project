@@ -20,7 +20,9 @@ async function loadPage(page, oldPage) {
   script.id = 'script_' + page;
   contentDiv.appendChild(script);
 
-  document.dispatchEvent(new CustomEvent('route-update', { to: page, from: oldPage }));
+  document.dispatchEvent(
+    new CustomEvent('route-update', { detail: { to: page, from: oldPage } })
+  );
 }
 
 const capitallize = (str) => str[0].toUpperCase() + str.slice(1);
@@ -53,7 +55,7 @@ window.addEventListener(
     const newPath = Router.getHash(ev.target.location.hash);
     const oldPath = ev.oldURL.split('#')[1];
     // Load current entered page
-    loadPage(newPath, oldPath);
+    loadPage(newPath || 'Home', oldPath || 'Home');
   },
   false
 );

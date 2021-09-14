@@ -1,223 +1,229 @@
-.cards--wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  max-width: 900px;
-  padding: 150px 0 100px;
-  margin-left: auto;
-
-  .homecards {
-    max-width: 500px;
-    width: 100%;
+.page {
+  &__wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    gap: 3rem;
-    filter: var(--box-shadow-card);
-    &__header {
-      color: rgba(9, 9, 32, 0.918);
-      max-width: 480px;
-      text-align: left;
-      h1 {
-        font-family: var(--font-header);
-        font-size: 5.5rem;
-        font-weight: bold;
-      }
-      p {
-        font-size: 1.2rem;
-        font-weight: bold;
-      }
-    }
+    width: 100%;
+    max-width: 900px;
+    padding: 150px 0 100px;
+    margin-left: auto;
+  }
 
-    &__flight {
-      &__destination {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-        margin-bottom: auto;
-        width: 100%;
-        font-family: var(--font-header);
+  &__content {
+    max-width: 500px;
+    width: 100%;
+  }
 
-        .country {
-          font-size: 1.2rem;
-        }
-        .shorthand--country {
-          font-size: 2.3rem;
-          text-transform: uppercase;
-          font-weight: bolder;
-          text-align: left;
-        }
-        .rtl {
-          text-align: right;
-        }
-      }
+  &__header {
+    color: rgba(9, 9, 32, 0.918);
+    max-width: 480px;
+    text-align: left;
+    h1 {
+      font-family: var(--font-header);
+      font-size: 5.5rem;
+      font-weight: bold;
     }
-    &__duration {
-      border-radius: 2rem;
-      background-color: var(--color-red);
-      height: 0.5rem;
+    p {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.homecards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  filter: var(--box-shadow-card);
+
+  &__flight {
+    &__destination {
       display: flex;
       align-items: center;
-      justify-content: center;
-      margin: 2rem 0;
-      position: relative;
-      .fa-plane {
-        color: var(--color-red);
-        font-size: 3rem;
-        z-index: 2;
-      }
+      justify-content: space-between;
+      text-align: center;
+      margin-bottom: auto;
+      width: 100%;
+      font-family: var(--font-header);
 
-      &::after {
-        position: absolute;
-        content: '';
-        background-color: rgb(143, 140, 140);
-        width: 50%;
-        height: 0.6rem;
-        right: 0rem;
-        border-radius: 2rem;
-        border: 1px solid rgb(143, 140, 140);
+      .country {
+        font-size: 1.2rem;
+      }
+      .shorthand--country {
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        font-weight: bolder;
+        text-align: left;
+      }
+      .rtl {
+        text-align: right;
       }
     }
+  }
+  &__duration {
+    border-radius: 2rem;
+    background-color: var(--color-red);
+    height: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    position: relative;
+    .fa-plane {
+      color: var(--color-red);
+      font-size: 3rem;
+      z-index: 2;
+    }
 
-    &__times {
+    &::after {
+      position: absolute;
+      content: '';
+      background-color: rgba(192, 191, 191, 0.986);
+      width: 50%;
+      height: 0.6rem;
+      right: 0rem;
+      border-radius: 2rem;
+      border: 1px solid rgb(143, 140, 140);
+    }
+  }
+
+  &__times {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__time {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    min-width: 50px;
+    align-items: flex-end;
+
+    &--mid {
+      text-align: center;
+      & span:first-of-type {
+        color: white;
+        background-color: rgba(23, 175, 23, 0.753);
+        border-radius: 1.5rem;
+        padding: 0.1rem 1rem;
+      }
+    }
+  }
+  &__top--text {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  &__bottom--text {
+    font-size: 0.95rem;
+    opacity: 0.4;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #pm {
+    text-align: right;
+  }
+  #am {
+    margin-right: auto;
+  }
+
+  // Weather Card!
+
+  &__weather,
+  .smallcard {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    padding: unset;
+    width: 100%;
+    padding: 1rem;
+    &::after {
+      position: absolute;
+      content: '';
+      background: linear-gradient(to bottom, #00c3ff, #2e5d9bee);
+      width: 23%;
+      height: 100%;
+      right: 0%;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+    &__temperature {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 100%;
     }
-    &__time {
+    &__degrees {
+      width: 40%;
       display: flex;
+      align-items: center;
       flex-direction: column;
-      gap: 0.3rem;
-      min-width: 50px;
-      align-items: flex-end;
-
-      &--mid {
-        text-align: center;
-        & span:first-of-type {
-          color: white;
-          background-color: rgba(23, 175, 23, 0.753);
-          border-radius: 1.5rem;
-          padding: 0.1rem 1rem;
-        }
-      }
-    }
-    &__top--text {
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-    &__bottom--text {
-      font-size: 0.95rem;
-      opacity: 0.4;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    #pm {
-      text-align: right;
-    }
-    #am {
-      margin-right: auto;
-    }
-
-    // Weather Card!
-
-    &__weather,
-    .smallcard {
-      height: 180px;
-      position: relative;
-      overflow: hidden;
-      padding: unset;
-      width: 100%;
-      padding: 1rem;
-      &::after {
-        position: absolute;
-        content: '';
-        background: linear-gradient(to bottom, #00c3ff, #2e5d9bee);
-        width: 23%;
-        height: 100%;
-        right: 0%;
-        top: 50%;
-        transform: translate(0, -50%);
-      }
-      &__temperature {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+      font-family: var(--font-header);
+      text-align: center;
+      margin: 0 auto;
+      .degree {
+        font-weight: bold;
+        font-size: 4rem;
+        font-size: clamp(1.5rem, 5vw, 4rem);
         width: 100%;
-      }
-      &__degrees {
-        width: 40%;
+        align-self: center;
         display: flex;
-        align-items: center;
-        flex-direction: column;
-        font-family: var(--font-header);
-        text-align: center;
-        margin: 0 auto;
-        .degree {
-          font-weight: bold;
-          font-size: 4rem;
-          font-size: clamp(1.5rem, 5vw, 4rem);
-          width: 100%;
-          align-self: center;
-          display: flex;
-        }
-        .degree--description {
-          font-weight: bold;
-          font-size: 1.5rem;
-          width: 100%;
-          align-self: center;
-          display: flex;
-        }
       }
-      &__image {
-        z-index: 1;
-        width: 40%;
-        img {
-          width: 100%;
-          max-width: 300px;
-        }
-      }
-    }
-
-    &__player {
-      &::after {
-        background: var(--color-red) !important;
-        right: unset;
-        left: 0%;
-      }
-      &__music {
-        height: 200px;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        .music--name {
-          font-size: 2.2rem;
-        }
-        .music--description {
-          font-size: 1.2rem;
-        }
-
-        .card--icon {
-          font-size: 1.7rem;
-        }
-      }
-    }
-    &__movies {
-      &::after {
-        background: rgba(9, 9, 32, 0.918) !important;
-        left: unset;
-        right: 0%;
-      }
-
-      .movie--name {
+      .degree--description {
+        font-weight: bold;
         font-size: 1.5rem;
+        width: 100%;
+        align-self: center;
+        display: flex;
       }
-      .movie--duration {
-        font-size: 1.1rem;
+    }
+    &__image {
+      z-index: 1;
+      width: 40%;
+      img {
+        width: 100%;
+        max-width: 300px;
       }
+    }
+  }
+
+  &__player {
+    &::after {
+      background: var(--color-red) !important;
+      right: unset;
+      left: 0%;
+    }
+    &__music {
+      height: 200px;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      .music--name {
+        font-size: 2.2rem;
+      }
+      .music--description {
+        font-size: 1.2rem;
+      }
+
+      .card--icon {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  &__movies {
+    &::after {
+      background: rgba(9, 9, 32, 0.918) !important;
+      left: unset;
+      right: 0%;
+    }
+
+    .movie--name {
+      font-size: 1.5rem;
+    }
+    .movie--duration {
+      font-size: 1.1rem;
     }
   }
 }
