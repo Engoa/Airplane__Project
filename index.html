@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airplane</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <script src="https://kit.fontawesome.com/9a80e50f42.js" crossorigin="anonymous"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- // KEEP FIRST -->
+    <script src="/scripts/router.js" defer></script>
+    <script src="/scripts/app.js" defer></script>
+    <script src="/scripts/vendors/svg-inject.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- // CDN HERE -->
+  </head>
+  <body>
+    <!-- <div class="background__video">
+      <video autoplay muted loop class="background--video__video">
+        <source src="/assets/videos/plane.gif" type="video/mp4" />
+      </video>
+    </div> -->
+    <div class="background__video">
+      <img
+        autoplay
+        muted
+        loop
+        class="background--video__video"
+        src="/assets/videos/plane.gif"
+      />
+    </div>
+    <div class="top--nav">
+      <ul class="top--nav__links">
+        <li>
+          <a href="#"
+            ><img onload="SVGInject(this)" src="/assets/images/youtube-s.svg" alt="logo"
+          /></a>
+        </li>
+
+        <li>
+          <button href="" class="topnav--link">
+            <i class="fas fa-power-off"></i>
+          </button>
+        </li>
+        <li>
+          <button href="" class="topnav--link bulb">
+            <i class="far fa-lightbulb"></i>
+          </button>
+        </li>
+        <li>
+          <button href="" class="topnav--link volume">
+            <i class="fas fa-volume-up"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="leftnav">
+      <nav>
+        <ul class="leftnav__links">
+          <li>
+            <button type="button" class="link">
+              <i class="fas fa-plane"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="link">
+              <i class="fas fa-headphones"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="link">
+              <i class="fas fa-play"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="link">
+              <i class="fas fa-laugh"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="link">
+              <i class="fas fa-shopping-bag"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="link">
+              <i class="fas fa-bars"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- <div class="airplane">
+      <img class="airplane__image" src="/assets/images/airplane.png" alt="Plane Image" />
+    </div> -->
+    <div id="app"></div>
+  </body>
+</html>

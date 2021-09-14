@@ -1,0 +1,229 @@
+@import 'vendors/variables';
+@import 'vendors/breakpoints';
+@import 'vendors/helpers';
+@import 'pages/home';
+
+html {
+  scroll-behavior: smooth;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &::-webkit-scrollbar {
+    opacity: 0;
+  }
+  &::-webkit-scrollbar-corner {
+    opacity: 0;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    opacity: 0;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    opacity: 0;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    opacity: 0;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  margin: 0;
+}
+.background__video {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+  &::after {
+    content: '';
+    opacity: 0.25;
+    inset: 0;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(
+      -120deg,
+      rgba(188, 255, 229, 1) 10%,
+      rgba(0, 0, 0, 0.329) 13%,
+      rgba(0, 93, 255, 1) 48%,
+      rgba(229, 0, 240, 0.4) 90%
+    );
+    mix-blend-mode: color-dodge;
+  }
+  // &__video {
+  //   position: fixed;
+  //   inset: 0;
+  //   min-width: 100vw;
+  //   min-height: 100vh;
+  //   width: 100%;
+  // }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    filter: blur(1px);
+    filter: contrast(120%);
+  }
+}
+.leftnav {
+  position: relative;
+  nav {
+    display: flex;
+    align-items: center;
+    height: 85%;
+    width: 90px;
+    max-width: 500px;
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      height: 60%;
+      background-color: var(--color-leftnav);
+      z-index: -1;
+      box-shadow: var(--box-shadow);
+    }
+
+    &::after {
+      top: unset;
+      bottom: 0;
+      transform: skewX(-25deg) rotate(-25deg);
+      border-bottom-right-radius: 1.5rem;
+    }
+    &::before {
+      transform: skewX(25deg) rotate(25deg);
+      border-top-right-radius: 1.5rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 80%;
+
+    li {
+      list-style-type: none;
+    }
+    .link {
+      text-decoration: none;
+      color: var(--color-lefticons);
+      font-size: 1.9rem;
+      font-size: clamp(1.2rem, 2vw, 1.9rem);
+      position: relative;
+      outline: none;
+      border: none;
+      transition: var(--transition-500);
+      background-color: transparent;
+
+      &:hover {
+        color: var(--color-red);
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 5rem;
+        height: 1px;
+        width: 200%;
+        left: 50%;
+        transform: translate(-50%);
+        background: rgba(153, 141, 141, 0.829);
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.top--nav {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  width: 20%;
+  z-index: 999;
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    li {
+      list-style-type: none;
+    }
+    svg {
+      width: 100%;
+      max-width: 40px;
+      * {
+        fill: var(--color-topicons);
+      }
+    }
+    .topnav--link {
+      text-decoration: none;
+      color: var(--color-topicons);
+      font-size: 1.4rem;
+      font-size: clamp(1.2rem, 2vw, 1.4rem);
+      background: transparent;
+      outline: none;
+      border: none;
+    }
+    .volume {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -1rem;
+        height: 100%;
+        width: 1px;
+        background: rgba(153, 141, 141, 0.829);
+      }
+    }
+    .bulb {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -1rem;
+        height: 100%;
+        width: 1px;
+        background: rgba(153, 141, 141, 0.829);
+      }
+    }
+  }
+}
+
+.airplane {
+  position: fixed;
+  top: 50%;
+  left: 10rem;
+  transform: translateY(-50%);
+  &__image {
+    width: 100%;
+    max-width: 1340px;
+  }
+}
