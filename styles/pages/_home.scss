@@ -16,7 +16,7 @@
   }
 
   &__header {
-    color: rgba(9, 9, 32, 0.918);
+    color: var(--color-main);
     max-width: 480px;
     text-align: left;
     h1 {
@@ -37,6 +37,7 @@
   flex-direction: column;
   gap: 3rem;
   filter: var(--box-shadow-card);
+  color: var(--color-main);
 
   &__flight {
     &__destination {

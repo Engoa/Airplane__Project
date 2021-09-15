@@ -72,6 +72,7 @@ body {
       z-index: 3;
       animation: CloudsAnim 25s linear infinite;
     }
+
     &:last-of-type {
       left: 20%;
       opacity: 0.46;
@@ -128,7 +129,7 @@ body {
     }
     .link {
       text-decoration: none;
-      color: var(--color-lefticons);
+      color: var(--color-main);
       font-size: 1.9rem;
       font-size: clamp(1.2rem, 2vw, 1.9rem);
       position: relative;

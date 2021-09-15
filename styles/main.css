@@ -9,6 +9,17 @@
   height: 280px;
 }
 
+.whitecard--small {
+  background-color: var(--color-leftnav);
+  border-radius: 1rem;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  padding: 1.5rem 2rem;
+  width: 100%;
+  max-width: 500px;
+  height: 115px;
+}
+
 @-webkit-keyframes PlaneAnim {
   0% {
     -webkit-transform: translateY(0px);
@@ -55,7 +66,7 @@
 
 :root {
   --font-header: 'Poppins', sans-serif;
-  --color-bg: hsl(230, 17%, 14%);
+  --color-main: rgba(9, 9, 32, 0.918);
   --color-leftnav: rgba(255, 255, 255, 0.932);
   --color-lefticons: rgba(9, 9, 32, 0.918);
   --color-topicons: rgba(255, 255, 255, 0.932);
@@ -93,7 +104,7 @@
 }
 
 .page__header {
-  color: rgba(9, 9, 32, 0.918);
+  color: var(--color-main);
   max-width: 480px;
   text-align: left;
 }
@@ -123,6 +134,7 @@
   gap: 3rem;
   -webkit-filter: var(--box-shadow-card);
           filter: var(--box-shadow-card);
+  color: var(--color-main);
 }
 
 .homecards__flight__destination {
@@ -385,6 +397,143 @@
   font-size: 1.1rem;
 }
 
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.media__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  font-family: var(--font-header);
+  margin-bottom: 1.5rem;
+}
+
+.media__header__author {
+  text-align: center;
+}
+
+.media__header__author h2 {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.media__header__info {
+  font-size: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+}
+
+.media .media__content {
+  font-weight: bold;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.2rem;
+  border-radius: 0rem;
+  border-bottom: 1px solid rgba(197, 197, 197, 0.527);
+  position: relative;
+  color: var(--color-main);
+}
+
+.media .media__content::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 100%;
+  background-color: var(--color-red);
+  left: 0;
+}
+
+.media .media__content--number {
+  color: var(--color-main);
+}
+
+.media .media__content--name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.media .media__content--name a {
+  text-decoration: none;
+  color: var(--color-main);
+}
+
+.media .media__content--name #author--name {
+  opacity: 0.6;
+  margin-right: auto;
+  font-weight: light;
+}
+
+.media .media__content--controller {
+  cursor: pointer;
+  -webkit-transition: var(--transition-500);
+  transition: var(--transition-500);
+  color: var(--color-main);
+}
+
+.media .media__content--controller:hover {
+  color: var(--color-red);
+}
+
+.blur {
+  width: 100%;
+  max-width: 500px;
+  height: 115px;
+  position: fixed;
+  left: 50.5%;
+  bottom: 3rem;
+  -webkit-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  background: linear-gradient(176deg, white 0%, rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 html input::-webkit-outer-spin-button,
 html input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -536,7 +685,7 @@ body {
 
 .leftnav__links .link {
   text-decoration: none;
-  color: var(--color-lefticons);
+  color: var(--color-main);
   font-size: 1.9rem;
   font-size: clamp(1.2rem, 2vw, 1.9rem);
   position: relative;
