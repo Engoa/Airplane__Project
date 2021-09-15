@@ -40,8 +40,8 @@ body {
     background: linear-gradient(
       -120deg,
       rgba(255, 255, 255, 0.39) 5%,
-      rgba(188, 255, 229, 1) 20%,
-      rgba(0, 93, 255, 1) 60%,
+      rgba(188, 255, 229, 0.7) 20%,
+      rgba(0, 93, 255, 0.8) 60%,
       rgba(223, 0, 235, 0.1) 100%
     );
     mix-blend-mode: overlay;
@@ -49,10 +49,10 @@ body {
 
   .airplane {
     position: fixed;
-    top: 50%;
     height: 100vh;
-    left: 106px;
-    transform: translateY(-50%);
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
     pointer-events: none;
     display: flex;
     align-items: center;
@@ -62,6 +62,8 @@ body {
       max-height: 90%;
       animation: PlaneAnim 5s ease-in-out infinite alternate;
     }
+
+    display: none;
   }
 
   &__clouds {

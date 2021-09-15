@@ -1,3 +1,5 @@
+const capitallize = (str) => str[0].toUpperCase() + str.slice(1);
+
 async function fetchHtmlAsText(url) {
   return await (await fetch(url)).text();
 }
@@ -24,8 +26,6 @@ async function loadPage(page, oldPage) {
     new CustomEvent('route-update', { detail: { to: page, from: oldPage } })
   );
 }
-
-const capitallize = (str) => str[0].toUpperCase() + str.slice(1);
 
 const Router = {
   getHash(hash) {

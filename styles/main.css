@@ -111,7 +111,7 @@
 
 .page__header h1 {
   font-family: var(--font-header);
-  font-size: 5.5rem;
+  font-size: 6rem;
   font-weight: bold;
 }
 
@@ -297,6 +297,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  height: 100%;
 }
 
 .homecards__weather__degrees,
@@ -361,14 +362,21 @@
 }
 
 .homecards__player__music {
-  height: 200px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.homecards__player__music a {
+  text-decoration: none;
+  color: var(--color-main);
+  -webkit-transition: var(--transition-500);
+  transition: var(--transition-500);
+}
+
+.homecards__player__music a:hover {
+  color: var(--color-red);
 }
 
 .homecards__player__music .music--name {
@@ -377,6 +385,7 @@
 
 .homecards__player__music .music--description {
   font-size: 1.2rem;
+  display: unset;
 }
 
 .homecards__player__music .card--icon {
@@ -427,14 +436,13 @@
           align-items: center;
   margin-right: auto;
   font-family: var(--font-header);
-  margin-bottom: 1.5rem;
 }
 
-.media__header__author {
-  text-align: center;
+.media__header h1 {
+  font-size: 4.5rem;
 }
 
-.media__header__author h2 {
+.media__header #author--name {
   font-weight: bold;
   font-size: 1.6rem;
 }
@@ -531,7 +539,115 @@
           filter: blur(1px);
   background: linear-gradient(176deg, white 0%, rgba(0, 0, 0, 0) 100%);
   pointer-events: none;
-  z-index: 1;
+}
+
+.media__player {
+  position: fixed;
+  top: 50%;
+  left: 35%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5rem;
+  z-index: 5;
+  display: none;
+}
+
+.media__player .media--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2.5rem;
+}
+
+.media__player__forward, .media__player__backward {
+  font-size: 2rem;
+  color: var(--color-main);
+  cursor: pointer;
+  -webkit-transition: var(--transition-500);
+  transition: var(--transition-500);
+  opacity: 0.8;
+}
+
+.media__player__forward:hover, .media__player__backward:hover {
+  color: var(--color-red);
+  opacity: 1;
+}
+
+.media__player__player {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 450px;
+  border: 2px solid white;
+}
+
+.media__player .media__player__album {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.media__player__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+.media__player__volume input {
+  cursor: pointer;
+  width: 450px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: rgba(128, 128, 128, 0.705);
+  outline: none;
+  border-radius: 2rem;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: var(--color-leftnav);
+  cursor: pointer;
 }
 
 html input::-webkit-outer-spin-button,
@@ -568,17 +684,17 @@ body {
   inset: 0;
   position: absolute;
   z-index: 1;
-  background: linear-gradient(-120deg, rgba(255, 255, 255, 0.39) 5%, #bcffe5 20%, #005dff 60%, rgba(223, 0, 235, 0.1) 100%);
+  background: linear-gradient(-120deg, rgba(255, 255, 255, 0.39) 5%, rgba(188, 255, 229, 0.7) 20%, rgba(0, 93, 255, 0.8) 60%, rgba(223, 0, 235, 0.1) 100%);
   mix-blend-mode: overlay;
 }
 
 .app-bg .airplane {
   position: fixed;
-  top: 50%;
   height: 100vh;
-  left: 106px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 50%;
+  left: 35%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   pointer-events: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -587,6 +703,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
+  display: none;
 }
 
 .app-bg .airplane__image {

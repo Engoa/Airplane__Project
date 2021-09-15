@@ -21,7 +21,7 @@
     text-align: left;
     h1 {
       font-family: var(--font-header);
-      font-size: 5.5rem;
+      font-size: 6rem;
       font-weight: bold;
     }
     p {
@@ -155,6 +155,7 @@
       align-items: center;
       justify-content: space-between;
       width: 100%;
+      height: 100%;
     }
     &__degrees {
       width: 40%;
@@ -197,15 +198,24 @@
       left: 0%;
     }
     &__music {
-      height: 200px;
       align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
+      margin-top: 2rem;
+
+      a {
+        text-decoration: none;
+        color: var(--color-main);
+        transition: var(--transition-500);
+
+        &:hover {
+          color: var(--color-red);
+        }
+      }
       .music--name {
         font-size: 2.2rem;
       }
       .music--description {
         font-size: 1.2rem;
+        display: unset;
       }
 
       .card--icon {
