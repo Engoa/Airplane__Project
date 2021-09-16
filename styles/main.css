@@ -131,7 +131,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 3rem;
+  gap: 1.5rem;
   -webkit-filter: var(--box-shadow-card);
           filter: var(--box-shadow-card);
   color: var(--color-main);
@@ -504,13 +504,17 @@
           align-items: center;
 }
 
-.media .media__content--name a {
-  text-decoration: none;
-  color: var(--color-main);
+.media .media__content--name #name {
+  -webkit-transition: var(--transition-500);
+  transition: var(--transition-500);
+}
+
+.media .media__content--name #name:hover {
+  color: var(--color-red);
 }
 
 .media .media__content--name #author--name {
-  opacity: 0.6;
+  opacity: 0.5;
   margin-right: auto;
   font-weight: light;
 }
@@ -524,21 +528,6 @@
 
 .media .media__content--controller:hover {
   color: var(--color-red);
-}
-
-.blur {
-  width: 100%;
-  max-width: 500px;
-  height: 115px;
-  position: fixed;
-  left: 50.5%;
-  bottom: 3rem;
-  -webkit-transform: translate(50%, 0);
-          transform: translate(50%, 0);
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
-  background: linear-gradient(176deg, white 0%, rgba(0, 0, 0, 0) 100%);
-  pointer-events: none;
 }
 
 .media__player {
@@ -560,8 +549,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 5rem;
   z-index: 5;
+  gap: 2rem;
   display: none;
 }
 
@@ -606,6 +595,8 @@
   width: 100%;
   max-width: 450px;
   border: 2px solid white;
+  background: rgba(255, 255, 255, 0.281);
+  padding: 0.5rem;
 }
 
 .media__player .media__player__album {
@@ -624,11 +615,24 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2rem;
+  margin-top: 3rem;
 }
 
 .media__player__volume input {
   cursor: pointer;
   width: 450px;
+}
+
+#card {
+  outline: none;
+  border: none;
+  -webkit-transition: var(--transition-500);
+  transition: var(--transition-500);
+}
+
+#card:hover {
+  -webkit-transform: perspective(1000px) scaleY(1) scaleX(1) rotateY(-2deg) skewX(-2deg);
+          transform: perspective(1000px) scaleY(1) scaleX(1) rotateY(-2deg) skewX(-2deg);
 }
 
 .slider {
@@ -691,7 +695,7 @@ body {
 .app-bg .airplane {
   position: fixed;
   height: 100vh;
-  top: 50%;
+  top: 58%;
   left: 35%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
