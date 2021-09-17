@@ -6,9 +6,17 @@
   --color-lefticons: rgba(9, 9, 32, 0.918);
   --color-topicons: rgba(255, 255, 255, 0.932);
   --box-shadow-nav: drop-shadow(10px 5px 6px rgba(0, 0, 0, 0.01));
-  --color-red: rgba(155, 49, 49, 0.849);
+  --color-red: rgb(211, 28, 89);
   --color-btn: linear-gradient(to left, #b13c89, #bb4382, #c34c7c, #c95677, #d86c7e);
   --box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
   --box-shadow-card: drop-shadow(-10px 5px 6px rgba(0, 0, 0, 0.01));
-  --transition-500: all 500ms ease;
+  --transition-500: all 300ms ease;
+  --bg-gradient: fixed
+    linear-gradient(
+      -120deg,
+      rgba(255, 255, 255, 0.39) 5%,
+      rgba(188, 255, 229, 0.7) 20%,
+      rgba(0, 93, 255, 0.8) 60%,
+      rgba(223, 0, 235, 0.1) 100%
+    );
 }

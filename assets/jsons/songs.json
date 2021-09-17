@@ -1,0 +1,26 @@
+[
+  {
+    "id": "peaches",
+    "title": "Peaches",
+    "author": "Justin Bieber",
+    "cover_img": "../assets/images/peaches.jpg",
+    "preview_link": "https://www.youtube.com/watch?v=tQ0yjYUFKAE&ab_channel=JustinBieberVEVO",
+    "itunes_id": "1556175857"
+  },
+  {
+    "id": "take_my_breath",
+    "title": "Take My Breath",
+    "author": "The Weekend",
+    "cover_img": "../assets/images/takemybreath.png",
+    "preview_link": "https://www.youtube.com/watch?v=tQ0yjYUFKAE&ab_channel=JustinBieberVEVO",
+    "itunes_id": "1579408008"
+  },
+  {
+    "id": "anxious",
+    "title": "Anxious",
+    "author": "Dennis Loyd",
+    "cover_img": "../assets/images/anxious.jpg",
+    "preview_link": "https://www.youtube.com/watch?v=tQ0yjYUFKAE&ab_channel=JustinBieberVEVO",
+    "itunes_id": "1543997037"
+  }
+]

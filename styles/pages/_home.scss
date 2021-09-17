@@ -1,36 +1,11 @@
-.page {
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 900px;
-    padding: 150px 0 100px;
-    margin-left: auto;
-  }
-
-  &__content {
-    max-width: 500px;
-    width: 100%;
-  }
-
-  &__header {
-    color: var(--color-main);
-    max-width: 480px;
-    text-align: left;
-    h1 {
-      font-family: var(--font-header);
-      font-size: 6rem;
-      font-weight: bold;
-    }
-    p {
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
+.card--anchor {
+  color: var(--color-main);
+  text-decoration: none;
+  transition: var(--transition-500);
+  &:hover {
+    color: var(--color-red);
   }
 }
-
 .homecards {
   display: flex;
   align-items: center;
@@ -144,7 +119,8 @@
       position: absolute;
       content: '';
       background: linear-gradient(to bottom, #00c3ff, #2e5d9bee);
-      width: 23%;
+      width: 100%;
+      max-width: 187.2px;
       height: 100%;
       right: 0%;
       top: 50%;
@@ -160,22 +136,19 @@
     &__degrees {
       width: 40%;
       display: flex;
-      align-items: center;
       flex-direction: column;
       font-family: var(--font-header);
-      text-align: center;
-      margin: 0 auto;
       .degree {
         font-weight: bold;
-        font-size: 4rem;
-        font-size: clamp(1.5rem, 5vw, 4rem);
+        font-size: 2.8rem;
+        font-size: clamp(1.5rem, 5vw, 2.8rem);
         width: 100%;
         align-self: center;
         display: flex;
       }
       .degree--description {
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         width: 100%;
         align-self: center;
         display: flex;
@@ -184,45 +157,41 @@
     &__image {
       z-index: 1;
       width: 40%;
+      display: flex;
+      align-self: center;
+      justify-content: center;
       img {
         width: 100%;
-        max-width: 300px;
+        max-width: 187.2px;
       }
     }
   }
-
-  &__player {
+  // Media Card
+  .render--homecard-media {
     &::after {
-      background: var(--color-red) !important;
-      right: unset;
-      left: 0%;
-    }
-    &__music {
-      align-items: center;
-      margin-top: 2rem;
-
-      a {
-        text-decoration: none;
-        color: var(--color-main);
-        transition: var(--transition-500);
-
-        &:hover {
-          color: var(--color-red);
-        }
-      }
-      .music--name {
-        font-size: 2.2rem;
-      }
-      .music--description {
-        font-size: 1.2rem;
-        display: unset;
-      }
-
-      .card--icon {
-        font-size: 1.7rem;
-      }
+      display: none;
     }
   }
+  #card-media {
+    h2 {
+      max-width: 290px;
+      width: 100%;
+      font-size: 3rem;
+    }
+  }
+
+  #card--img {
+    img {
+      margin-left: 1rem;
+    }
+  }
+  .card--icon {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  // Movie card
+
   &__movies {
     &::after {
       background: rgba(9, 9, 32, 0.918) !important;

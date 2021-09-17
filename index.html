@@ -28,7 +28,6 @@
 
     <script src="/scripts/router.js" defer></script>
     <script src="/scripts/songdata.js" defer></script>
-    <script src="/scripts/app.js" defer></script>
     <script src="/scripts/vendors/svg-inject.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,6 +63,10 @@
         <img src="/assets/images/clouds.png" class="app-bg__clouds" alt="clouds" />
       </div>
 
+      <div class="app-bg__dummy">
+        <div class="app-bg__fade"></div>
+      </div>
+
       <div class="top--nav">
         <ul class="top--nav__links">
           <li>
@@ -83,7 +86,7 @@
             </button>
           </li>
           <li>
-            <button href="" class="topnav--link volume">
+            <button href="" class="topnav--link volume" onclick="MediaPlayer.toggleMute()">
               <i class="fas fa-volume-up"></i>
             </button>
           </li>
@@ -129,18 +132,18 @@
 
       <div class="media__player">
         <div class="media--container">
-          <div class="media__player__backward">
+          <div class="media__player__backward" onclick="MediaPlayer.previousSong()">
             <i class="fas fa-step-backward"></i>
           </div>
 
-          <div class="media__player__player">
-            <img
-              class="media__player__album"
-              src="/assets/images/somedays.jpg"
-              alt="Album Image"
-            />
+          <div class="media__player__player" onclick="MediaPlayer.toggle()">
+            <div class="player-icon--wrapper">
+              <i class="fas fa-play player-icon" id="icon-played"></i>
+              <i class="fas fa-pause player-icon" id="icon-paused" style="display: none"></i>
+            </div>
+            <div class="render--media--image"></div>
           </div>
-          <div class="media__player__forward">
+          <div class="media__player__forward" onclick="MediaPlayer.nextSong()">
             <i class="fas fa-step-forward"></i>
           </div>
         </div>
@@ -149,31 +152,44 @@
             <i class="fas fa-random shuffle"></i>
           </div>
           <div class="media__player__volume">
-            <input type="range" class="slider" />
+            <input
+              type="range"
+              class="slider slider__volume"
+              max="100"
+              value="30"
+              min="0"
+              oninput="MediaPlayer.adjustVolume(event)"
+            />
+            <input
+              type="range"
+              class="slider slider__seek"
+              max="300"
+              min="0"
+              oninput="MediaPlayer.seek(event)"
+            />
           </div>
-          <div class="media__player__forward repeat">
+          <div class="media__player__forward repeat" onclick="MediaPlayer.toggleLoop()">
             <i class="fas fa-redo-alt"></i>
           </div>
+        </div>
+
+        <div id="render--media--audio">
+          <audio controls preload="none" style="width: 480px">
+            <source src="" type="audio/mp4" />
+            <p>Your browser does not support this audio file.</p>
+          </audio>
         </div>
       </div>
       <div id="app" data-scroll-section></div>
     </div>
+
     <script src="/scripts/vendors/locomotive-scroll.min.js"></script>
-    <script>
-      (function () {
-        let scroll = null;
-
-        document.addEventListener('route-update', () => {
-          if (scroll) {
-            return scroll.update();
-          }
-
-          scroll = new LocomotiveScroll({
-            el: document.querySelector('[data-scroll-container]'),
-            smooth: true,
-          });
-        });
-      })();
-    </script>
+    <script src="/scripts/app.js" defer></script>
+    <script src="/scripts/MediaPlayer.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/fitty@2.3.5/dist/fitty.min.js"
+      integrity="sha256-Sc+/1+qa8RGHw0M/OV+d2ylLWriAjdSwXF2JvVTufu0="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

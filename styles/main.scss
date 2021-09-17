@@ -21,10 +21,23 @@ html {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 body {
   font-size: 16px !important;
   font-family: 'Montserrat', sans-serif !important;
   margin: 0;
+}
+
+audio {
+  display: none;
 }
 .app-bg {
   height: 100vh;
@@ -37,14 +50,25 @@ body {
     inset: 0;
     position: absolute;
     z-index: 1;
-    background: linear-gradient(
-      -120deg,
-      rgba(255, 255, 255, 0.39) 5%,
-      rgba(188, 255, 229, 0.7) 20%,
-      rgba(0, 93, 255, 0.8) 60%,
-      rgba(223, 0, 235, 0.1) 100%
-    );
+    background: var(--bg-gradient);
     mix-blend-mode: overlay;
+  }
+
+  &__dummy {
+    position: fixed;
+    right: 0;
+    height: 150px;
+    width: 100%;
+    z-index: 5;
+  }
+  &__fade {
+    height: 100%;
+    mask-image: linear-gradient(to bottom, white 30%, transparent 100%);
+
+    background: linear-gradient(to bottom, white 30%, transparent 100%);
+
+    width: 100%;
+    margin: auto;
   }
 
   .airplane {
@@ -83,6 +107,41 @@ body {
     }
   }
 }
+
+.page {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    padding: 150px 0 100px;
+    margin-left: auto;
+  }
+
+  &__content {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  &__header {
+    color: var(--color-main);
+    max-width: 480px;
+    text-align: left;
+    h1 {
+      max-width: 480px;
+      font-family: var(--font-header);
+      font-size: 6rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+}
+
 .leftnav {
   position: relative;
   z-index: 999;
@@ -178,12 +237,12 @@ body {
       width: 100%;
       max-width: 40px;
       * {
-        fill: var(--color-topicons);
+        fill: var(--color-topmain);
       }
     }
     .topnav--link {
       text-decoration: none;
-      color: var(--color-topicons);
+      color: var(--color-main);
       font-size: 1.4rem;
       font-size: clamp(1.2rem, 2vw, 1.4rem);
       background: transparent;
@@ -201,28 +260,21 @@ body {
       &::before {
         content: '';
         position: absolute;
-        inset: 0;
-        left: -1.5rem;
-        height: 200%;
+        height: 2px;
+        width: 0;
+        left: 50%;
         top: 50%;
-        transform: translate(0, -50%);
-        width: 2px;
-        background: rgba(153, 141, 141, 0.541);
+        transform: translate(-50%, -50%) rotate(-40deg) scale(1.35);
+        background: var(--color-main);
+        transition: var(--transition-500);
+        transform-origin: 50% 0;
       }
-    }
-    .bulb {
-      position: relative;
-
-      &::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        left: -1.5rem;
-        height: 200%;
-        top: 50%;
-        width: 2px;
-        transform: translate(0, -50%);
-        background: rgba(153, 141, 141, 0.541);
+      &:hover::before,
+      &.mute-selected::before {
+        width: 100%;
+      }
+      &.mute-selected::before {
+        background: var(--color-red);
       }
     }
   }
