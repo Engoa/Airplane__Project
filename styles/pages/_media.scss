@@ -3,6 +3,8 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  box-shadow: var(--box-shadow);
+
   &__header {
     display: flex;
     flex-direction: column;
@@ -45,10 +47,12 @@
       height: 100%;
       background-color: var(--color-red);
       left: 0;
+      transition: var(--transition-500);
     }
 
     &--number {
       color: var(--color-main);
+      z-index: 5;
     }
     &--name {
       display: flex;
@@ -204,16 +208,12 @@
 
   display: none;
 }
+// Playing now Card class!
 
 .songcard {
   outline: none;
   border: none;
   transition: var(--transition-500);
-
-  &:hover {
-    transform: scale(1.02);
-  }
- 
 
   .playing {
     display: flex;
@@ -221,8 +221,13 @@
   .paused {
     display: none;
   }
-  &.playing-now .media__content {
-    background: rgba(black, 0.1) !important;
+  &.playing-now .whitecard--small {
+    background: rgba(grey, 0.1);
+
+    &::before {
+      width: 70px;
+      transition: var(--transition-500);
+    }
   }
 }
 .slider {

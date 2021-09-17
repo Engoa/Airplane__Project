@@ -73,9 +73,15 @@ const MediaPlayer = {
   },
 
   toggleLoop() {
+    const repeatElement = document.querySelector('.repeat');
     this.loop = !this.loop;
-    this.$audio.loop = this.loop;
-    // todo: change state of button when
+    if (this.loop) {
+      repeatElement.style.color = 'var(--color-red)';
+      this.$audio.loop = this.loop;
+    } else {
+      repeatElement.style.color = 'var(--color-main)';
+      this.$audio.loop = !this.loop;
+    }
   },
 
   play() {
@@ -114,8 +120,6 @@ const MediaPlayer = {
       this.itunes[id] = song;
     }
 
-    console.log(this.itunes);
-
     this.$audio.querySelector('source').src = song.previewUrl;
     this.$audio.load();
   },
@@ -149,7 +153,13 @@ const MediaPlayer = {
 
 (async () => {
   await MediaPlayer.fetchAllSongs();
+  //Save Mute to LS
   if (getLS('user-muted')) {
     MediaPlayer.toggleMute(getLS('user-muted'));
+  }
+
+  //Save Shutdown to LS
+  if (getLS('shutdown')) {
+    shutDownScreen(getLS('shutdown'));
   }
 })();

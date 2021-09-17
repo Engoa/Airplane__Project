@@ -3,7 +3,7 @@ const airplane = $('#airplane-img');
 const mediaPlayer = $('.media__player');
 
 let $LocoScroll = null;
-
+let isShutDown = false;
 document.addEventListener('route-update', (event) => {
   handleHomePageTransition(event.detail);
   handleMediaPageTransition(event.detail);
@@ -35,3 +35,16 @@ const handleMediaPageTransition = ({ to, from }) => {
   }
 };
 
+const shutDownScreen = () => {
+  if (!isShutDown) {
+    $('.circle--clippath').css('clip-path', 'circle(150% at 0% 0%)');
+    $('.power').css('color', 'white');
+    MediaPlayer.$audio.pause();
+    isShutDown = true;
+  } else {
+    $('.circle--clippath').css('clip-path', 'circle(0% at 0% 0%)');
+    $('.power').css('color', 'var(--color-main)');
+    isShutDown = false;
+  }
+  setLS('shutdown', isShutDown);
+};

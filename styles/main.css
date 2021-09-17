@@ -70,10 +70,10 @@
   --color-leftnav: rgba(255, 255, 255, 0.932);
   --color-lefticons: rgba(9, 9, 32, 0.918);
   --color-topicons: rgba(255, 255, 255, 0.932);
-  --box-shadow-nav: drop-shadow(10px 5px 6px rgba(0, 0, 0, 0.01));
+  --box-shadow-nav: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.01));
   --color-red: rgb(211, 28, 89);
   --color-btn: linear-gradient(to left, #b13c89, #bb4382, #c34c7c, #c95677, #d86c7e);
-  --box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  --box-shadow: rgba(0, 0, 0, 0.1) 0px 18px 50px -10px;
   --box-shadow-card: drop-shadow(-10px 5px 6px rgba(0, 0, 0, 0.01));
   --transition-500: all 300ms ease;
   --bg-gradient: fixed
@@ -333,7 +333,7 @@
 .homecards__weather__image img,
 .homecards .smallcard__image img {
   width: 100%;
-  max-width: 187.2px;
+  max-width: 175.2px;
 }
 
 .homecards .render--homecard-media::after {
@@ -383,6 +383,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
 }
 
 .media__header {
@@ -448,10 +450,13 @@
   height: 100%;
   background-color: var(--color-red);
   left: 0;
+  -webkit-transition: var(--transition-500);
+  transition: var(--transition-500);
 }
 
 .media .media__content--number {
   color: var(--color-main);
+  z-index: 5;
 }
 
 .media .media__content--name {
@@ -678,11 +683,6 @@
   transition: var(--transition-500);
 }
 
-.songcard:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-}
-
 .songcard .playing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -693,8 +693,14 @@
   display: none;
 }
 
-.songcard.playing-now .media__content {
-  background: rgba(0, 0, 0, 0.1) !important;
+.songcard.playing-now .whitecard--small {
+  background: rgba(128, 128, 128, 0.1);
+}
+
+.songcard.playing-now .whitecard--small::before {
+  width: 70px;
+  -webkit-transition: var(--transition-500);
+  transition: var(--transition-500);
 }
 
 .slider {
@@ -885,7 +891,7 @@ audio {
 
 .leftnav {
   position: relative;
-  z-index: 999;
+  z-index: 10;
 }
 
 .leftnav nav {
@@ -988,6 +994,30 @@ audio {
   z-index: 999;
 }
 
+.top--nav .circle--clippath {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: circle(0% at 0% 0%);
+          clip-path: circle(0% at 0% 0%);
+  background-color: black;
+  z-index: 999;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.top--nav .circle--clippath--active {
+  -webkit-clip-path: circle(150% at 0% 0%);
+          clip-path: circle(150% at 0% 0%);
+}
+
+.top--nav .power {
+  z-index: 999;
+  position: relative;
+}
+
 .top--nav__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1031,6 +1061,13 @@ audio {
 
 .top--nav__links .volume {
   position: relative;
+  -webkit-transition: var(--transition-500);
+  transition: var(--transition-500);
+}
+
+.top--nav__links .volume:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .top--nav__links .volume::before {
