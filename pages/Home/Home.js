@@ -10,7 +10,7 @@
        
       </div>
       <div>
-        <span class="degree--description movie--duration"
+        <span class="title--description movie--duration"
           >${MediaPlayer.songs.length} Songs</span
         >
       </div>
