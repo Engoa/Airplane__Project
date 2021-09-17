@@ -42,6 +42,7 @@
     position: relative;
     color: var(--color-main);
     transition: var(--transition-500);
+    padding: 1.5rem;
 
     &:hover #name {
       color: var(--color-red);
@@ -233,6 +234,10 @@
     display: none;
   }
   &.playing-now .whitecard--small {
+    .media__content--number {
+      transition: var(--transition-500);
+      padding-left: 1rem;
+    }
     &::before {
       width: 90px;
       transition: var(--transition-500);

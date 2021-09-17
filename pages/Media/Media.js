@@ -70,7 +70,6 @@
   drawSelectedCard();
 
   const mediaCard = document.querySelectorAll('.songcard');
-  const mediaControllers = document.querySelectorAll('.media__content--controller');
 
   mediaCard.forEach((btn) =>
     btn.addEventListener('click', () => MediaPlayer.select(btn.dataset.id))
