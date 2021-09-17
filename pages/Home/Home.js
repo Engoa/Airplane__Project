@@ -6,11 +6,11 @@
   <div class="homecards__card__data homecards__media">
     <div class="homecards__card__text" id="card-media">
       <div class='mediacard--header--container'>
-        <h2 class="degree movie--name" id="fitty-title2">${MediaPlayer.playingNow.title}</h2>
+        <h2 class="title movie--name" id="fitty-title2">${MediaPlayer.playingNow.title}</h2>
        
       </div>
       <div>
-        <span class="degree--description movie--duration"
+        <span class="title--description movie--duration"
           >${MediaPlayer.songs.length} Songs</span
         >
       </div>
@@ -61,10 +61,10 @@
               <h2 class="city--name" id='fitty-title3'>${timezone}</h2>
             </div>
             <div>
-            <h2 class="degree">${temp.toFixed(0)}°</h2>
+            <h2 class="title">${temp.toFixed(0)}°</h2>
           </div>
             <div>
-              <span class="degree--description">${weather[0].description}</span>
+              <span class="title--description">${weather[0].description}</span>
             </div>
           </div>
           <div class="homecards__card__image">

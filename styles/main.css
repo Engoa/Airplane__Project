@@ -1,4 +1,4 @@
-.whitecard {
+.bigcard {
   background-color: var(--color-leftnav);
   border-radius: 1rem;
   -webkit-box-shadow: var(--box-shadow);
@@ -469,7 +469,7 @@
 }
 
 .homecards__card__text,
-.homecards .smallcard__degrees {
+.homecards .smallcard__titles {
   z-index: 5;
   width: 50%;
   display: -webkit-box;
@@ -488,19 +488,19 @@
 }
 
 .homecards__card__text .city--name,
-.homecards .smallcard__degrees .city--name {
+.homecards .smallcard__titles .city--name {
   font-size: 3rem;
 }
 
-.homecards__card__text .degree,
-.homecards .smallcard__degrees .degree {
+.homecards__card__text .title,
+.homecards .smallcard__titles .title {
   font-weight: bold;
   font-size: 1.8rem;
   font-size: clamp(1.5rem, 5vw, 1.8rem);
 }
 
-.homecards__card__text .degree--description,
-.homecards .smallcard__degrees .degree--description {
+.homecards__card__text .title--description,
+.homecards .smallcard__titles .title--description {
   font-weight: bold;
   font-size: 1.2rem;
 }
