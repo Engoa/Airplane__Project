@@ -233,7 +233,7 @@
   .paused {
     display: none;
   }
-  &.playing-now .whitecard--small {
+  &.playing-now .small-card {
     .media__content--number {
       transition: var(--transition-500);
       padding-left: 1rem;

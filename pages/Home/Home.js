@@ -3,8 +3,8 @@
     const drawHomeCard = document.querySelector('.render--homecard-media');
     drawHomeCard.innerHTML = `
     <a href="#Media" class="card--anchor">
-  <div class="homecards__weather__temperature homecards__media">
-    <div class="homecards__weather__degrees" id="card-media">
+  <div class="homecards__weather__data homecards__media">
+    <div class="homecards__weather__text" id="card-media">
       <div class='mediacard--header--container'>
         <h2 class="degree movie--name" id="fitty-title2">${MediaPlayer.playingNow.title}</h2>
        
@@ -55,8 +55,8 @@
     console.log(data.current);
     document.querySelector('.render--homecard-weather').innerHTML += `
       <a href="#Weather" class="card--anchor">
-        <div class="homecards__weather__temperature">
-          <div class="homecards__weather__degrees">
+        <div class="homecards__weather__data">
+          <div class="homecards__weather__text">
             <div>
               <h2 class="city--name" id='fitty-title3'>${timezone}</h2>
             </div>
@@ -74,7 +74,6 @@
       </a>    
       `;
     fitty('#fitty-title3', { multiLine: true });
-
   };
   drawHomeMediaCard();
 })();
