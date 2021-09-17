@@ -74,7 +74,6 @@
       </a>    
       `;
     fitty('#fitty-title3', { multiLine: true });
-
   };
   drawHomeMediaCard();
 })();
