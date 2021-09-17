@@ -108,7 +108,7 @@
   // Weather Card!
 
   &__weather,
-  .smallcard {
+  .whitecard--small {
     height: 180px;
     position: relative;
     overflow: hidden;
@@ -176,6 +176,8 @@
       img {
         width: 100%;
         max-width: 160px;
+        border: 2px solid var(--color-main);
+        border-radius: 50%;
       }
     }
   }
@@ -183,13 +185,6 @@
   .render--homecard-media {
     &::after {
       background: var(--color-red) !important;
-    }
-
-    .card--media--img {
-      img {
-        border: 2px solid var(--color-main);
-        border-radius: 50%;
-      }
     }
   }
   #card-media {

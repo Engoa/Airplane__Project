@@ -419,7 +419,7 @@
 }
 
 .homecards__weather,
-.homecards .smallcard {
+.homecards .whitecard--small {
   height: 180px;
   position: relative;
   overflow: hidden;
@@ -427,12 +427,12 @@
 }
 
 .homecards__weather:hover,
-.homecards .smallcard:hover {
+.homecards .whitecard--small:hover {
   color: var(--color-leftnav);
 }
 
 .homecards__weather::after,
-.homecards .smallcard::after {
+.homecards .whitecard--small::after {
   position: absolute;
   content: '';
   background: -webkit-gradient(linear, left top, left bottom, from(#00c3ff), to(#2e5d9bee));
@@ -449,13 +449,13 @@
 }
 
 .homecards__weather:hover::after,
-.homecards .smallcard:hover::after {
+.homecards .whitecard--small:hover::after {
   max-width: 500px;
   pointer-events: none;
 }
 
 .homecards__weather__temperature,
-.homecards .smallcard__temperature {
+.homecards .whitecard--small__temperature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,7 +469,7 @@
 }
 
 .homecards__weather__degrees,
-.homecards .smallcard__degrees {
+.homecards .whitecard--small__degrees {
   z-index: 5;
   width: 50%;
   display: -webkit-box;
@@ -488,25 +488,25 @@
 }
 
 .homecards__weather__degrees .city--name,
-.homecards .smallcard__degrees .city--name {
+.homecards .whitecard--small__degrees .city--name {
   font-size: 3rem;
 }
 
 .homecards__weather__degrees .degree,
-.homecards .smallcard__degrees .degree {
+.homecards .whitecard--small__degrees .degree {
   font-weight: bold;
   font-size: 1.8rem;
   font-size: clamp(1.5rem, 5vw, 1.8rem);
 }
 
 .homecards__weather__degrees .degree--description,
-.homecards .smallcard__degrees .degree--description {
+.homecards .whitecard--small__degrees .degree--description {
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .homecards__weather__image,
-.homecards .smallcard__image {
+.homecards .whitecard--small__image {
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,18 +521,15 @@
 }
 
 .homecards__weather__image img,
-.homecards .smallcard__image img {
+.homecards .whitecard--small__image img {
   width: 100%;
   max-width: 160px;
+  border: 2px solid var(--color-main);
+  border-radius: 50%;
 }
 
 .homecards .render--homecard-media::after {
   background: var(--color-red) !important;
-}
-
-.homecards .render--homecard-media .card--media--img img {
-  border: 2px solid var(--color-main);
-  border-radius: 50%;
 }
 
 .homecards #card-media h2 {
