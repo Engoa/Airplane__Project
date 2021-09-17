@@ -45,7 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 3rem 0;
     position: relative;
     .fa-plane {
       color: var(--color-red);
@@ -112,9 +112,7 @@
     height: 180px;
     position: relative;
     overflow: hidden;
-    padding: unset;
     width: 100%;
-    padding: 1rem 1rem 0rem 1rem;
 
     &:hover {
       color: var(--color-leftnav);
@@ -140,6 +138,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      height: 100%;
     }
     &__degrees {
       z-index: 5;
@@ -147,10 +146,19 @@
       display: flex;
       flex-direction: column;
       font-family: var(--font-header);
+      height: 100%;
+      margin-bottom: auto;
+      gap: 0.5rem;
+      text-transform: capitalize;
+      padding: 1.5rem;
+
+      .city--name {
+        font-size: 3rem;
+      }
       .degree {
         font-weight: bold;
-        font-size: 2.8rem;
-        font-size: clamp(1.5rem, 5vw, 2.8rem);
+        font-size: 1.8rem;
+        font-size: clamp(1.5rem, 5vw, 1.8rem);
       }
       .degree--description {
         font-weight: bold;
@@ -163,7 +171,7 @@
       align-self: center;
       justify-content: center;
       position: relative;
-      margin-bottom: 1rem;
+      width: 190px;
 
       img {
         width: 100%;

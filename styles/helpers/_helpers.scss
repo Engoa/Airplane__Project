@@ -2,16 +2,15 @@
   background-color: var(--color-leftnav);
   border-radius: 1rem;
   box-shadow: var(--box-shadow);
-  padding: 1.5rem;
   width: 100%;
   max-width: 500px;
   height: 280px;
+  padding: 1.5rem;
 }
 .whitecard--small {
   background-color: var(--color-leftnav);
   border-radius: 1rem;
   box-shadow: var(--box-shadow);
-  padding: 1.5rem 2rem;
   width: 100%;
   max-width: 500px;
   height: 115px;
@@ -82,6 +81,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  mix-blend-mode: hue;
 }
 
 .box {
@@ -97,20 +97,25 @@
 
 .box1 {
   animation-name: quiet;
+  animation-delay: 0.05s;
 }
 
 .box2 {
   animation-name: normal;
+  animation-delay: 0.15s;
 }
 
 .box3 {
   animation-name: quiet;
+  animation-delay: 0.15s;
 }
 
 .box4 {
   animation-name: loud;
+  animation-delay: 0.25s;
 }
 
 .box5 {
   animation-name: quiet;
+  animation-delay: 0.1s;
 }
