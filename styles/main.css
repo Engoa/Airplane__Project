@@ -3,10 +3,10 @@
   border-radius: 1rem;
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
+  padding: 1.5rem;
   width: 100%;
   max-width: 500px;
   height: 280px;
-  padding: 1.5rem;
 }
 
 .whitecard--small {
@@ -14,6 +14,7 @@
   border-radius: 1rem;
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
+  padding: 1.5rem 2rem;
   width: 100%;
   max-width: 500px;
   height: 115px;
@@ -169,7 +170,6 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  mix-blend-mode: hue;
 }
 
 .box {
@@ -190,36 +190,26 @@
 .box1 {
   -webkit-animation-name: quiet;
           animation-name: quiet;
-  -webkit-animation-delay: 0.05s;
-          animation-delay: 0.05s;
 }
 
 .box2 {
   -webkit-animation-name: normal;
           animation-name: normal;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
 }
 
 .box3 {
   -webkit-animation-name: quiet;
           animation-name: quiet;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
 }
 
 .box4 {
   -webkit-animation-name: loud;
           animation-name: loud;
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
 }
 
 .box5 {
   -webkit-animation-name: quiet;
           animation-name: quiet;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
 }
 
 .bglight {
@@ -338,7 +328,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 3rem 0;
+  margin: 2rem 0;
   position: relative;
 }
 
@@ -423,7 +413,9 @@
   height: 180px;
   position: relative;
   overflow: hidden;
+  padding: unset;
   width: 100%;
+  padding: 1rem 1rem 0rem 1rem;
 }
 
 .homecards__weather:hover,
@@ -465,7 +457,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
 }
 
 .homecards__weather__degrees,
@@ -480,23 +471,13 @@
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: var(--font-header);
-  height: 100%;
-  margin-bottom: auto;
-  gap: 0.5rem;
-  text-transform: capitalize;
-  padding: 1.5rem;
-}
-
-.homecards__weather__degrees .city--name,
-.homecards .smallcard__degrees .city--name {
-  font-size: 3rem;
 }
 
 .homecards__weather__degrees .degree,
 .homecards .smallcard__degrees .degree {
   font-weight: bold;
-  font-size: 1.8rem;
-  font-size: clamp(1.5rem, 5vw, 1.8rem);
+  font-size: 2.8rem;
+  font-size: clamp(1.5rem, 5vw, 2.8rem);
 }
 
 .homecards__weather__degrees .degree--description,
@@ -517,7 +498,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  width: 190px;
+  margin-bottom: 1rem;
 }
 
 .homecards__weather__image img,
@@ -637,7 +618,6 @@
   color: var(--color-main);
   -webkit-transition: var(--transition-500);
   transition: var(--transition-500);
-  padding: 1.5rem;
 }
 
 .media .media__content:hover #name {
@@ -894,12 +874,6 @@
 
 .songcard .paused {
   display: none;
-}
-
-.songcard.playing-now .whitecard--small .media__content--number {
-  -webkit-transition: var(--transition-500);
-  transition: var(--transition-500);
-  padding-left: 1rem;
 }
 
 .songcard.playing-now .whitecard--small::before {
@@ -1241,15 +1215,6 @@ audio {
   z-index: 999;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
-}
-
-.top--nav .circle--clippath--text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
-  font-size: 3rem;
 }
 
 .top--nav .circle--clippath--active {
