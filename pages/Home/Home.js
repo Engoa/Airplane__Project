@@ -3,14 +3,14 @@
     const drawHomeCard = document.querySelector('.render--homecard-media');
     drawHomeCard.innerHTML = `
     <a href="#Media" class="card--anchor">
-  <div class="homecards__card__data homecards__media">
+  <div class="homecards__card__data">
     <div class="homecards__card__text" id="card-media">
       <div class='mediacard--header--container'>
         <h2 class="title movie--name" id="fitty-title2">${MediaPlayer.playingNow.title}</h2>
        
       </div>
       <div>
-        <span class="title--description movie--duration"
+        <span class="title--description"
           >${MediaPlayer.songs.length} Songs</span
         >
       </div>
@@ -18,7 +18,7 @@
         <i class="fas fa-headphones card--icon"></i>
       </div>
     </div>
-    <div class="homecards__card__image homecards__movies--image card--media--img">
+    <div class="homecards__card__image">
       <img src="${MediaPlayer.playingNow.cover_img}" alt="music image" />
        <div class="boxContainer">
           <div class="box box1"></div>
