@@ -3,14 +3,14 @@
     const drawHomeCard = document.querySelector('.render--homecard-media');
     drawHomeCard.innerHTML = `
     <a href="#Media" class="card--anchor">
-  <div class="homecards__weather__temperature">
+  <div class="homecards__weather__temperature homecards__media">
     <div class="homecards__weather__degrees" id="card-media">
       <div class='mediacard--header--container'>
         <h2 class="degree movie--name" id="fitty-title2">${MediaPlayer.playingNow.title}</h2>
        
       </div>
       <div>
-        <span class="degree--description"
+        <span class="degree--description movie--duration"
           >${MediaPlayer.songs.length} Songs</span
         >
       </div>
@@ -18,7 +18,7 @@
         <i class="fas fa-headphones card--icon"></i>
       </div>
     </div>
-    <div class="homecards__weather__image">
+    <div class="homecards__weather__image homecards__movies--image card--media--img">
       <img src="${MediaPlayer.playingNow.cover_img}" alt="music image" />
        <div class="boxContainer">
           <div class="box box1"></div>
@@ -74,6 +74,7 @@
       </a>    
       `;
     fitty('#fitty-title3', { multiLine: true });
+
   };
   drawHomeMediaCard();
 })();
