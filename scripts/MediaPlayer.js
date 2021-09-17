@@ -83,7 +83,7 @@ const MediaPlayer = {
       repeatElement.style.color = 'var(--color-red)';
       this.$audio.loop = this.loop;
     } else {
-      repeatElement.style.color = 'var(--color-lefticons)';
+      repeatElement.style.color = 'var(--color-main)';
       this.$audio.loop = !this.loop;
     }
   },

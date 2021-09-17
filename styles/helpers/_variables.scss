@@ -17,7 +17,7 @@
       rgba(0, 93, 255, 0.8) 60%,
       rgba(223, 0, 235, 0.1) 100%
     );
-  --bg-fade: linear-gradient(to bottom, white 30%, transparent 100%);
+  --bg-fade: linear-gradient(to bottom, rgba(255, 255, 255, 0.856) 30%, transparent 100%);
 }
 .bgdark {
   --color-white: rgb(255, 255, 255);
@@ -26,11 +26,11 @@
   --color-lefticons: rgba(9, 9, 32, 0.918);
   --color-topicons: rgba(9, 9, 32, 0.918);
   --color-power: rgba(9, 9, 32, 0.918);
-  --color-header: rgba(255, 255, 255, 0.932);
+  --color-header: rgba(219, 219, 219, 0.932);
   --color-mediacard: rgba(9, 9, 32, 0.918);
   --color-red: rgb(201, 20, 80);
-  --bg-gradient: fixed linear-gradient(315deg, #1c1a3f 54%, #25216e 74%);
-  --bg-fade: linear-gradient(to bottom, #25216ee5 0%, transparent 100%);
+  --bg-gradient: fixed linear-gradient(315deg, #000000 50%, #2f358ad2 100%);
+  --bg-fade: linear-gradient(to bottom, #000000cc 0%, transparent 100%);
 }
 
 :root {

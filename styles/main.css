@@ -64,6 +64,154 @@
   }
 }
 
+@-webkit-keyframes quiet {
+  25% {
+    -webkit-transform: scaleY(0.6);
+            transform: scaleY(0.6);
+  }
+  50% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+  }
+  75% {
+    -webkit-transform: scaleY(0.8);
+            transform: scaleY(0.8);
+  }
+}
+
+@keyframes quiet {
+  25% {
+    -webkit-transform: scaleY(0.6);
+            transform: scaleY(0.6);
+  }
+  50% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+  }
+  75% {
+    -webkit-transform: scaleY(0.8);
+            transform: scaleY(0.8);
+  }
+}
+
+@-webkit-keyframes normal {
+  25% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+  }
+  75% {
+    -webkit-transform: scaleY(0.6);
+            transform: scaleY(0.6);
+  }
+}
+
+@keyframes normal {
+  25% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+  }
+  75% {
+    -webkit-transform: scaleY(0.6);
+            transform: scaleY(0.6);
+  }
+}
+
+@-webkit-keyframes loud {
+  25% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+  }
+  75% {
+    -webkit-transform: scaleY(1.2);
+            transform: scaleY(1.2);
+  }
+}
+
+@keyframes loud {
+  25% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
+  }
+  75% {
+    -webkit-transform: scaleY(1.2);
+            transform: scaleY(1.2);
+  }
+}
+
+.boxContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  --boxSize: 7px;
+  --gutter: 4.5px;
+  width: calc((var(--boxSize) + var(--gutter)) * 4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.box {
+  -webkit-transform: scaleY(0.4);
+          transform: scaleY(0.4);
+  height: 100%;
+  width: var(--boxSize);
+  background: var(--color-mediacard) !important;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  border-radius: 8px;
+}
+
+.box1 {
+  -webkit-animation-name: quiet;
+          animation-name: quiet;
+}
+
+.box2 {
+  -webkit-animation-name: normal;
+          animation-name: normal;
+}
+
+.box3 {
+  -webkit-animation-name: quiet;
+          animation-name: quiet;
+}
+
+.box4 {
+  -webkit-animation-name: loud;
+          animation-name: loud;
+}
+
+.box5 {
+  -webkit-animation-name: quiet;
+          animation-name: quiet;
+}
+
 .bglight {
   --color-white: rgb(255, 255, 255);
   --color-main: rgba(9, 9, 32, 0.918);
@@ -82,7 +230,7 @@
       rgba(0, 93, 255, 0.8) 60%,
       rgba(223, 0, 235, 0.1) 100%
     );
-  --bg-fade: linear-gradient(to bottom, white 30%, transparent 100%);
+  --bg-fade: linear-gradient(to bottom, rgba(255, 255, 255, 0.856) 30%, transparent 100%);
 }
 
 .bgdark {
@@ -92,11 +240,11 @@
   --color-lefticons: rgba(9, 9, 32, 0.918);
   --color-topicons: rgba(9, 9, 32, 0.918);
   --color-power: rgba(9, 9, 32, 0.918);
-  --color-header: rgba(255, 255, 255, 0.932);
+  --color-header: rgba(219, 219, 219, 0.932);
   --color-mediacard: rgba(9, 9, 32, 0.918);
   --color-red: rgb(201, 20, 80);
-  --bg-gradient: fixed linear-gradient(315deg, #1c1a3f 54%, #25216e 74%);
-  --bg-fade: linear-gradient(to bottom, #25216ee5 0%, transparent 100%);
+  --bg-gradient: fixed linear-gradient(315deg, #000000 50%, #2f358ad2 100%);
+  --bg-fade: linear-gradient(to bottom, #000000cc 0%, transparent 100%);
 }
 
 :root {
@@ -267,7 +415,12 @@
   overflow: hidden;
   padding: unset;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.homecards__weather:hover,
+.homecards .smallcard:hover {
+  color: var(--color-leftnav);
 }
 
 .homecards__weather::after,
@@ -277,7 +430,7 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#00c3ff), to(#2e5d9bee));
   background: linear-gradient(to bottom, #00c3ff, #2e5d9bee);
   width: 100%;
-  max-width: 187.2px;
+  max-width: 190px;
   height: 100%;
   right: 0%;
   top: 50%;
@@ -285,6 +438,12 @@
           transform: translate(0, -50%);
   -webkit-transition: var(--transition-500);
   transition: var(--transition-500);
+}
+
+.homecards__weather:hover::after,
+.homecards .smallcard:hover::after {
+  max-width: 500px;
+  pointer-events: none;
 }
 
 .homecards__weather__temperature,
@@ -298,13 +457,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
-  height: 100%;
 }
 
 .homecards__weather__degrees,
 .homecards .smallcard__degrees {
-  width: 40%;
+  z-index: 5;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,50 +478,48 @@
   font-weight: bold;
   font-size: 2.8rem;
   font-size: clamp(1.5rem, 5vw, 2.8rem);
-  width: 100%;
-  -ms-flex-item-align: center;
-      align-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .homecards__weather__degrees .degree--description,
 .homecards .smallcard__degrees .degree--description {
   font-weight: bold;
   font-size: 1.2rem;
-  width: 100%;
-  -ms-flex-item-align: center;
-      align-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .homecards__weather__image,
 .homecards .smallcard__image {
   z-index: 1;
-  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-bottom: 1rem;
 }
 
 .homecards__weather__image img,
 .homecards .smallcard__image img {
   width: 100%;
-  max-width: 185.2px;
+  max-width: 160px;
 }
 
 .homecards .render--homecard-media::after {
-  display: none;
+  background: var(--color-red) !important;
+}
+
+.homecards .render--homecard-media .card--media--img img {
+  border: 2px solid var(--color-main);
+  border-radius: 50%;
 }
 
 .homecards #card-media h2 {
   max-width: 290px;
   width: 100%;
   font-size: 3rem;
-}
-
-.homecards #card--img img {
-  margin-left: 1rem;
 }
 
 .homecards .card--icon {
@@ -414,11 +570,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: auto;
   font-family: var(--font-leftnav);
   min-height: 200px;
   -webkit-transition: var(--transition-500);
   transition: var(--transition-500);
+  margin-right: auto;
+  text-align: left;
 }
 
 .media__header h1 {
@@ -463,6 +620,14 @@
   transition: var(--transition-500);
 }
 
+.media .media__content:hover #name {
+  color: var(--color-red);
+}
+
+.media .media__content:hover .media__content--controller {
+  color: var(--color-red);
+}
+
 .media .media__content::before {
   position: absolute;
   content: '';
@@ -498,10 +663,6 @@
   color: var(--color-main);
 }
 
-.media .media__content--name #name:hover {
-  color: var(--color-red);
-}
-
 .media .media__content--name #author--name {
   color: var(--color-main);
   opacity: 0.5;
@@ -514,10 +675,6 @@
   -webkit-transition: var(--transition-500);
   transition: var(--transition-500);
   color: var(--color-main);
-}
-
-.media .media__content--controller:hover {
-  color: var(--color-red);
 }
 
 .media__player {
@@ -559,11 +716,11 @@
 
 .media__player__forward, .media__player__backward {
   font-size: 2rem;
-  color: var(--color-lefticons);
+  color: var(--color-main);
   cursor: pointer;
   -webkit-transition: var(--transition-500);
   transition: var(--transition-500);
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 .media__player__forward:hover, .media__player__backward:hover {
@@ -584,8 +741,8 @@
           justify-content: center;
   width: 100%;
   max-width: 450px;
-  border: 2px solid var(--color-leftnav);
-  background: rgba(255, 255, 255, 0.281);
+  border: 2px solid var(--color-mediacard);
+  background: var(--color-white);
   padding: 0.5rem;
   position: relative;
   cursor: pointer;
@@ -632,7 +789,6 @@
 }
 
 .media__player__player .player-icon--wrapper .player-icon {
-  font-size: 1.8rem;
   -webkit-transition: var(--transition-500);
   transition: var(--transition-500);
   opacity: 0;
@@ -653,6 +809,10 @@
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
   opacity: 0.75;
+}
+
+.media__player__player:active .player-icon {
+  color: var(--color-red);
 }
 
 .media__player .media__player__album {
@@ -726,10 +886,10 @@
   -webkit-appearance: none;
   width: 100%;
   height: 6px;
-  background: var(color-leftnav);
+  background: rgba(0, 0, 0, 0.849);
   outline: none;
   border-radius: 2rem;
-  opacity: 0.75;
+  opacity: 0.85;
   -webkit-transition: var(--transition-500);
   transition: var(--transition-500);
 }
@@ -744,15 +904,10 @@
   width: 21px;
   height: 21px;
   border-radius: 50%;
-  background: var(--color-lefticons);
+  background: var(--color-main);
   cursor: pointer;
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
-}
-
-.media--player {
-  width: 1000px;
-  height: 200px;
 }
 
 html input::-webkit-outer-spin-button,
@@ -778,6 +933,10 @@ h5,
 h6 {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+a:hover {
+  color: unset !important;
 }
 
 body {
@@ -817,12 +976,11 @@ audio {
 
 .app-bg::after {
   content: '';
-  opacity: 0.55;
+  opacity: 0.8;
   inset: 0;
   position: absolute;
   z-index: 1;
   background: var(--bg-gradient);
-  mix-blend-mode: overlay;
 }
 
 .app-bg__dummy {
@@ -923,7 +1081,7 @@ audio {
 .page__header h1 {
   max-width: 480px;
   font-family: var(--font-header);
-  font-size: 6rem;
+  font-size: 6.5rem;
   font-weight: bold;
 }
 
@@ -1017,7 +1175,7 @@ audio {
 }
 
 .leftnav__links .link:hover {
-  color: var(--color-red);
+  color: var(--color-red) !important;
 }
 
 .leftnav__links .link::before {
@@ -1031,6 +1189,10 @@ audio {
           transform: translate(-50%);
   background: rgba(153, 141, 141, 0.829);
   pointer-events: none;
+}
+
+.leftnav #leftnav--menu::before {
+  display: none;
 }
 
 .top--nav {

@@ -20,7 +20,7 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-
+//  Bootsrap overrides!
 h1,
 h2,
 h3,
@@ -30,12 +30,18 @@ h6 {
   margin: 0 !important;
   padding: 0 !important;
 }
+a {
+  &:hover {
+    color: unset !important;
+  }
+}
 body {
   font-size: 16px !important;
   font-family: 'Montserrat', sans-serif !important;
   margin: 0;
   transition: var(--transition-theme);
 }
+//  Bootsrap overrides!
 
 .bgdark {
   .app-bg {
@@ -74,12 +80,11 @@ audio {
 
   &::after {
     content: '';
-    opacity: 0.55;
+    opacity: 0.8;
     inset: 0;
     position: absolute;
     z-index: 1;
     background: var(--bg-gradient);
-    mix-blend-mode: overlay;
   }
 
   &__dummy {
@@ -159,7 +164,7 @@ audio {
     h1 {
       max-width: 480px;
       font-family: var(--font-header);
-      font-size: 6rem;
+      font-size: 6.5rem;
       font-weight: bold;
     }
     p {
@@ -229,8 +234,9 @@ audio {
       transition: var(--transition-500);
       background-color: transparent;
 
+      // Bootstrap override!
       &:hover {
-        color: var(--color-red);
+        color: var(--color-red) !important;
       }
 
       &::before {
@@ -244,6 +250,11 @@ audio {
         background: rgba(153, 141, 141, 0.829);
         pointer-events: none;
       }
+    }
+  }
+  #leftnav--menu {
+    &::before {
+      display: none;
     }
   }
 }
