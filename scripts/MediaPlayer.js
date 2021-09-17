@@ -46,7 +46,6 @@ const MediaPlayer = {
         this.play();
       }
     }
-
     this.isPlaying = state ?? !this.isPlaying;
 
     document.dispatchEvent(new CustomEvent('music-toggled'));
@@ -54,6 +53,11 @@ const MediaPlayer = {
   adjustVolume(e) {
     const { value } = e.target;
     this.$audio.volume = value / 100;
+
+    tippy('#vol--tooltip', {
+      content: this.$audio.volume,
+      placement: 'top',
+    });
   },
 
   seek(e) {
@@ -79,7 +83,7 @@ const MediaPlayer = {
       repeatElement.style.color = 'var(--color-red)';
       this.$audio.loop = this.loop;
     } else {
-      repeatElement.style.color = 'var(--color-main)';
+      repeatElement.style.color = 'var(--color-lefticons)';
       this.$audio.loop = !this.loop;
     }
   },

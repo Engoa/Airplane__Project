@@ -49,11 +49,13 @@
     <link rel="stylesheet" href="/styles/vendors/locomotive.min.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
 
     <!-- // CDN HERE -->
   </head>
 
-  <body>
+  <body class="bglight">
     <div data-scroll-container>
       <div class="app-bg">
         <div class="airplane" id="airplane-img">
@@ -82,7 +84,7 @@
             </button>
           </li>
           <li>
-            <button href="" class="topnav--link bulb">
+            <button href="" class="topnav--link themebtn">
               <i class="far fa-lightbulb"></i>
             </button>
           </li>
@@ -154,6 +156,7 @@
           </div>
           <div class="media__player__volume">
             <input
+              id="vol--tooltip"
               type="range"
               class="slider slider__volume"
               max="100"

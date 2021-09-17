@@ -125,6 +125,7 @@
       right: 0%;
       top: 50%;
       transform: translate(0, -50%);
+      transition: var(--transition-500);
     }
     &__temperature {
       display: flex;
@@ -157,12 +158,9 @@
     &__image {
       z-index: 1;
       width: 40%;
-      display: flex;
-      align-self: center;
-      justify-content: center;
       img {
         width: 100%;
-        max-width: 175.2px;
+        max-width: 185.2px;
       }
     }
   }
@@ -194,7 +192,7 @@
 
   &__movies {
     &::after {
-      background: rgba(9, 9, 32, 0.918) !important;
+      background: var(--color-main) !important;
       left: unset;
       right: 0%;
     }

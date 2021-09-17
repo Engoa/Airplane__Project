@@ -28,7 +28,7 @@
     MediaPlayer.songs.forEach((song, index) => {
       renderMediaCards.innerHTML += `
      <button type="button" class='songcard' data-id="${song.id}">
-      <div class="media__content whitecard--small">
+      <div class="media__content whitecard--small" onclick="MediaPlayer.toggle()"> 
         <div class="media__content--number">
           <span>${index + 1}</span>
         </div>
@@ -37,8 +37,8 @@
           <span id="author--name">${song.author}</span>
         </div>
         <div class="media__content--controller">
-          <i class="fas fa-play playing" id='card-play' onclick="MediaPlayer.toggle()"></i>
-          <i class="fas fa-pause paused" id='card-pause' onclick="MediaPlayer.toggle()"></i>
+          <i class="fas fa-play playing" id='card-play' onclick="MediaPlayer.play()"></i>
+          <i class="fas fa-pause paused" id='card-pause' onclick="MediaPlayer.pause()"></i>
         </div>
       </div>
     </button>

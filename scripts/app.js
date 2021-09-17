@@ -43,8 +43,23 @@ const shutDownScreen = () => {
     isShutDown = true;
   } else {
     $('.circle--clippath').css('clip-path', 'circle(0% at 0% 0%)');
-    $('.power').css('color', 'var(--color-main)');
+    $('.power').css('color', 'var(--color-topicons');
     isShutDown = false;
   }
   setLS('shutdown', isShutDown);
 };
+
+const themeBtn = document.querySelector('.themebtn');
+themeBtn.addEventListener('click', () => {
+  setTimeout(() => {
+    document.body.classList.toggle('bgdark');
+    let isLight = document.body.classList.contains('bgdark');
+    localStorage.setItem('darkTheme', isLight);
+  }, 100);
+});
+
+// Save to Local Storage
+const isDarkTheme = JSON.parse(localStorage.getItem('darkTheme'));
+if (isDarkTheme) {
+  document.body.classList.add('bgdark');
+}

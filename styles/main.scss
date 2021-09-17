@@ -34,8 +34,35 @@ body {
   font-size: 16px !important;
   font-family: 'Montserrat', sans-serif !important;
   margin: 0;
+  transition: var(--transition-theme);
 }
 
+.bgdark {
+  .app-bg {
+    &__clouds {
+      &:first-of-type {
+        opacity: 0.2 !important;
+      }
+
+      &:last-of-type {
+        opacity: 0.05 !important;
+      }
+    }
+  }
+}
+.bglight {
+  .app-bg {
+    &__clouds {
+      &:first-of-type {
+        opacity: 0.7;
+      }
+
+      &:last-of-type {
+        opacity: 0.55;
+      }
+    }
+  }
+}
 audio {
   display: none;
 }
@@ -44,6 +71,7 @@ audio {
   width: 100vw;
   position: fixed;
   z-index: -1;
+
   &::after {
     content: '';
     opacity: 0.55;
@@ -63,10 +91,8 @@ audio {
   }
   &__fade {
     height: 100%;
-    mask-image: linear-gradient(to bottom, white 30%, transparent 100%);
-
-    background: linear-gradient(to bottom, white 30%, transparent 100%);
-
+    mask-image: var(--bg-fade);
+    background: var(--bg-fade);
     width: 100%;
     margin: auto;
   }
@@ -126,7 +152,8 @@ audio {
   }
 
   &__header {
-    color: var(--color-main);
+    transition: var(--transition-500);
+    color: var(--color-header);
     max-width: 480px;
     text-align: left;
     h1 {
@@ -145,6 +172,7 @@ audio {
 .leftnav {
   position: relative;
   z-index: 10;
+
   nav {
     display: flex;
     align-items: center;
@@ -171,10 +199,12 @@ audio {
       bottom: 0;
       transform: skewX(-25deg) rotate(-25deg);
       border-bottom-right-radius: 1.5rem;
+      transition: var(--transition-500);
     }
     &::before {
       transform: skewX(25deg) rotate(25deg);
       border-top-right-radius: 1.5rem;
+      transition: var(--transition-500);
     }
   }
 
@@ -256,12 +286,12 @@ audio {
       width: 100%;
       max-width: 40px;
       * {
-        fill: var(--color-topmain);
+        fill: var(--color-topicons);
       }
     }
     .topnav--link {
       text-decoration: none;
-      color: var(--color-main);
+      fill: var(--color-topicons);
       font-size: 1.4rem;
       font-size: clamp(1.2rem, 2vw, 1.4rem);
       background: transparent;

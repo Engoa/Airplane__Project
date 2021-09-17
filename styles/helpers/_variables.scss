@@ -1,16 +1,14 @@
 // Extra Vars:
-:root {
-  --font-header: 'Poppins', sans-serif;
+.bglight {
+  --color-white: rgb(255, 255, 255);
   --color-main: rgba(9, 9, 32, 0.918);
   --color-leftnav: rgba(255, 255, 255, 0.932);
   --color-lefticons: rgba(9, 9, 32, 0.918);
-  --color-topicons: rgba(255, 255, 255, 0.932);
-  --box-shadow-nav: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.01));
+  --color-topicons: rgba(9, 9, 32, 0.918);
+  --color-power: rgba(8, 8, 82, 0.918);
+  --color-header: rgba(9, 9, 32, 0.918);
+  --color-mediacard: rgba(9, 9, 32, 0.918);
   --color-red: rgb(211, 28, 89);
-  --color-btn: linear-gradient(to left, #b13c89, #bb4382, #c34c7c, #c95677, #d86c7e);
-  --box-shadow: rgba(0, 0, 0, 0.1) 0px 18px 50px -10px;
-  --box-shadow-card: drop-shadow(-10px 5px 6px rgba(0, 0, 0, 0.01));
-  --transition-500: all 300ms ease;
   --bg-gradient: fixed
     linear-gradient(
       -120deg,
@@ -19,4 +17,27 @@
       rgba(0, 93, 255, 0.8) 60%,
       rgba(223, 0, 235, 0.1) 100%
     );
+  --bg-fade: linear-gradient(to bottom, white 30%, transparent 100%);
+}
+.bgdark {
+  --color-white: rgb(255, 255, 255);
+  --color-main: rgba(255, 255, 255, 0.932);
+  --color-leftnav: rgb(9, 9, 32);
+  --color-lefticons: rgba(9, 9, 32, 0.918);
+  --color-topicons: rgba(9, 9, 32, 0.918);
+  --color-power: rgba(9, 9, 32, 0.918);
+  --color-header: rgba(255, 255, 255, 0.932);
+  --color-mediacard: rgba(9, 9, 32, 0.918);
+  --color-red: rgb(201, 20, 80);
+  --bg-gradient: fixed linear-gradient(315deg, #1c1a3f 54%, #25216e 74%);
+  --bg-fade: linear-gradient(to bottom, #25216ee5 0%, transparent 100%);
+}
+
+:root {
+  --font-header: 'Poppins', sans-serif;
+  --box-shadow: rgba(0, 0, 0, 0.1) 0px 18px 50px -10px;
+  --box-shadow-card: drop-shadow(-10px 5px 6px rgba(0, 0, 0, 0.01));
+  --transition-500: all 300ms ease;
+  --transition-theme: all 500ms ease;
+  --box-shadow-nav: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.01));
 }
