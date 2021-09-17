@@ -22,5 +22,21 @@
     "cover_img": "../assets/images/anxious.jpg",
     "preview_link": "https://www.youtube.com/watch?v=tQ0yjYUFKAE&ab_channel=JustinBieberVEVO",
     "itunes_id": "1543997037"
+  },
+  {
+    "id": "woman",
+    "title": "Woman",
+    "author": "Doja Cat",
+    "cover_img": "https://is3-ssl.mzstatic.com/image/thumb/Video115/v4/34/71/46/347146b8-2a83-ad88-7b9a-17a1c574d7e9/Job9185e3c6-0e24-4121-a40f-c36d29ff3491-116359815-PreviewImage_preview_image_nonvideo_sdr-Time1625080424767.png/500x500bb.webp",
+    "preview_link": "https://www.youtube.com/watch?v=tQ0yjYUFKAE&ab_channel=JustinBieberVEVO",
+    "itunes_id": "1571169048"
+  },
+  {
+    "id": "angel",
+    "title": "Angel",
+    "author": "Mergui",
+    "cover_img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e3/e9/a1/e3e9a144-949c-501a-f648-ad6f2c5e831f/cover.jpg/500x500bb.webp",
+    "preview_link": "https://www.youtube.com/watch?v=tQ0yjYUFKAE&ab_channel=JustinBieberVEVO",
+    "itunes_id": "1573476967"
   }
 ]

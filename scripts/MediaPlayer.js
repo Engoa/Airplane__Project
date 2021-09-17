@@ -141,9 +141,9 @@ const MediaPlayer = {
   },
 
   fetchLookup(id) {
-    return fetch('https://itunes.apple.com/us/lookup?id=' + id)
-      .then((res) => res.json())
-      .then((res) => res.results[0]);
+    return Promise.resolve(
+      $.getJSON('https://itunes.apple.com/us/lookup?id=' + id).then((res) => res.results[0])
+    );
   },
 };
 

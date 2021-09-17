@@ -36,7 +36,6 @@
     border-radius: 0rem;
     border-bottom: 1px solid rgba(197, 197, 197, 0.527);
     position: relative;
-
     color: var(--color-main);
 
     &::before {
@@ -212,8 +211,9 @@
   transition: var(--transition-500);
 
   &:hover {
-    transform: perspective(1000px) scaleY(1) scaleX(1) rotateY(-2deg) skewX(-2deg);
+    transform: scale(1.02);
   }
+ 
 
   .playing {
     display: flex;

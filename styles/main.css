@@ -679,8 +679,8 @@
 }
 
 .songcard:hover {
-  -webkit-transform: perspective(1000px) scaleY(1) scaleX(1) rotateY(-2deg) skewX(-2deg);
-          transform: perspective(1000px) scaleY(1) scaleX(1) rotateY(-2deg) skewX(-2deg);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .songcard .playing {
