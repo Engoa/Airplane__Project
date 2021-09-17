@@ -418,7 +418,7 @@
   margin-right: auto;
 }
 
-.homecards__weather,
+.homecards__card,
 .homecards .smallcard {
   height: 180px;
   position: relative;
@@ -426,12 +426,12 @@
   width: 100%;
 }
 
-.homecards__weather:hover,
+.homecards__card:hover,
 .homecards .smallcard:hover {
   color: var(--color-leftnav);
 }
 
-.homecards__weather::after,
+.homecards__card::after,
 .homecards .smallcard::after {
   position: absolute;
   content: '';
@@ -448,13 +448,13 @@
   transition: var(--transition-500);
 }
 
-.homecards__weather:hover::after,
+.homecards__card:hover::after,
 .homecards .smallcard:hover::after {
   max-width: 500px;
   pointer-events: none;
 }
 
-.homecards__weather__data,
+.homecards__card__data,
 .homecards .smallcard__temperature {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,7 +468,7 @@
   height: 100%;
 }
 
-.homecards__weather__text,
+.homecards__card__text,
 .homecards .smallcard__degrees {
   z-index: 5;
   width: 50%;
@@ -487,25 +487,25 @@
   padding: 1.5rem;
 }
 
-.homecards__weather__text .city--name,
+.homecards__card__text .city--name,
 .homecards .smallcard__degrees .city--name {
   font-size: 3rem;
 }
 
-.homecards__weather__text .degree,
+.homecards__card__text .degree,
 .homecards .smallcard__degrees .degree {
   font-weight: bold;
   font-size: 1.8rem;
   font-size: clamp(1.5rem, 5vw, 1.8rem);
 }
 
-.homecards__weather__text .degree--description,
+.homecards__card__text .degree--description,
 .homecards .smallcard__degrees .degree--description {
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-.homecards__weather__image,
+.homecards__card__image,
 .homecards .smallcard__image {
   z-index: 1;
   display: -webkit-box;
@@ -520,7 +520,7 @@
   width: 190px;
 }
 
-.homecards__weather__image img,
+.homecards__card__image img,
 .homecards .smallcard__image img {
   width: 100%;
   max-width: 160px;

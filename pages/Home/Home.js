@@ -3,8 +3,8 @@
     const drawHomeCard = document.querySelector('.render--homecard-media');
     drawHomeCard.innerHTML = `
     <a href="#Media" class="card--anchor">
-  <div class="homecards__weather__data homecards__media">
-    <div class="homecards__weather__text" id="card-media">
+  <div class="homecards__card__data homecards__media">
+    <div class="homecards__card__text" id="card-media">
       <div class='mediacard--header--container'>
         <h2 class="degree movie--name" id="fitty-title2">${MediaPlayer.playingNow.title}</h2>
        
@@ -18,7 +18,7 @@
         <i class="fas fa-headphones card--icon"></i>
       </div>
     </div>
-    <div class="homecards__weather__image homecards__movies--image card--media--img">
+    <div class="homecards__card__image homecards__movies--image card--media--img">
       <img src="${MediaPlayer.playingNow.cover_img}" alt="music image" />
        <div class="boxContainer">
           <div class="box box1"></div>
@@ -55,8 +55,8 @@
     console.log(data.current);
     document.querySelector('.render--homecard-weather').innerHTML += `
       <a href="#Weather" class="card--anchor">
-        <div class="homecards__weather__data">
-          <div class="homecards__weather__text">
+        <div class="homecards__card__data">
+          <div class="homecards__card__text">
             <div>
               <h2 class="city--name" id='fitty-title3'>${timezone}</h2>
             </div>
@@ -67,7 +67,7 @@
               <span class="degree--description">${weather[0].description}</span>
             </div>
           </div>
-          <div class="homecards__weather__image">
+          <div class="homecards__card__image">
             <img src="../assets/images/rainy.png" alt="temperature image" />
           </div>
         </div>
