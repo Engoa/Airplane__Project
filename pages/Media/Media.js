@@ -1,7 +1,9 @@
 (() => {
   const drawMediaHeader = () => {
-    document.querySelector('.render--media--header').innerHTML = `
-      <div
+    const mediaHeader = document.querySelector('.render--media--header');
+    if (!mediaHeader) return;
+    mediaHeader.innerHTML = `
+    <div
         class="page__header media__header ${
           MediaPlayer.playingNow.rtl ? 'page__header--rtl' : ''
         }"

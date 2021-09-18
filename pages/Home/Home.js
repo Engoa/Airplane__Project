@@ -1,6 +1,7 @@
 (() => {
   const drawHomeMediaCard = () => {
     const drawHomeCard = document.querySelector('.render--homecard-media');
+    if (!drawHomeCard) return;
     drawHomeCard.innerHTML = `
     <a href="#Media" class="card--anchor">
   <div class="homecards__weather__temperature homecards__media">
@@ -74,5 +75,8 @@
       `;
     fitty('#fitty-title3', { multiLine: true });
   };
+
   drawHomeMediaCard();
+
+  document.addEventListener('song-selected', () => drawHomeMediaCard());
 })();
