@@ -34,8 +34,15 @@
 
           `;
     fitty('#fitty-title2', { multiLine: true });
+    // Audio Wave check if playing or not
+    if (!MediaPlayer.isPlaying) {
+      $('.boxContainer').css('display', 'none');
+    } else {
+      $('.boxContainer').css('display', 'flex');
+    }
   };
 
+  // API for Weather
   const apiKey = 'a505effdf68e5b04fa5eb42d16b7374c';
   const findLocation = () => {
     const location = navigator.geolocation.getCurrentPosition((success) => {

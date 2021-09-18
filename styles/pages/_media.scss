@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   transition: var(--transition-500);
+  gap: 0.8rem;
   &__header {
     display: flex;
     flex-direction: column;

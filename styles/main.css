@@ -575,6 +575,7 @@
           justify-content: center;
   -webkit-transition: var(--transition-500);
   transition: var(--transition-500);
+  gap: 0.8rem;
 }
 
 .media__header {

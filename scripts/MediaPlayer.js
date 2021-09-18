@@ -138,7 +138,7 @@ const MediaPlayer = {
     }
 
     await this.loadSong(this.playingNow.itunes_id);
-    this.$audio.volume = 0.3;
+    this.$audio.volume = 0.25;
     this.$audio.addEventListener('timeupdate', () => {
       document.querySelector('.slider__seek').value = Math.floor(this.$audio.currentTime * 10);
 
