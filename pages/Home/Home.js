@@ -52,7 +52,6 @@
   const renderWeatherCards = (data) => {
     let { temp, weather } = data.current;
     const { timezone } = data;
-    console.log(data.current);
     document.querySelector('.render--homecard-weather').innerHTML += `
       <a href="#Weather" class="card--anchor">
         <div class="homecards__weather__temperature">

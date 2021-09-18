@@ -2,10 +2,12 @@
   const drawMediaHeader = () => {
     document.querySelector('.render--media--header').innerHTML = `
       <div
-        class="page__header media__header"
+        class="page__header media__header ${
+          MediaPlayer.playingNow.rtl ? 'page__header--rtl' : ''
+        }"
         data-scroll
-        data-scroll-speed="2"
-        data-scroll-delay="0.1"
+        data-scroll-speed="0.1"
+        data-scroll-delay="0.5"
       >
         <div>
           <div class="media__header__album">
@@ -20,14 +22,16 @@
       </div>
       `;
 
-    fitty('#fitty-title', { multiLine: true, maxSize: 115 });
+    fitty('#fitty-title', { multiLine: true, maxSize: 150, minSize: 80 });
   };
 
   const drawMediaCards = () => {
     const renderMediaCards = document.querySelector('.render--media--cards');
     MediaPlayer.songs.forEach((song, index) => {
       renderMediaCards.innerHTML += `
-     <button type="button" class='songcard' data-id="${song.id}">
+     <button type="button" class="songcard ${song.rtl ? 'songcard--rtl' : ''}" data-id="${
+        song.id
+      }" >
       <div class="media__content whitecard--small" onclick="MediaPlayer.toggle()"> 
         <div class="media__content--number">
           <span>${index + 1}</span>

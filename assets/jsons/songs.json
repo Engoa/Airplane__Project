@@ -40,7 +40,8 @@
     "title": "הולכת איתך",
     "author": "Narkis",
     "cover_img": "https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/da/e6/9b/dae69b75-2e1c-f28b-94fe-5ca56831f4dd/cover.jpg/500x500bb.webp",
-    "itunes_id": "1564315111"
+    "itunes_id": "1564315111",
+    "rtl": true
   },
   {
     "id": "dontsuck",
@@ -61,13 +62,15 @@
     "title": "גדל לי קצת זקן",
     "author": "Eden Hason",
     "cover_img": "https://is4-ssl.mzstatic.com/image/thumb/Music114/v4/dd/44/b7/dd44b728-fe6d-638b-e0f3-41eadb3677ea/cover.jpg/500x500bb.webp",
-    "itunes_id": "1556279889"
+    "itunes_id": "1556279889",
+    "rtl": true
   },
   {
     "id": "telaviv_streets",
     "title": "ברחובות של תל אביבו",
     "author": "Eden Ben Zaken",
     "cover_img": "https://is4-ssl.mzstatic.com/image/thumb/Music125/v4/c4/bf/35/c4bf355b-134b-be67-ae8d-c16025aa6146/7290115399349.png/500x500bb.webp",
-    "itunes_id": "1565731369"
+    "itunes_id": "1565731369",
+    "rtl": true
   }
 ]

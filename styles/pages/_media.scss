@@ -4,16 +4,13 @@
   flex-direction: column;
   justify-content: center;
   transition: var(--transition-500);
-
   &__header {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: var(--font-leftnav);
-    min-height: 200px;
+    max-height: 200px;
     transition: var(--transition-500);
-    margin-right: auto;
-    text-align: left;
 
     h1 {
       font-size: 4.5rem;
@@ -42,7 +39,7 @@
     position: relative;
     color: var(--color-main);
     transition: var(--transition-500);
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
 
     &:hover #name {
       color: var(--color-red);
@@ -73,12 +70,12 @@
       #name {
         transition: var(--transition-500);
         color: var(--color-main);
+        font-size: 1.4rem;
       }
 
       #author--name {
         color: var(--color-main);
         opacity: 0.5;
-        margin-right: auto;
         font-weight: light;
       }
     }
@@ -101,7 +98,6 @@
   align-items: center;
   justify-content: center;
   z-index: 5;
-  gap: 2rem;
 
   .media--container {
     display: flex;
@@ -129,6 +125,8 @@
     justify-content: center;
     width: 100%;
     max-width: 450px;
+    min-width: 450px;
+    min-height: 450px;
     border: 2px solid var(--color-mediacard);
     background: var(--color-white);
     padding: 0.5rem;

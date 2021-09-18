@@ -65,4 +65,3 @@ if (isDarkTheme) {
 }
 
 // Show/Hide Sound wave
-

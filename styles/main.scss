@@ -47,11 +47,11 @@ body {
   .app-bg {
     &__clouds {
       &:first-of-type {
-        opacity: 0.2 !important;
+        opacity: 0.4 !important;
       }
 
       &:last-of-type {
-        opacity: 0.05 !important;
+        opacity: 0.2 !important;
       }
     }
   }
@@ -127,10 +127,11 @@ audio {
     &:first-of-type {
       opacity: 0.6;
       z-index: 3;
-      animation: CloudsAnim 25s linear infinite;
+      animation: CloudsAnim 20s linear infinite;
     }
 
     &:last-of-type {
+      top: -70%;
       left: 20%;
       opacity: 0.46;
       z-index: 1;
@@ -160,12 +161,15 @@ audio {
     transition: var(--transition-500);
     color: var(--color-header);
     max-width: 480px;
-    text-align: left;
+    &--rtl {
+      direction: rtl;
+    }
     h1 {
       max-width: 480px;
       font-family: var(--font-header);
       font-size: 6.5rem;
       font-weight: bold;
+      line-height: 1.1;
     }
     p {
       font-size: 1.2rem;

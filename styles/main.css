@@ -169,7 +169,6 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  mix-blend-mode: hue;
 }
 
 .box {
@@ -590,11 +589,9 @@
       -ms-flex-align: center;
           align-items: center;
   font-family: var(--font-leftnav);
-  min-height: 200px;
+  max-height: 200px;
   -webkit-transition: var(--transition-500);
   transition: var(--transition-500);
-  margin-right: auto;
-  text-align: left;
 }
 
 .media__header h1 {
@@ -637,7 +634,7 @@
   color: var(--color-main);
   -webkit-transition: var(--transition-500);
   transition: var(--transition-500);
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .media .media__content:hover #name {
@@ -681,12 +678,12 @@
   -webkit-transition: var(--transition-500);
   transition: var(--transition-500);
   color: var(--color-main);
+  font-size: 1.4rem;
 }
 
 .media .media__content--name #author--name {
   color: var(--color-main);
   opacity: 0.5;
-  margin-right: auto;
   font-weight: light;
 }
 
@@ -717,7 +714,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 5;
-  gap: 2rem;
   display: none;
 }
 
@@ -761,6 +757,8 @@
           justify-content: center;
   width: 100%;
   max-width: 450px;
+  min-width: 450px;
+  min-height: 450px;
   border: 2px solid var(--color-mediacard);
   background: var(--color-white);
   padding: 0.5rem;
@@ -974,11 +972,11 @@ body {
 }
 
 .bgdark .app-bg__clouds:first-of-type {
-  opacity: 0.2 !important;
+  opacity: 0.4 !important;
 }
 
 .bgdark .app-bg__clouds:last-of-type {
-  opacity: 0.05 !important;
+  opacity: 0.2 !important;
 }
 
 .bglight .app-bg__clouds:first-of-type {
@@ -1059,11 +1057,12 @@ audio {
 .app-bg__clouds:first-of-type {
   opacity: 0.6;
   z-index: 3;
-  -webkit-animation: CloudsAnim 25s linear infinite;
-          animation: CloudsAnim 25s linear infinite;
+  -webkit-animation: CloudsAnim 20s linear infinite;
+          animation: CloudsAnim 20s linear infinite;
 }
 
 .app-bg__clouds:last-of-type {
+  top: -70%;
   left: 20%;
   opacity: 0.46;
   z-index: 1;
@@ -1101,7 +1100,10 @@ audio {
   transition: var(--transition-500);
   color: var(--color-header);
   max-width: 480px;
-  text-align: left;
+}
+
+.page__header--rtl {
+  direction: rtl;
 }
 
 .page__header h1 {
@@ -1109,6 +1111,7 @@ audio {
   font-family: var(--font-header);
   font-size: 6.5rem;
   font-weight: bold;
+  line-height: 1.1;
 }
 
 .page__header p {
