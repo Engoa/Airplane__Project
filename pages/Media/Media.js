@@ -5,6 +5,7 @@
     mediaControllerTitle.innerHTML = `
     <a class='title--anchor' href="#Media">
       <span>${MediaPlayer.playingNow.title}</span>
+    </a>
       <div class="boxContainer media__controller__anims">
           <div class="box box1 media__controller__anim1"></div>
           <div class="box box2 media__controller__anim2"></div>
@@ -12,7 +13,6 @@
           <div class="box box4 media__controller__anim4"></div>
           <div class="box box5 media__controller__anim5"></div>
         </div>
-  </a>
     `;
   };
 

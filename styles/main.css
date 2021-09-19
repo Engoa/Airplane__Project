@@ -1513,6 +1513,7 @@
 .weather__stat__twilight--wrapper {
   position: relative;
   overflow: hidden;
+  padding: 0;
 }
 
 .weather__stat__twilight--wrapper:hover {

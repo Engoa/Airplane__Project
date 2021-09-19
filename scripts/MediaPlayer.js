@@ -140,13 +140,10 @@ const MediaPlayer = {
     });
   },
   fetchLookup(id) {
-    const url = `https://itunes.apple.com/us/lookup?id=${id}&entity=album`;
     return Promise.resolve(
-      fetch(url, {
-        method: 'GET',
-      })
-        .then((res) => res.json())
-        .then((data) => data.results[0])
+      $.getJSON('https://itunes.apple.com/us/lookup?id=' + id + '&callback=?').then(
+        (res) => res.results[0]
+      )
     );
   },
 };
