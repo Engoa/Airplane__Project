@@ -139,12 +139,18 @@ const MediaPlayer = {
       }
     });
   },
-
   fetchLookup(id) {
+    const url = `https://itunes.apple.com/us/lookup?id=${id}&entity=album`;
     return Promise.resolve(
-      $.getJSON('https://itunes.apple.com/us/lookup?id=' + id + '&entity=album').then(
-        (res) => res.results[0]
-      )
+      fetch(url, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+        },
+      })
+        .then((res) => res.json())
+        .then((data) => data.results[0])
     );
   },
 };
