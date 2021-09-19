@@ -4,42 +4,48 @@
     "title": "Peaches",
     "author": "Justin Bieber",
     "cover_img": "https://is2-ssl.mzstatic.com/image/thumb/Video124/v4/81/17/e9/8117e9bf-283c-8b3b-697b-0a0addde92ab/Job67f35c56-4a93-4fbd-9e11-9a897bd0e09d-110110896-PreviewImage_PreviewImageIntermediate_preview_image_nonvideo_vfcs112147523-Time1616006080985.png/500x500bb.webp",
-    "itunes_id": "1556175857"
+    "itunes_id": "1556175857",
+    "rtl": false
   },
   {
     "id": "you_right",
     "title": "You Right",
     "author": "Doja Cat & The Weekend",
     "cover_img": "https://is3-ssl.mzstatic.com/image/thumb/Video115/v4/34/71/46/347146b8-2a83-ad88-7b9a-17a1c574d7e9/Job9185e3c6-0e24-4121-a40f-c36d29ff3491-116359815-PreviewImage_preview_image_nonvideo_sdr-Time1625080424767.png/500x500bb.webp",
-    "itunes_id": "1573852371"
+    "itunes_id": "1573852371",
+    "rtl": false
   },
   {
     "id": "anxious",
     "title": "Anxious",
     "author": "Dennis Loyd",
     "cover_img": "https://is4-ssl.mzstatic.com/image/thumb/Music124/v4/1e/07/8a/1e078a39-6765-cfa9-2299-d1e2fe7bc9f8/886448217312.jpg/500x500bb.webp",
-    "itunes_id": "1543997037"
+    "itunes_id": "1543997037",
+    "rtl": false
   },
   {
     "id": "alien",
     "title": "Alien",
     "author": "Dennis Loyd",
     "cover_img": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/c0/41/11/c04111ba-cc13-2d1e-4639-c79497d7e68b/886448464754.jpg/500x500bb.webp",
-    "itunes_id": "1516373859"
+    "itunes_id": "1516373859",
+    "rtl": false
   },
   {
     "id": "the_way",
     "title": "The Way",
     "author": "Dennis Loyd",
     "cover_img": "https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/39/8f/ee/398fee89-b316-3459-b4a7-647ba8f2d32a/886448569619.jpg/500x500bb.webp",
-    "itunes_id": "1569095504"
+    "itunes_id": "1569095504",
+    "rtl": false
   },
   {
     "id": "woman",
     "title": "Woman",
     "author": "Doja Cat",
     "cover_img": "https://is3-ssl.mzstatic.com/image/thumb/Video115/v4/34/71/46/347146b8-2a83-ad88-7b9a-17a1c574d7e9/Job9185e3c6-0e24-4121-a40f-c36d29ff3491-116359815-PreviewImage_preview_image_nonvideo_sdr-Time1625080424767.png/500x500bb.webp",
-    "itunes_id": "1571169048"
+    "itunes_id": "1571169048",
+    "rtl": false
   },
 
   {
@@ -47,14 +53,16 @@
     "title": "STAY",
     "author": "The KID LAROI",
     "cover_img": "https://is2-ssl.mzstatic.com/image/thumb/Music125/v4/e8/eb/cc/e8ebcc8d-6293-6e7f-7cc5-defa2bdbd4bd/886449399895.jpg/500x500bb.webp",
-    "itunes_id": "1574378625"
+    "itunes_id": "1574378625",
+    "rtl": false
   },
   {
     "id": "whatcha_say",
     "title": "Whatcha Say",
     "author": "Jason Derulo",
     "cover_img": "https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/2a/e1/fc/2ae1fc34-a98d-20bf-33ed-71e321773b0a/dj.lykipmdm.jpg/500x500bb.webp",
-    "itunes_id": "353554372"
+    "itunes_id": "353554372",
+    "rtl": false
   },
   {
     "id": "Holechet_itha",
@@ -69,14 +77,16 @@
     "title": "Please Don't Suck",
     "author": "Noa Kirel",
     "cover_img": "https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/eb/0c/82/eb0c82d2-ef3a-1a95-f90b-7b65f189705a/075679775177.jpg/500x500bb.webp",
-    "itunes_id": "1575711792"
+    "itunes_id": "1575711792",
+    "rtl": false
   },
   {
     "id": "industry_baby",
     "title": "INDUSTRY BABY",
     "author": "Lil Nas X",
     "cover_img": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/79/d7/66/79d7669f-36ff-46fb-16cb-b86fd321ef25/886449403912.jpg/500x500bb.webp",
-    "itunes_id": "1576552565"
+    "itunes_id": "1576552565",
+    "rtl": false
   },
   {
     "id": "zakan",
