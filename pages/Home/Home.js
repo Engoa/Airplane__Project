@@ -34,8 +34,8 @@
 
           `;
     fitty('#fitty-title2', { multiLine: true });
-    
-    // Audio Wave check if playing or not
+
+    // Audio Wave on Home check if playing or not 
     if (!MediaPlayer.isPlaying) {
       $('.boxContainer').css('display', 'none');
     } else {
@@ -83,5 +83,7 @@
   document.addEventListener('on-weather-init', () => {
     renderWeatherCards();
   });
-  document.addEventListener('song-selected', () => drawHomeMediaCard());
+  document.addEventListener('song-selected', () => {
+    drawHomeMediaCard();
+  });
 })();

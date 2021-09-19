@@ -3,12 +3,17 @@
     const mediaControllerTitle = document.querySelector('.media__controller--title');
     if (!mediaControllerTitle) return;
     mediaControllerTitle.innerHTML = `
-    <a href="#Media">
+    <a class='title--anchor' href="#Media">
       <span>${MediaPlayer.playingNow.title}</span>
+      <div class="boxContainer media__controller__anims">
+          <div class="box box1 media__controller__anim1"></div>
+          <div class="box box2 media__controller__anim2"></div>
+          <div class="box box3 media__controller__anim3"></div>
+          <div class="box box4 media__controller__anim4"></div>
+          <div class="box box5 media__controller__anim5"></div>
+        </div>
   </a>
     `;
-
-    
   };
 
   const drawMediaHeader = () => {
@@ -104,6 +109,7 @@
   });
 
   document.addEventListener('music-toggled', () => {
+    // Checks for play/pause buttons on cards
     $(`.songcard[data-id=${MediaPlayer.lastPlayed}] .playing`).show();
     $(`.songcard[data-id=${MediaPlayer.lastPlayed}] .paused`).hide();
 
@@ -119,6 +125,16 @@
 
       $(`.songcard[data-id=${MediaPlayer.selectedSong}] .playing`).show();
       $(`.songcard[data-id=${MediaPlayer.selectedSong}] .paused`).hide();
+    }
+
+    // Check/Flag for Media controller
+    if (MediaPlayer.isPlaying) {
+      $('.media__controller').css('visibility', 'visible');
+    }
+    if (!MediaPlayer.isPlaying) {
+      $('.media__controller__anims').css('display', 'none');
+    } else {
+      $('.media__controller__anims').css('display', 'flex');
     }
   });
 

@@ -200,7 +200,7 @@
           transform: scaleY(0.4);
   height: 100%;
   width: var(--boxSize);
-  background: var(--color-mediacard) !important;
+  background: var(--color-mediacard);
   -webkit-animation-duration: 1.2s;
           animation-duration: 1.2s;
   -webkit-animation-timing-function: ease-in-out;
@@ -947,6 +947,7 @@
 
 .slider:hover {
   opacity: 1;
+  background-color: var(--color-red);
 }
 
 .slider::-webkit-slider-thumb {
@@ -970,9 +971,25 @@
   z-index: 5;
   background-color: var(--color-leftnav);
   width: 100%;
-  max-width: 200px;
+  max-width: 230px;
   border-radius: 2rem;
-  padding: 0.2rem 1rem;
+  padding: 0.5rem 1rem;
+  visibility: hidden;
+  -webkit-transition: var(--transition-500);
+  transition: var(--transition-500);
+  cursor: pointer;
+}
+
+.media__controller:hover {
+  background-color: var(--color-main);
+}
+
+.media__controller:hover .media__controller--title a {
+  color: var(--color-leftnav);
+}
+
+.media__controller:hover .icon {
+  color: var(--color-leftnav);
 }
 
 .media__controller--wrapper {
@@ -989,31 +1006,62 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: var(--color-main);
+  gap: 0.3rem;
 }
 
 .media__controller--title {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  opacity: 0.85;
+  -webkit-transition: var(--transition-500);
+  transition: var(--transition-500);
 }
 
-.media__controller--title a {
+.media__controller--title:hover {
+  color: var(--color-red);
+}
+
+.media__controller--title .title--anchor {
   color: var(--color-main);
   text-decoration: none;
 }
 
 .media__controller--buttons {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  cursor: pointer;
+}
+
+.media__controller .icon {
+  -webkit-transition: var(--transition-500);
+  transition: var(--transition-500);
+  color: var(--color-main);
+}
+
+.media__controller .icon:hover {
+  color: var(--color-red);
+}
+
+.media__controller__anims {
+  position: absolute;
+  --boxSize: 2.7px;
+  height: 17px;
+  margin-left: auto;
+  right: 0;
+}
+
+.media__controller__anims .box {
+  background: var(--color-red);
+  -webkit-transform: scaleY(0.1);
+          transform: scaleY(0.1);
 }
 
 .weather__header {
@@ -1646,7 +1694,7 @@ audio {
 .app-bg .airplane {
   position: fixed;
   height: 100vh;
-  top: 58%;
+  top: 60%;
   left: 35%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1664,8 +1712,8 @@ audio {
 .app-bg .airplane__image {
   width: 100%;
   max-height: 90%;
-  -webkit-animation: PlaneAnim 5s ease-in-out infinite alternate;
-          animation: PlaneAnim 5s ease-in-out infinite alternate;
+  -webkit-animation: PlaneAnim 4s ease-in-out infinite alternate;
+          animation: PlaneAnim 4s ease-in-out infinite alternate;
 }
 
 .app-bg__clouds {

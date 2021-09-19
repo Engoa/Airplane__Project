@@ -189,12 +189,15 @@
         <div class="media__controller--wrapper">
           <div class="media__controller--title"></div>
           <div class="media__controller--buttons">
-            <i class="fas fa-forward fa-rotate-180" onclick="MediaPlayer.previousSong()"></i>
+            <i
+              class="fas fa-forward fa-rotate-180 icon"
+              onclick="MediaPlayer.previousSong()"
+            ></i>
             <div onclick="MediaPlayer.toggle()">
-              <i class="fas fa-play icon-played playing"> </i>
-              <i class="fas fa-pause icon-paused paused" style="display: none"></i>
+              <i class="fas fa-play icon-played playing icon"> </i>
+              <i class="fas fa-pause icon-paused paused icon" style="display: none"></i>
             </div>
-            <i class="fas fa-backward fa-rotate-180" onclick="MediaPlayer.nextSong()"></i>
+            <i class="fas fa-backward fa-rotate-180 icon" onclick="MediaPlayer.nextSong()"></i>
           </div>
         </div>
       </div>
@@ -204,8 +207,8 @@
 
     <script src="/scripts/vendors/locomotive-scroll.min.js"></script>
     <script src="/scripts/helpers.js" defer></script>
-    <script src="/scripts/app.js" defer></script>
     <script src="/scripts/MediaPlayer.js" defer></script>
+    <script src="/scripts/app.js" defer></script>
     <script src="/scripts/WeatherService.js" defer></script>
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script

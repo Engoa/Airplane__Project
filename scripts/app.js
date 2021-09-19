@@ -73,3 +73,4 @@ const isDarkTheme = JSON.parse(localStorage.getItem('darkTheme'));
 if (isDarkTheme) {
   document.body.classList.add('bgdark');
 }
+
