@@ -140,15 +140,9 @@ const MediaPlayer = {
     });
   },
   fetchLookup(id) {
-    const url = `https://itunes.apple.com/us/lookup?id=${id}&entity=album`;
+    const url = `https://itunes.apple.com/us/lookup?id=${id}`;
     return Promise.resolve(
-      fetch(url, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
-        },
-      })
+      fetch(url)
         .then((res) => res.json())
         .then((data) => data.results[0])
     );
