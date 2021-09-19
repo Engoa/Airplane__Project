@@ -1,7 +1,7 @@
 .card--anchor {
   color: var(--color-main);
   text-decoration: none;
-  transition: var(--transition-500);
+  transition: var(--transition-300);
   &:hover {
     color: var(--color-red);
   }
@@ -127,7 +127,7 @@
       right: 0%;
       top: 50%;
       transform: translate(0, -50%);
-      transition: var(--transition-500);
+      transition: var(--transition-300);
     }
     &:hover::after {
       max-width: 500px;

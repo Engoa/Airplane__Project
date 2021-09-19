@@ -159,7 +159,7 @@ audio {
   }
 
   &__header {
-    transition: var(--transition-500);
+    transition: var(--transition-300);
     color: var(--color-header);
     max-width: 480px;
     &--rtl {
@@ -209,12 +209,12 @@ audio {
       bottom: 0;
       transform: skewX(-25deg) rotate(-25deg);
       border-bottom-right-radius: 1.5rem;
-      transition: var(--transition-500);
+      transition: var(--transition-300);
     }
     &::before {
       transform: skewX(25deg) rotate(25deg);
       border-top-right-radius: 1.5rem;
-      transition: var(--transition-500);
+      transition: var(--transition-300);
     }
   }
 
@@ -236,7 +236,7 @@ audio {
       position: relative;
       outline: none;
       border: none;
-      transition: var(--transition-500);
+      transition: var(--transition-300);
       background-color: transparent;
 
       // Bootstrap override!
@@ -318,7 +318,7 @@ audio {
       background: transparent;
       outline: none;
       border: none;
-      transition: var(--transition-500);
+      transition: var(--transition-300);
 
       &:hover {
         color: var(--color-red);
@@ -326,7 +326,7 @@ audio {
     }
     .volume {
       position: relative;
-      transition: var(--transition-500);
+      transition: var(--transition-300);
       &:active {
         transform: scale(1.25);
       }
@@ -340,7 +340,7 @@ audio {
         top: 50%;
         transform: translate(-50%, -50%) rotate(-40deg) scale(1.35);
         background: var(--color-main);
-        transition: var(--transition-500);
+        transition: var(--transition-300);
         transform-origin: 50% 0;
       }
       &:active::before,

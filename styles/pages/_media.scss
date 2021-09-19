@@ -3,7 +3,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  transition: var(--transition-500);
+  transition: var(--transition-300);
   gap: 0.8rem;
   &__header {
     display: flex;
@@ -11,7 +11,7 @@
     align-items: center;
     font-family: var(--font-leftnav);
     max-height: 200px;
-    transition: var(--transition-500);
+    transition: var(--transition-300);
 
     h1 {
       font-size: 4.5rem;
@@ -39,7 +39,7 @@
     border-bottom: 1px solid rgba(197, 197, 197, 0.527);
     position: relative;
     color: var(--color-main);
-    transition: var(--transition-500);
+    transition: var(--transition-300);
     padding: 1rem 1.5rem;
 
     &:hover #name {
@@ -56,7 +56,7 @@
       height: 100%;
       background-color: var(--color-red);
       left: 0;
-      transition: var(--transition-500);
+      transition: var(--transition-300);
     }
 
     &--number {
@@ -69,7 +69,7 @@
       align-items: center;
 
       #name {
-        transition: var(--transition-500);
+        transition: var(--transition-300);
         color: var(--color-main);
         font-size: 1.4rem;
       }
@@ -83,7 +83,7 @@
 
     &--controller {
       cursor: pointer;
-      transition: var(--transition-500);
+      transition: var(--transition-300);
       color: var(--color-main);
     }
   }
@@ -111,7 +111,7 @@
     font-size: 2rem;
     color: var(--color-main);
     cursor: pointer;
-    transition: var(--transition-500);
+    transition: var(--transition-300);
     opacity: 0.85;
     &:hover {
       color: var(--color-red);
@@ -133,7 +133,7 @@
     padding: 0.5rem;
     position: relative;
     cursor: pointer;
-    transition: var(--transition-500);
+    transition: var(--transition-300);
     // On hover add border to controllers
     &:hover .player-icon--wrapper {
       border: 2px white;
@@ -164,7 +164,7 @@
       }
 
       .player-icon {
-        transition: var(--transition-500);
+        transition: var(--transition-300);
         opacity: 0;
         color: var(--color-white);
       }
@@ -224,7 +224,7 @@
 .songcard {
   outline: none;
   border: none;
-  transition: var(--transition-500);
+  transition: var(--transition-300);
 
   .playing {
     display: flex;
@@ -234,12 +234,12 @@
   }
   &.playing-now .whitecard--small {
     .media__content--number {
-      transition: var(--transition-500);
+      transition: var(--transition-300);
       padding-left: 1rem;
     }
     &::before {
       width: 90px;
-      transition: var(--transition-500);
+      transition: var(--transition-300);
     }
   }
 }
@@ -251,7 +251,7 @@
   outline: none;
   border-radius: 2rem;
   opacity: 0.85;
-  transition: var(--transition-500);
+  transition: var(--transition-300);
   &:hover {
     opacity: 1;
     background-color: var(--color-red);
@@ -281,7 +281,7 @@
   border-radius: 2rem;
   padding: 0.5rem 1rem;
   visibility: hidden;
-  transition: var(--transition-500);
+  transition: var(--transition-300);
 
   &:hover {
     background-color: var(--color-main);
@@ -307,7 +307,7 @@
     font-size: 0.85rem;
     font-weight: bold;
     opacity: 0.85;
-    transition: var(--transition-500);
+    transition: var(--transition-300);
     cursor: pointer;
 
     &:hover {
@@ -328,7 +328,7 @@
     cursor: pointer;
   }
   .icon {
-    transition: var(--transition-500);
+    transition: var(--transition-300);
     color: var(--color-main);
     &:hover {
       color: var(--color-red);
