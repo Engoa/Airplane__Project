@@ -1,4 +1,16 @@
 (() => {
+  const drawMediaController = () => {
+    const mediaControllerTitle = document.querySelector('.media__controller--title');
+    if (!mediaControllerTitle) return;
+    mediaControllerTitle.innerHTML = `
+    <a href="#Media">
+      <span>${MediaPlayer.playingNow.title}</span>
+  </a>
+    `;
+
+    
+  };
+
   const drawMediaHeader = () => {
     const mediaHeader = document.querySelector('.render--media--header');
     if (!mediaHeader) return;
@@ -74,6 +86,7 @@
   drawMediaCards();
   drawMediaImage();
   drawSelectedCard();
+  drawMediaController();
 
   const mediaCard = document.querySelectorAll('.songcard');
 
@@ -86,6 +99,7 @@
     drawMediaHeader();
     drawMediaImage();
     drawSelectedCard();
+    drawMediaController();
     $LocoScroll.update();
   });
 
@@ -94,14 +108,14 @@
     $(`.songcard[data-id=${MediaPlayer.lastPlayed}] .paused`).hide();
 
     if (MediaPlayer.isPlaying) {
-      $('#icon-played').hide();
-      $('#icon-paused').show();
+      $('.icon-played').hide();
+      $('.icon-paused').show();
 
       $(`.songcard[data-id=${MediaPlayer.selectedSong}] .playing`).hide();
       $(`.songcard[data-id=${MediaPlayer.selectedSong}] .paused`).show();
     } else {
-      $('#icon-paused').hide();
-      $('#icon-played').show();
+      $('.icon-paused').hide();
+      $('.icon-played').show();
 
       $(`.songcard[data-id=${MediaPlayer.selectedSong}] .playing`).show();
       $(`.songcard[data-id=${MediaPlayer.selectedSong}] .paused`).hide();

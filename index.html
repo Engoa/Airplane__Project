@@ -111,7 +111,7 @@
             </li>
             <li>
               <a href="#Weather" class="link">
-                <i class="fas fa-cloud-sun-rain" ></i>
+                <i class="fas fa-cloud-sun-rain"></i>
               </a>
             </li>
             <li>
@@ -141,8 +141,8 @@
 
           <div class="media__player__player" onclick="MediaPlayer.toggle()">
             <div class="player-icon--wrapper">
-              <i class="fas fa-play player-icon" id="icon-played"></i>
-              <i class="fas fa-pause player-icon" id="icon-paused" style="display: none"></i>
+              <i class="fas fa-play player-icon icon-played"></i>
+              <i class="fas fa-pause player-icon icon-paused" style="display: none"></i>
             </div>
             <div class="render--media--image"></div>
           </div>
@@ -185,6 +185,20 @@
       </div>
 
       <div class="weather__app"></div>
+      <div class="media__controller">
+        <div class="media__controller--wrapper">
+          <div class="media__controller--title"></div>
+          <div class="media__controller--buttons">
+            <i class="fas fa-forward fa-rotate-180" onclick="MediaPlayer.previousSong()"></i>
+            <div onclick="MediaPlayer.toggle()">
+              <i class="fas fa-play icon-played playing"> </i>
+              <i class="fas fa-pause icon-paused paused" style="display: none"></i>
+            </div>
+            <i class="fas fa-backward fa-rotate-180" onclick="MediaPlayer.nextSong()"></i>
+          </div>
+        </div>
+      </div>
+
       <div id="app" data-scroll-section></div>
     </div>
 

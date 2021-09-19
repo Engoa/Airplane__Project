@@ -829,7 +829,7 @@
           justify-content: center;
 }
 
-.media__player__player .player-icon--wrapper #icon-played {
+.media__player__player .player-icon--wrapper .icon-played {
   padding-left: 0.4rem;
 }
 
@@ -959,6 +959,61 @@
   cursor: pointer;
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
+}
+
+.media__controller {
+  position: fixed;
+  top: 3.5rem;
+  left: 35%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 5;
+  background-color: var(--color-leftnav);
+  width: 100%;
+  max-width: 200px;
+  border-radius: 2rem;
+  padding: 0.2rem 1rem;
+}
+
+.media__controller--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: var(--color-main);
+}
+
+.media__controller--title {
+  font-size: 0.75rem;
+}
+
+.media__controller--title a {
+  color: var(--color-main);
+  text-decoration: none;
+}
+
+.media__controller--buttons {
+  font-size: 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
 }
 
 .weather__header {

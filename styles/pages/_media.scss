@@ -159,7 +159,7 @@
       align-items: center;
       justify-content: center;
 
-      #icon-played {
+      .icon-played {
         padding-left: 0.4rem;
       }
 
@@ -266,4 +266,41 @@
   background: var(--color-main);
   cursor: pointer;
   transition: all 1s linear;
+}
+
+.media__controller {
+  position: fixed;
+  top: 3.5rem;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background-color: var(--color-leftnav);
+  width: 100%;
+  max-width: 200px;
+  border-radius: 2rem;
+  padding: 0.2rem 1rem;
+
+  &--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: var(--color-main);
+  }
+
+  &--title {
+    font-size: 0.75rem;
+    a {
+      color: var(--color-main);
+      text-decoration: none;
+    }
+  }
+  &--buttons {
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    cursor: pointer;
+  }
 }
