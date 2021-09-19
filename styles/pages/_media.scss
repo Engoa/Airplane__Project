@@ -282,7 +282,6 @@
   padding: 0.5rem 1rem;
   visibility: hidden;
   transition: var(--transition-500);
-  cursor: pointer;
 
   &:hover {
     background-color: var(--color-main);
@@ -309,6 +308,8 @@
     font-weight: bold;
     opacity: 0.85;
     transition: var(--transition-500);
+    cursor: pointer;
+
     &:hover {
       color: var(--color-red);
     }
@@ -324,6 +325,7 @@
     align-items: center;
     gap: 1rem;
     justify-content: center;
+    cursor: pointer;
   }
   .icon {
     transition: var(--transition-500);
@@ -339,6 +341,7 @@
     height: 17px;
     margin-left: auto;
     right: 0;
+    cursor: default;
     .box {
       background: var(--color-red);
       transform: scaleY(0.1);

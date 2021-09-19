@@ -977,7 +977,6 @@
   visibility: hidden;
   -webkit-transition: var(--transition-500);
   transition: var(--transition-500);
-  cursor: pointer;
 }
 
 .media__controller:hover {
@@ -1015,6 +1014,7 @@
   opacity: 0.85;
   -webkit-transition: var(--transition-500);
   transition: var(--transition-500);
+  cursor: pointer;
 }
 
 .media__controller--title:hover {
@@ -1038,6 +1038,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 .media__controller .icon {
@@ -1056,6 +1057,7 @@
   height: 17px;
   margin-left: auto;
   right: 0;
+  cursor: default;
 }
 
 .media__controller__anims .box {
@@ -1330,6 +1332,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  pointer-events: none;
 }
 
 .weather__app__current-date h3 {
@@ -1975,8 +1978,8 @@ audio {
 }
 
 .top--nav__links .volume:active {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 .top--nav__links .volume::before {
@@ -1995,7 +1998,7 @@ audio {
           transform-origin: 50% 0;
 }
 
-.top--nav__links .volume:hover::before, .top--nav__links .volume.mute-selected::before {
+.top--nav__links .volume:active::before, .top--nav__links .volume.mute-selected::before {
   width: 100%;
 }
 

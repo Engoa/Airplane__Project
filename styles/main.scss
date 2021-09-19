@@ -328,7 +328,7 @@ audio {
       position: relative;
       transition: var(--transition-500);
       &:active {
-        transform: scale(1.2);
+        transform: scale(1.25);
       }
 
       &::before {
@@ -343,7 +343,7 @@ audio {
         transition: var(--transition-500);
         transform-origin: 50% 0;
       }
-      &:hover::before,
+      &:active::before,
       &.mute-selected::before {
         width: 100%;
       }
