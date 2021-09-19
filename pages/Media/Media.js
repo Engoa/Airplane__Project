@@ -34,7 +34,7 @@
      <button type="button" class="songcard ${song.rtl ? 'songcard--rtl' : ''}" data-id="${
         song.id
       }" >
-      <div class="media__content whitecard--small" onclick="MediaPlayer.toggle()"> 
+      <div class="media__content whitecard whitecard--small" onclick="MediaPlayer.toggle()"> 
         <div class="media__content--number">
           <span>${index + 1}</span>
         </div>

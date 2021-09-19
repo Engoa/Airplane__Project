@@ -1,6 +1,3 @@
-const getLS = (k) => JSON.parse(localStorage.getItem(k));
-const setLS = (k, v) => localStorage.setItem(k, JSON.stringify(v));
-
 const MediaPlayer = {
   // DATA MEMBERS
   $audio: document.querySelector('audio'),
@@ -53,11 +50,6 @@ const MediaPlayer = {
   adjustVolume(e) {
     const { value } = e.target;
     this.$audio.volume = value / 100;
-
-    tippy('#vol--tooltip', {
-      content: this.$audio.volume,
-      placement: 'top',
-    });
   },
 
   seek(e) {

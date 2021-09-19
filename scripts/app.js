@@ -1,12 +1,14 @@
 // Page Transitions!
 const airplane = $('#airplane-img');
 const mediaPlayer = $('.media__player');
+const weatherApp = $('.weather__app');
 
 let $LocoScroll = null;
 let isShutDown = false;
 document.addEventListener('route-update', (event) => {
   handleHomePageTransition(event.detail);
   handleMediaPageTransition(event.detail);
+  handleWeatherPageTransition(event.detail);
 
   if ($LocoScroll) {
     return $LocoScroll.update();
@@ -32,6 +34,14 @@ const handleMediaPageTransition = ({ to, from }) => {
   }
   if (to === 'Media') {
     mediaPlayer.fadeIn();
+  }
+};
+const handleWeatherPageTransition = ({ to, from }) => {
+  if (from === 'Weather') {
+    weatherApp.fadeOut();
+  }
+  if (to === 'Weather') {
+    weatherApp.fadeIn();
   }
 };
 
@@ -63,5 +73,3 @@ const isDarkTheme = JSON.parse(localStorage.getItem('darkTheme'));
 if (isDarkTheme) {
   document.body.classList.add('bgdark');
 }
-
-// Show/Hide Sound wave

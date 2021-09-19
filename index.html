@@ -49,7 +49,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
 
     <!-- // CDN HERE -->
   </head>
@@ -102,7 +101,7 @@
           <ul class="leftnav__links">
             <li>
               <a href="#" class="link">
-                <i class="fas fa-plane"></i>
+                <i class="fas fa-plane fa-rotate-270"></i>
               </a>
             </li>
             <li>
@@ -111,8 +110,8 @@
               </a>
             </li>
             <li>
-              <a href="#" class="link">
-                <i class="fas fa-play"></i>
+              <a href="#Weather" class="link">
+                <i class="fas fa-cloud-sun-rain" ></i>
               </a>
             </li>
             <li>
@@ -179,18 +178,22 @@
         </div>
 
         <div id="render--media--audio">
-          <audio controls preload="none" style="width: 480px">
+          <audio controls preload="none">
             <source src="" type="audio/mp4" />
-            <p>Your browser does not support this audio file.</p>
           </audio>
         </div>
       </div>
+
+      <div class="weather__app"></div>
       <div id="app" data-scroll-section></div>
     </div>
 
     <script src="/scripts/vendors/locomotive-scroll.min.js"></script>
+    <script src="/scripts/helpers.js" defer></script>
     <script src="/scripts/app.js" defer></script>
     <script src="/scripts/MediaPlayer.js" defer></script>
+    <script src="/scripts/WeatherService.js" defer></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/fitty@2.3.5/dist/fitty.min.js"
       integrity="sha256-Sc+/1+qa8RGHw0M/OV+d2ylLWriAjdSwXF2JvVTufu0="

@@ -1,3 +1,12 @@
+.hugecard {
+  background-color: var(--color-leftnav);
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  max-width: 1400px;
+  height: 700px;
+  padding: 1.5rem;
+}
 .whitecard {
   background-color: var(--color-leftnav);
   border-radius: 1rem;
@@ -5,15 +14,29 @@
   width: 100%;
   max-width: 500px;
   height: 280px;
-  padding: 1.5rem;
+  &:not(&--small) {
+    padding: 1.5rem;
+  }
+  &--small {
+    height: 115px;
+  }
 }
-.whitecard--small {
-  background-color: var(--color-leftnav);
-  border-radius: 1rem;
-  box-shadow: var(--box-shadow);
-  width: 100%;
-  max-width: 500px;
-  height: 115px;
+
+.bgdark {
+  .lightimage {
+    display: none !important;
+  }
+  .darkimage {
+    display: unset !important;
+  }
+}
+.bglight {
+  .lightimage {
+    display: unset;
+  }
+  .darkimage {
+    display: none;
+  }
 }
 
 @keyframes PlaneAnim {

@@ -3,6 +3,7 @@
 @import 'helpers/variables';
 @import 'pages/home';
 @import 'pages/media';
+@import 'pages/weather';
 
 html {
   // scroll-behavior: smooth;
@@ -148,7 +149,7 @@ audio {
     flex-direction: column;
     width: 100%;
     max-width: 900px;
-    padding: 150px 0 100px;
+    padding: 115px 0 100px;
     margin-left: auto;
   }
 
@@ -288,9 +289,6 @@ audio {
       transform: translate(-50%, 50%);
       font-size: 3rem;
     }
-  }
-  .circle--clippath--active {
-    clip-path: circle(150% at 0% 0%);
   }
 
   .power {

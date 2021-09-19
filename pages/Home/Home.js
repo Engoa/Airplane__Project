@@ -34,6 +34,7 @@
 
           `;
     fitty('#fitty-title2', { multiLine: true });
+    
     // Audio Wave check if playing or not
     if (!MediaPlayer.isPlaying) {
       $('.boxContainer').css('display', 'none');
@@ -42,24 +43,14 @@
     }
   };
 
-  // API for Weather
-  const apiKey = 'a505effdf68e5b04fa5eb42d16b7374c';
-  const findLocation = () => {
-    const location = navigator.geolocation.getCurrentPosition((success) => {
-      let { latitude, longitude } = success.coords;
-      const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&units=metric&appid=${apiKey}`;
-      fetch(url).then((res) => res.json().then((data) => renderWeatherCards(data)));
-      if (!latitude || !longitude) {
-        console.log('No location selected');
-      }
-    });
-    return location;
-  };
-  findLocation();
+  const renderWeatherCards = () => {
+    if (!WeatherService.data) return;
 
-  const renderWeatherCards = (data) => {
-    let { temp, weather } = data.current;
-    const { timezone } = data;
+    const {
+      timezone,
+      current: { temp, weather },
+    } = WeatherService.data;
+
     document.querySelector('.render--homecard-weather').innerHTML += `
       <a href="#Weather" class="card--anchor">
         <div class="homecards__weather__temperature">
@@ -73,17 +64,24 @@
             <div>
               <span class="degree--description">${weather[0].description}</span>
             </div>
+            <div>
+            <i class="fas fa-cloud" ></i>
+            </div>
           </div>
           <div class="homecards__weather__image">
             <img src="../assets/images/rainy.png" alt="temperature image" />
           </div>
         </div>
-      </a>    
+      </a>
       `;
     fitty('#fitty-title3', { multiLine: true });
   };
 
   drawHomeMediaCard();
 
+  renderWeatherCards();
+  document.addEventListener('on-weather-init', () => {
+    renderWeatherCards();
+  });
   document.addEventListener('song-selected', () => drawHomeMediaCard());
 })();
