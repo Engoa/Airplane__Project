@@ -293,7 +293,7 @@
 :root {
   --font-header: 'Poppins', sans-serif;
   --box-shadow: rgba(0, 0, 0, 0.1) 0px 18px 50px -10px;
-  --box-shadow-weather: rgb(0, 0, 0) -10px 10px 20px -20px;
+  --box-shadow-weather: rgba(0, 0, 0, 0.712) -10px 15px 20px -20px;
   --box-shadow-card: drop-shadow(-10px 5px 6px rgba(0, 0, 0, 0.01));
   --transition-300: all 300ms ease;
   --transition-theme: all 500ms ease;
@@ -1119,6 +1119,8 @@
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
+  -webkit-box-shadow: var(--box-shadow-weather);
+          box-shadow: var(--box-shadow-weather);
 }
 
 .weather__daily .weather-cards-card:hover {
@@ -1174,12 +1176,12 @@
 .weather__daily .weather-cards-card__image {
   min-width: 80px;
   z-index: 5;
+  pointer-events: none;
 }
 
 .weather__daily .weather-cards-card__image img {
   width: 100%;
-  max-width: 80px;
-  border-radius: 1rem;
+  max-width: 75px;
 }
 
 .weather__daily .weather-cards-card__temp {
@@ -1267,6 +1269,8 @@
   transition: var(--transition-300);
   position: relative;
   overflow: hidden;
+  -webkit-box-shadow: var(--box-shadow-weather);
+          box-shadow: var(--box-shadow-weather);
 }
 
 .weather__app__current::before {

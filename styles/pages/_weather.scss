@@ -24,6 +24,8 @@
         border-radius: 1rem;
         position: relative;
         overflow: hidden;
+        box-shadow: var(--box-shadow-weather);
+
         &:hover {
           &::before {
             height: 100%;
@@ -66,11 +68,12 @@
         &__image {
           min-width: 80px;
           z-index: 5;
+          pointer-events: none;
 
           img {
             width: 100%;
-            max-width: 80px;
-            border-radius: 1rem;
+            max-width: 75px;
+            
           }
         }
         &__temp {
@@ -136,6 +139,7 @@
       transition: var(--transition-300);
       position: relative;
       overflow: hidden;
+      box-shadow: var(--box-shadow-weather);
       &::before {
         position: absolute;
         content: '';
