@@ -27,6 +27,16 @@
   height: 115px;
 }
 
+.whitecard--movie {
+  background-color: var(--color-leftnav);
+  border-radius: 1rem;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  width: 100%;
+  max-width: 500px;
+  height: 600px;
+}
+
 .bgdark .lightimage {
   display: none !important;
 }

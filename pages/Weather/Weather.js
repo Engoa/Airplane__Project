@@ -141,7 +141,7 @@
         
         <div class="weather__stat--sunrise">
           <div class="weather__stat--title">
-            <h3>Sunset</h3>
+            <h3>Sunrise</h3>
           </div>
             <div class="weather__stat--icon">
             <i class="fas fa-cloud-sun"></i>

@@ -20,6 +20,14 @@
   &--small {
     height: 115px;
   }
+  &--movie {
+    background-color: var(--color-leftnav);
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+  }
 }
 
 .bgdark {

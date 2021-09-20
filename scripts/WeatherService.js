@@ -48,8 +48,6 @@ const WeatherService = {
   },
 };
 
-
 (async () => {
   await WeatherService.init();
-  console.log(WeatherService.data);
 })();
