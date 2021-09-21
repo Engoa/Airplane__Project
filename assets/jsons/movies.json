@@ -1,0 +1,1502 @@
+[
+  {
+    "Title": "Game of Thrones",
+    "Year": "2011–2019",
+    "Rated": "TV-MA",
+    "Released": "17 Apr 2011",
+    "Runtime": "57 min",
+    "Genre": "Action, Adventure, Drama",
+    "Director": "N/A",
+    "Writer": "David Benioff, D.B. Weiss",
+    "Actors": "Emilia Clarke, Peter Dinklage, Kit Harington",
+    "Plot": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+    "Language": "English",
+    "Country": "United States, United Kingdom",
+    "Awards": "Won 59 Primetime Emmys. 382 wins & 626 nominations total",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "9.2/10"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "9.2",
+    "imdbVotes": "1,867,688",
+    "imdbID": "tt0944947",
+    "Type": "series",
+    "totalSeasons": "8",
+    "Response": "True"
+  },
+  {
+    "Title": "The Imitation Game",
+    "Year": "2014",
+    "Rated": "PG-13",
+    "Released": "25 Dec 2014",
+    "Runtime": "114 min",
+    "Genre": "Biography, Drama, Thriller",
+    "Director": "Morten Tyldum",
+    "Writer": "Graham Moore, Andrew Hodges",
+    "Actors": "Benedict Cumberbatch, Keira Knightley, Matthew Goode",
+    "Plot": "During World War II, the English mathematical genius Alan Turing tries to crack the German Enigma code with help from fellow mathematicians.",
+    "Language": "English, German",
+    "Country": "United Kingdom, United States",
+    "Awards": "Won 1 Oscar. 49 wins & 162 nominations total",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BOTgwMzFiMWYtZDhlNS00ODNkLWJiODAtZDVhNzgyNzJhYjQ4L2ltYWdlXkEyXkFqcGdeQXVyNzEzOTYxNTQ@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "8.0/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "89%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "71/100"
+      }
+    ],
+    "Metascore": "71",
+    "imdbRating": "8.0",
+    "imdbVotes": "716,754",
+    "imdbID": "tt2084970",
+    "Type": "movie",
+    "DVD": "31 Mar 2015",
+    "BoxOffice": "$91,125,683",
+    "Production": "Black Bear Pictures, Bristol Automotive",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Sherlock Holmes: A Game of Shadows",
+    "Year": "2011",
+    "Rated": "PG-13",
+    "Released": "16 Dec 2011",
+    "Runtime": "129 min",
+    "Genre": "Action, Adventure, Mystery",
+    "Director": "Guy Ritchie",
+    "Writer": "Michele Mulroney, Kieran Mulroney, Arthur Conan Doyle",
+    "Actors": "Robert Downey Jr., Jude Law, Jared Harris",
+    "Plot": "Detective Sherlock Holmes is on the trail of criminal mastermind Professor Moriarty, who is carrying out a string of random crimes across Europe.",
+    "Language": "English, French, Italian, German, Romany",
+    "Country": "United States, United Kingdom",
+    "Awards": "3 wins & 11 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMTQwMzQ5Njk1MF5BMl5BanBnXkFtZTcwNjIxNzIxNw@@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "7.5/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "59%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "48/100"
+      }
+    ],
+    "Metascore": "48",
+    "imdbRating": "7.5",
+    "imdbVotes": "432,370",
+    "imdbID": "tt1515091",
+    "Type": "movie",
+    "DVD": "12 Jun 2012",
+    "BoxOffice": "$186,848,418",
+    "Production": "Silver Pictures, Wigram Productions",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "The Game",
+    "Year": "1997",
+    "Rated": "R",
+    "Released": "12 Sep 1997",
+    "Runtime": "129 min",
+    "Genre": "Drama, Mystery, Thriller",
+    "Director": "David Fincher",
+    "Writer": "John Brancato, Michael Ferris",
+    "Actors": "Michael Douglas, Deborah Kara Unger, Sean Penn",
+    "Plot": "After a wealthy banker is given an opportunity to participate in a mysterious game, his life is turned upside down when he becomes unable to distinguish between the game and reality.",
+    "Language": "English, Cantonese, German",
+    "Country": "United States",
+    "Awards": "1 nomination",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BZGVmMDNmYmEtNGQ2Mi00Y2ZhLThhZTYtYjE5YmQzMjZiZGMxXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "7.7/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "76%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "61/100"
+      }
+    ],
+    "Metascore": "61",
+    "imdbRating": "7.7",
+    "imdbVotes": "368,027",
+    "imdbID": "tt0119174",
+    "Type": "movie",
+    "DVD": "26 Apr 2011",
+    "BoxOffice": "$48,323,648",
+    "Production": "PolyGram Filmed Entertainment",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Ender's Game",
+    "Year": "2013",
+    "Rated": "PG-13",
+    "Released": "01 Nov 2013",
+    "Runtime": "114 min",
+    "Genre": "Action, Adventure, Fantasy",
+    "Director": "Gavin Hood",
+    "Writer": "Gavin Hood, Orson Scott Card",
+    "Actors": "Harrison Ford, Asa Butterfield, Hailee Steinfeld",
+    "Plot": "Young Ender Wiggin is recruited by the International Military to lead the fight against the Formics, an insectoid alien race who had previously tried to invade Earth and had inflicted heavy losses on humankind.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "1 win & 6 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMjAzMzI5OTgzMl5BMl5BanBnXkFtZTgwMTU5MTAwMDE@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.6/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "62%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "51/100"
+      }
+    ],
+    "Metascore": "51",
+    "imdbRating": "6.6",
+    "imdbVotes": "229,873",
+    "imdbID": "tt1731141",
+    "Type": "movie",
+    "DVD": "11 Feb 2014",
+    "BoxOffice": "$61,737,191",
+    "Production": "Chartoff Productions, Digital Domain, K/O Paper Products, Odd Lot Entertainment, Taleswapper",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Game Night",
+    "Year": "2018",
+    "Rated": "R",
+    "Released": "23 Feb 2018",
+    "Runtime": "100 min",
+    "Genre": "Action, Comedy, Crime",
+    "Director": "John Francis Daley, Jonathan Goldstein",
+    "Writer": "Mark Perez",
+    "Actors": "Jason Bateman, Rachel McAdams, Kyle Chandler",
+    "Plot": "A group of friends who meet regularly for game nights find themselves entangled in a real-life mystery when the shady brother of one of them is seemingly kidnapped by dangerous gangsters.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "4 wins & 21 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMjI3ODkzNDk5MF5BMl5BanBnXkFtZTgwNTEyNjY2NDM@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.9/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "85%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "66/100"
+      }
+    ],
+    "Metascore": "66",
+    "imdbRating": "6.9",
+    "imdbVotes": "219,273",
+    "imdbID": "tt2704998",
+    "Type": "movie",
+    "DVD": "22 May 2018",
+    "BoxOffice": "$69,179,066",
+    "Production": "New Line Cinema, Aggregate Films, Davis Entertainment",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Molly's Game",
+    "Year": "2017",
+    "Rated": "R",
+    "Released": "05 Jan 2018",
+    "Runtime": "140 min",
+    "Genre": "Biography, Crime, Drama",
+    "Director": "Aaron Sorkin",
+    "Writer": "Aaron Sorkin, Molly Bloom",
+    "Actors": "Jessica Chastain, Idris Elba, Kevin Costner",
+    "Plot": "The true story of Molly Bloom, an Olympic-class skier who ran the world's most exclusive high-stakes poker game and became an FBI target.",
+    "Language": "English",
+    "Country": "China, Canada, United States",
+    "Awards": "Nominated for 1 Oscar. 8 wins & 51 nominations total",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNTkzMzRlYjEtMTQ5Yi00OWY3LWI0NzYtNGQ4ZDkzZTU0M2IwXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "7.4/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "81%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "71/100"
+      }
+    ],
+    "Metascore": "71",
+    "imdbRating": "7.4",
+    "imdbVotes": "155,270",
+    "imdbID": "tt4209788",
+    "Type": "movie",
+    "DVD": "10 Apr 2018",
+    "BoxOffice": "$28,780,744",
+    "Production": "Pascal Pictures, The Mark Gordon Company",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Spy Game",
+    "Year": "2001",
+    "Rated": "R",
+    "Released": "21 Nov 2001",
+    "Runtime": "126 min",
+    "Genre": "Action, Crime, Thriller",
+    "Director": "Tony Scott",
+    "Writer": "Michael Frost Beckner, David Arata",
+    "Actors": "Robert Redford, Brad Pitt, Catherine McCormack",
+    "Plot": "Retiring CIA agent Nathan Muir recalls his training of Tom Bishop while working against agency politics to free him from his Chinese captors.",
+    "Language": "English, German, Arabic, French, Cantonese",
+    "Country": "United States, Germany, Japan, France, United Kingdom",
+    "Awards": "3 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNjNhOGZkNzktMGU3NC00ODk2LWE4NjctZTliN2JjZTQxZmIxXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "7.1/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "66%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "63/100"
+      }
+    ],
+    "Metascore": "63",
+    "imdbRating": "7.1",
+    "imdbVotes": "151,423",
+    "imdbID": "tt0266987",
+    "Type": "movie",
+    "DVD": "09 Apr 2002",
+    "BoxOffice": "$62,362,560",
+    "Production": "Beacon Communications, Zaltman Film, Red Wagon Entertainment",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Gerald's Game",
+    "Year": "2017",
+    "Rated": "TV-MA",
+    "Released": "29 Sep 2017",
+    "Runtime": "103 min",
+    "Genre": "Drama, Horror, Thriller",
+    "Director": "Mike Flanagan",
+    "Writer": "Mike Flanagan, Jeff Howard, Stephen King",
+    "Actors": "Carla Gugino, Bruce Greenwood, Chiara Aurelia",
+    "Plot": "A couple tries to spice up their marriage in a remote lake house. After the husband dies unexpectedly, the wife is left handcuffed to their bed frame and must fight to survive and break free.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "4 wins & 5 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMzg0NGE0N2MtYTg1My00NTBkLWI5NjEtZTgyMDA0MTU4MmIyXkEyXkFqcGdeQXVyMTU2NTcyMg@@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.5/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "91%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "77/100"
+      }
+    ],
+    "Metascore": "77",
+    "imdbRating": "6.5",
+    "imdbVotes": "97,131",
+    "imdbID": "tt3748172",
+    "Type": "movie",
+    "DVD": "29 Sep 2017",
+    "BoxOffice": "N/A",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "The Game Plan",
+    "Year": "2007",
+    "Rated": "PG",
+    "Released": "28 Sep 2007",
+    "Runtime": "110 min",
+    "Genre": "Comedy, Family, Sport",
+    "Director": "Andy Fickman",
+    "Writer": "Nichole Millard, Kathryn Price, Audrey Wells",
+    "Actors": "Dwayne Johnson, Kyra Sedgwick, Madison Pettis",
+    "Plot": "An NFL quarterback living the bachelor lifestyle discovers that he has an 8-year-old daughter from a previous relationship.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "3 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BZjczZDAwZTYtYzQ0Ny00NTAyLWIwNjMtMDYyOThhZGIxODc5XkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.1/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "29%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "44/100"
+      }
+    ],
+    "Metascore": "44",
+    "imdbRating": "6.1",
+    "imdbVotes": "61,485",
+    "imdbID": "tt0492956",
+    "Type": "movie",
+    "DVD": "22 Jan 2008",
+    "BoxOffice": "$90,648,202",
+    "Production": "Buena Vista Pictures",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "I Am Legend",
+    "Year": "2007",
+    "Rated": "PG-13",
+    "Released": "14 Dec 2007",
+    "Runtime": "101 min",
+    "Genre": "Action, Adventure, Drama",
+    "Director": "Francis Lawrence",
+    "Writer": "Mark Protosevich, Akiva Goldsman, Richard Matheson",
+    "Actors": "Will Smith, Alice Braga, Charlie Tahan",
+    "Plot": "Years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "9 wins & 23 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BYTE1ZTBlYzgtNmMyNS00ZTQ2LWE4NjEtZjUxNDJkNTg2MzlhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "7.2/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "68%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "65/100"
+      }
+    ],
+    "Metascore": "65",
+    "imdbRating": "7.2",
+    "imdbVotes": "711,197",
+    "imdbID": "tt0480249",
+    "Type": "movie",
+    "DVD": "18 Mar 2008",
+    "BoxOffice": "$256,393,010",
+    "Production": "Weed Road Pictures, Village Roadshow Pictures, Overbrook Entertainment",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Anchorman: The Legend of Ron Burgundy",
+    "Year": "2004",
+    "Rated": "PG-13",
+    "Released": "09 Jul 2004",
+    "Runtime": "94 min",
+    "Genre": "Comedy",
+    "Director": "Adam McKay",
+    "Writer": "Will Ferrell, Adam McKay",
+    "Actors": "Will Ferrell, Christina Applegate, Steve Carell",
+    "Plot": "Ron Burgundy is San Diego's top-rated newsman in the male-dominated broadcasting of the 1970s, but that's all about to change for Ron and his cronies when an ambitious woman is hired as a new anchor.",
+    "Language": "English, French, Spanish",
+    "Country": "United States",
+    "Awards": "1 win & 13 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ2MzYwMzk5Ml5BMl5BanBnXkFtZTcwOTI4NzUyMw@@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "7.2/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "66%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "63/100"
+      }
+    ],
+    "Metascore": "63",
+    "imdbRating": "7.2",
+    "imdbVotes": "339,563",
+    "imdbID": "tt0357413",
+    "Type": "movie",
+    "DVD": "28 Dec 2004",
+    "BoxOffice": "$85,288,303",
+    "Production": "DreamWorks SKG, Apatow Productions",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "King Arthur: Legend of the Sword",
+    "Year": "2017",
+    "Rated": "PG-13",
+    "Released": "12 May 2017",
+    "Runtime": "126 min",
+    "Genre": "Action, Adventure, Drama",
+    "Director": "Guy Ritchie",
+    "Writer": "Joby Harold, Guy Ritchie, Lionel Wigram",
+    "Actors": "Charlie Hunnam, Astrid Bergès-Frisbey, Jude Law",
+    "Plot": "Robbed of his birthright, Arthur comes up the hard way in the back alleys of the city. But once he pulls the sword from the stone, he is forced to acknowledge his true legacy - whether he likes it or not.",
+    "Language": "English",
+    "Country": "United Kingdom, United States, Australia",
+    "Awards": "10 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMjM3ODY3Njc5Ml5BMl5BanBnXkFtZTgwMjQ5NjM5MTI@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.7/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "31%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "41/100"
+      }
+    ],
+    "Metascore": "41",
+    "imdbRating": "6.7",
+    "imdbVotes": "202,042",
+    "imdbID": "tt1972591",
+    "Type": "movie",
+    "DVD": "08 Aug 2017",
+    "BoxOffice": "$39,175,066",
+    "Production": "Weed Road, Ritchie/Wigram, Safehouse Pictures",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Anchorman 2: The Legend Continues",
+    "Year": "2013",
+    "Rated": "PG-13",
+    "Released": "18 Dec 2013",
+    "Runtime": "119 min",
+    "Genre": "Comedy",
+    "Director": "Adam McKay",
+    "Writer": "Will Ferrell, Adam McKay",
+    "Actors": "Will Ferrell, Christina Applegate, Paul Rudd",
+    "Plot": "With the 1970s behind them, San Diego's top-rated newsman, Ron Burgundy, returns to take New York City's first twenty-four-hour news channel by storm.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "1 win & 23 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMjE5ODk0NjQzNV5BMl5BanBnXkFtZTgwODk4MDA1MDE@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.3/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "75%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "61/100"
+      }
+    ],
+    "Metascore": "61",
+    "imdbRating": "6.3",
+    "imdbVotes": "173,655",
+    "imdbID": "tt1229340",
+    "Type": "movie",
+    "DVD": "01 Apr 2014",
+    "BoxOffice": "$127,352,707",
+    "Production": "Apatow Productions, Gary Sanchez Productions",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "The Legend of Tarzan",
+    "Year": "2016",
+    "Rated": "PG-13",
+    "Released": "01 Jul 2016",
+    "Runtime": "110 min",
+    "Genre": "Action, Adventure, Drama",
+    "Director": "David Yates",
+    "Writer": "Adam Cozad, Craig Brewer, Edgar Rice Burroughs",
+    "Actors": "Alexander Skarsgård, Rory J. Saper, Christian Stevens",
+    "Plot": "Tarzan, having acclimated to life in London, is called back to his former home in the jungle to investigate the activities at a mining encampment.",
+    "Language": "English, Lingala, French",
+    "Country": "United Kingdom, Canada, United States, Australia",
+    "Awards": "2 wins & 4 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMzY3OTI0OTcyMF5BMl5BanBnXkFtZTgwNjkxNTAwOTE@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.2/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "35%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "44/100"
+      }
+    ],
+    "Metascore": "44",
+    "imdbRating": "6.2",
+    "imdbVotes": "169,803",
+    "imdbID": "tt0918940",
+    "Type": "movie",
+    "DVD": "11 Oct 2016",
+    "BoxOffice": "$126,643,061",
+    "Production": "Jerry Weintraub Productions, Beaglepug",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Legend",
+    "Year": "2015",
+    "Rated": "R",
+    "Released": "20 Nov 2015",
+    "Runtime": "132 min",
+    "Genre": "Biography, Crime, Drama",
+    "Director": "Brian Helgeland",
+    "Writer": "Brian Helgeland, John Pearson",
+    "Actors": "Tom Hardy, Emily Browning, Taron Egerton",
+    "Plot": "Identical twin gangsters Ronald and Reginald Kray terrorize London during the 1960s.",
+    "Language": "English",
+    "Country": "United Kingdom, France, United States",
+    "Awards": "6 wins & 12 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMjE0MjkyODQ3NF5BMl5BanBnXkFtZTgwNDM1OTk1NjE@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.9/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "61%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "55/100"
+      }
+    ],
+    "Metascore": "55",
+    "imdbRating": "6.9",
+    "imdbVotes": "165,746",
+    "imdbID": "tt3569230",
+    "Type": "movie",
+    "DVD": "01 Mar 2016",
+    "BoxOffice": "$1,872,994",
+    "Production": "Working Title Films",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "The Legend of Korra",
+    "Year": "2012–2014",
+    "Rated": "TV-PG",
+    "Released": "14 Apr 2012",
+    "Runtime": "23 min",
+    "Genre": "Animation, Action, Adventure",
+    "Director": "N/A",
+    "Writer": "Michael Dante DiMartino, Bryan Konietzko",
+    "Actors": "Janet Varney, P.J. Byrne, David Faustino",
+    "Plot": "Avatar Korra fights to keep Republic City safe from the evil forces of both the physical and spiritual worlds.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "27 wins & 41 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BYTZhNGY2ZDAtYWYxYy00YWNlLWI3NDUtNjBiM2NkMGVmODIxXkEyXkFqcGdeQXVyODUwNjEzMzg@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "8.4/10"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "8.4",
+    "imdbVotes": "110,652",
+    "imdbID": "tt1695360",
+    "Type": "series",
+    "totalSeasons": "4",
+    "Response": "True"
+  },
+  {
+    "Title": "The Legend of Zorro",
+    "Year": "2005",
+    "Rated": "PG",
+    "Released": "28 Oct 2005",
+    "Runtime": "129 min",
+    "Genre": "Action, Adventure, Romance",
+    "Director": "Martin Campbell",
+    "Writer": "Roberto Orci, Alex Kurtzman, Ted Elliott",
+    "Actors": "Antonio Banderas, Catherine Zeta-Jones, Rufus Sewell",
+    "Plot": "Despite trying to keep his swashbuckling to a minimum, a threat to California's pending statehood causes the adventure-loving Don Alejandro de la Vega and his wife, Elena, to take action.",
+    "Language": "English, Spanish",
+    "Country": "United States, Mexico",
+    "Awards": "2 wins & 3 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BZTE1MjVmYTYtOGFjZi00NGM3LTg0ZTEtNWI4MGI3NmM1MTVhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.0/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "26%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "47/100"
+      }
+    ],
+    "Metascore": "47",
+    "imdbRating": "6.0",
+    "imdbVotes": "96,533",
+    "imdbID": "tt0386140",
+    "Type": "movie",
+    "DVD": "31 Jan 2006",
+    "BoxOffice": "$46,464,023",
+    "Production": "Tornado Productions Inc., Spyglass Entertainment, Columbia Pictures Corporation, Amblin Entertainment",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Legend of the Guardians: The Owls of Ga'Hoole",
+    "Year": "2010",
+    "Rated": "PG",
+    "Released": "24 Sep 2010",
+    "Runtime": "97 min",
+    "Genre": "Animation, Action, Adventure",
+    "Director": "Zack Snyder",
+    "Writer": "John Orloff, Emil Stern, Kathryn Lasky",
+    "Actors": "Jim Sturgess, Hugo Weaving, David Wenham",
+    "Plot": "When a young owl is abducted by an evil Owl army, he must escape with new-found friends and seek the legendary Guardians to stop the menace.",
+    "Language": "English",
+    "Country": "United States, Australia",
+    "Awards": "4 wins & 23 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMjE0NjA5OTA4N15BMl5BanBnXkFtZTcwODA3MTA3Mw@@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.9/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "52%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "53/100"
+      }
+    ],
+    "Metascore": "53",
+    "imdbRating": "6.9",
+    "imdbVotes": "80,725",
+    "imdbID": "tt1219342",
+    "Type": "movie",
+    "DVD": "17 Dec 2010",
+    "BoxOffice": "$55,675,313",
+    "Production": "Village Roadshow Entertainment, Animal Logic",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Stop! Or My Mom Will Shoot",
+    "Year": "1992",
+    "Rated": "PG-13",
+    "Released": "21 Feb 1992",
+    "Runtime": "87 min",
+    "Genre": "Action, Comedy",
+    "Director": "Roger Spottiswoode",
+    "Writer": "Blake Snyder, William Osborne, William Davies",
+    "Actors": "Sylvester Stallone, Estelle Getty, JoBeth Williams",
+    "Plot": "A tough police sergeant's overbearing mother comes to visit him and begins to meddle in his life and career.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "3 wins & 1 nomination",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNzZiZmUzMDAtN2RmZS00ZDkzLWE3OGEtNzRhYTY0NTVkNGRkXkEyXkFqcGdeQXVyNDc2NjEyMw@@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "4.3/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "11%"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "4.3",
+    "imdbVotes": "40,881",
+    "imdbID": "tt0105477",
+    "Type": "movie",
+    "DVD": "26 Dec 2006",
+    "BoxOffice": "$28,411,210",
+    "Production": "Universal Pictures, Northern Lights Entertainment",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Don't Tell Mom the Babysitter's Dead",
+    "Year": "1991",
+    "Rated": "PG-13",
+    "Released": "07 Jun 1991",
+    "Runtime": "102 min",
+    "Genre": "Comedy",
+    "Director": "Stephen Herek",
+    "Writer": "Neil Landau, Tara Ison",
+    "Actors": "Christina Applegate, Joanna Cassidy, John Getz",
+    "Plot": "Five siblings are left alone all summer when their mom leaves town and the evil babysitter bites the dust.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "4 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BY2RhNWNlMzctMjQzNi00M2M5LTk5MjYtMWU0MjQ0Nzk0MDQ5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.3/10"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "35/100"
+      }
+    ],
+    "Metascore": "35",
+    "imdbRating": "6.3",
+    "imdbVotes": "31,400",
+    "imdbID": "tt0101757",
+    "Type": "movie",
+    "DVD": "N/A",
+    "BoxOffice": "$25,196,249",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Mom",
+    "Year": "2013–2021",
+    "Rated": "TV-14",
+    "Released": "23 Sep 2013",
+    "Runtime": "30 min",
+    "Genre": "Comedy, Drama, Romance",
+    "Director": "N/A",
+    "Writer": "Gemma Baker, Eddie Gorodetsky, Chuck Lorre",
+    "Actors": "Allison Janney, Anna Faris, Mimi Kennedy",
+    "Plot": "A newly sober single mom tries to pull her life together in Napa Valley while dealing with her wayward mother.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "Won 2 Primetime Emmys. 12 wins & 41 nominations total",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNWI0ZjU4MzUtMTdmMy00OWVkLThhNWItNzQ4NDEyNTBiY2ZjXkEyXkFqcGdeQXVyNjg4NzAyOTA@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "7.2/10"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "7.2",
+    "imdbVotes": "30,680",
+    "imdbID": "tt2660806",
+    "Type": "series",
+    "totalSeasons": "8",
+    "Response": "True"
+  },
+  {
+    "Title": "Serial Mom",
+    "Year": "1994",
+    "Rated": "R",
+    "Released": "13 Apr 1994",
+    "Runtime": "95 min",
+    "Genre": "Comedy, Crime, Thriller",
+    "Director": "John Waters",
+    "Writer": "John Waters",
+    "Actors": "Kathleen Turner, Sam Waterston, Ricki Lake",
+    "Plot": "She's the perfect all-American parent: a great cook and homemaker, a devoted recycler, and a woman who'll literally kill to keep her children happy.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "1 nomination",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BYjM0N2ViMzUtMTc1OS00YmEzLWE2NWYtNjU5NTY4NjRlOTI0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.8/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "64%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "64/100"
+      }
+    ],
+    "Metascore": "64",
+    "imdbRating": "6.8",
+    "imdbVotes": "28,377",
+    "imdbID": "tt0111127",
+    "Type": "movie",
+    "DVD": "14 Apr 2009",
+    "BoxOffice": "$7,820,688",
+    "Production": "Polar Entertainment Corporation",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Mr. Mom",
+    "Year": "1983",
+    "Rated": "PG",
+    "Released": "19 Aug 1983",
+    "Runtime": "91 min",
+    "Genre": "Comedy, Drama",
+    "Director": "Stan Dragoti",
+    "Writer": "John Hughes",
+    "Actors": "Michael Keaton, Teri Garr, Frederick Koehler",
+    "Plot": "After he's laid off, a husband switches roles with his wife. She returns to the workforce, and he becomes a stay-at-home dad, a job he has no clue how to do.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "2 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMTUyMzg0MTkwNV5BMl5BanBnXkFtZTgwOTA2NzEyMDE@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.6/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "78%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "50/100"
+      }
+    ],
+    "Metascore": "50",
+    "imdbRating": "6.6",
+    "imdbVotes": "22,505",
+    "imdbID": "tt0085970",
+    "Type": "movie",
+    "DVD": "25 Apr 2000",
+    "BoxOffice": "$64,783,827",
+    "Production": "Sherwood Productions",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Mom and Dad",
+    "Year": "2017",
+    "Rated": "R",
+    "Released": "09 Mar 2018",
+    "Runtime": "86 min",
+    "Genre": "Comedy, Horror, Thriller",
+    "Director": "Brian Taylor",
+    "Writer": "Brian Taylor",
+    "Actors": "Nicolas Cage, Selma Blair, Anne Winters",
+    "Plot": "A teenage girl and her younger brother must survive a wild 24 hours during which a mass hysteria of unknown origin causes parents to turn violently on their own kids.",
+    "Language": "English, Chinese",
+    "Country": "United States, United Kingdom",
+    "Awards": "1 win & 2 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BZGRkM2Q3MmEtNzIyZC00NDdmLWFiMjEtMjk2NjNlODYwOWVlXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "5.5/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "75%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "59/100"
+      }
+    ],
+    "Metascore": "59",
+    "imdbRating": "5.5",
+    "imdbVotes": "22,087",
+    "imdbID": "tt5462326",
+    "Type": "movie",
+    "DVD": "19 Jan 2018",
+    "BoxOffice": "N/A",
+    "Production": "Armory Films",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Mom",
+    "Year": "2017",
+    "Rated": "TV-MA",
+    "Released": "07 Jul 2017",
+    "Runtime": "146 min",
+    "Genre": "Crime, Drama, Thriller",
+    "Director": "Ravi Udyawar",
+    "Writer": "Girish Kohli, Ravi Udyawar, Kona Venkat",
+    "Actors": "Sridevi, Sajal Ali, Akshaye Khanna",
+    "Plot": "After her daughter is sexually assaulted at a party, a furious mother sets out to destroy the lives of the four perpetrators who walked away free.",
+    "Language": "Hindi",
+    "Country": "India",
+    "Awards": "5 wins & 12 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BOTc0YTJhZDktMGViYi00NjIwLThiMDEtY2E4NWFkYWQxNjQ5XkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "7.3/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "67%"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "7.3",
+    "imdbVotes": "9,840",
+    "imdbID": "tt5690142",
+    "Type": "movie",
+    "DVD": "21 Aug 2018",
+    "BoxOffice": "N/A",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Fun Mom Dinner",
+    "Year": "2017",
+    "Rated": "R",
+    "Released": "04 Aug 2017",
+    "Runtime": "81 min",
+    "Genre": "Comedy",
+    "Director": "Alethea Jones",
+    "Writer": "Julie Rudd",
+    "Actors": "Katie Aselton, Toni Collette, Bridget Everett",
+    "Plot": "Four moms whose only common ground is their kids' preschool class, decide to get together for a harmless \"fun mom dinner.\"",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "1 win & 1 nomination",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BZWRhOTcwMGUtYzAwYi00Y2E2LTgyZTQtZjdjM2Y4YTE4ZTZiXkEyXkFqcGdeQXVyMzQwMTY2Nzk@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "5.3/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "32%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "46/100"
+      }
+    ],
+    "Metascore": "46",
+    "imdbRating": "5.3",
+    "imdbVotes": "5,291",
+    "imdbID": "tt5829040",
+    "Type": "movie",
+    "DVD": "04 Aug 2017",
+    "BoxOffice": "N/A",
+    "Production": "June Pictures, Gettin&#39; Rad, Voltage Pictures",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Hi, Mom!",
+    "Year": "1970",
+    "Rated": "R",
+    "Released": "N/A",
+    "Runtime": "87 min",
+    "Genre": "Comedy, Drama",
+    "Director": "Brian De Palma",
+    "Writer": "Brian De Palma, Charles Hirsch",
+    "Actors": "Robert De Niro, Allen Garfield, Lara Parker",
+    "Plot": "A Vietnam vet moves into an apartment and peers through other people's windows across the street, meets one of the women, and discovers Black theater.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "N/A",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNDYxMmM3NmQtZjViMy00Mjc0LWIzOTYtMjkyMjFlNjBiNGI5XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.2/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "73%"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "6.2",
+    "imdbVotes": "4,635",
+    "imdbID": "tt0065836",
+    "Type": "movie",
+    "DVD": "07 Dec 2004",
+    "BoxOffice": "N/A",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Teen Mom",
+    "Year": "2009–",
+    "Rated": "TV-PG",
+    "Released": "01 Dec 2009",
+    "Runtime": "60 min",
+    "Genre": "Reality-TV",
+    "Director": "N/A",
+    "Writer": "Lauren Dolgen",
+    "Actors": "Amber Portwood, Catelynn Lowell, Maci Bookout",
+    "Plot": "A documentary series that follows four of 16 &amp; Pregnant's first season stars, Farrah, Maci, Amber and Catelynn as they face the challenges of motherhood.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "1 nomination",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BYTlhMDgzOTEtMzJmOC00MDg1LWE2NjEtODMwYjc4MjY2NDVkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "3.6/10"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "3.6",
+    "imdbVotes": "4,602",
+    "imdbID": "tt1566154",
+    "Type": "series",
+    "totalSeasons": "9",
+    "Response": "True"
+  },
+  {
+    "Title": "The Fast and the Furious",
+    "Year": "2001",
+    "Rated": "PG-13",
+    "Released": "22 Jun 2001",
+    "Runtime": "106 min",
+    "Genre": "Action, Crime, Thriller",
+    "Director": "Rob Cohen",
+    "Writer": "Ken Li, Gary Scott Thompson, Erik Bergquist",
+    "Actors": "Vin Diesel, Paul Walker, Michelle Rodriguez",
+    "Plot": "Los Angeles police officer Brian O'Conner must decide where his loyalty really lies when he becomes enamored with the street racing world he has been sent undercover to destroy.",
+    "Language": "English, Spanish",
+    "Country": "United States, Germany",
+    "Awards": "11 wins & 18 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNzlkNzVjMDMtOTdhZC00MGE1LTkxODctMzFmMjkwZmMxZjFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.8/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "54%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "58/100"
+      }
+    ],
+    "Metascore": "58",
+    "imdbRating": "6.8",
+    "imdbVotes": "366,093",
+    "imdbID": "tt0232500",
+    "Type": "movie",
+    "DVD": "03 Jun 2003",
+    "BoxOffice": "$144,533,925",
+    "Production": "Original Film, Neal H. Moritz Productions, Universal Pictures",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "The Fast and the Furious: Tokyo Drift",
+    "Year": "2006",
+    "Rated": "PG-13",
+    "Released": "16 Jun 2006",
+    "Runtime": "104 min",
+    "Genre": "Action, Crime, Thriller",
+    "Director": "Justin Lin",
+    "Writer": "Chris Morgan",
+    "Actors": "Lucas Black, Zachery Ty Bryan, Shad Moss",
+    "Plot": "A teenager becomes a major competitor in the world of drift racing after moving in with his father in Tokyo to avoid a jail sentence in America.",
+    "Language": "English, Japanese, Portuguese",
+    "Country": "United States, Germany, Japan",
+    "Awards": "1 win & 4 nominations",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ2NTMxODEyNV5BMl5BanBnXkFtZTcwMDgxMjA0MQ@@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.0/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "38%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "45/100"
+      }
+    ],
+    "Metascore": "45",
+    "imdbRating": "6.0",
+    "imdbVotes": "255,817",
+    "imdbID": "tt0463985",
+    "Type": "movie",
+    "DVD": "26 Sep 2006",
+    "BoxOffice": "$62,514,415",
+    "Production": "Universal Pictures, Original Film",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Fast and Furry-ous",
+    "Year": "1949",
+    "Rated": "Approved",
+    "Released": "17 Sep 1949",
+    "Runtime": "7 min",
+    "Genre": "Family, Animation, Short",
+    "Director": "Chuck Jones",
+    "Writer": "Michael Maltese",
+    "Actors": "Mel Blanc, Paul Julian",
+    "Plot": "Wile E. Coyote makes 11 disastrous attempts to catch the Road Runner.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "N/A",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNDM4YzgxMzYtNjE1NS00NWY2LTgyYWUtZmY2MjMxNWIzNjA0XkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "7.9/10"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "7.9",
+    "imdbVotes": "2,066",
+    "imdbID": "tt0041349",
+    "Type": "movie",
+    "DVD": "N/A",
+    "BoxOffice": "$14,753",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Tom and Jerry: The Fast and the Furry",
+    "Year": "2005",
+    "Rated": "G",
+    "Released": "11 Oct 2005",
+    "Runtime": "75 min",
+    "Genre": "Animation, Action, Adventure, Comedy, Family, Sport",
+    "Director": "Bill Kopp, Joe Murray",
+    "Writer": "Joseph Barbera (based on a story by), Bill Kopp (screenplay), William Hanna (based upon characters created by), Joseph Barbera (based upon characters created by), Kent Osborne",
+    "Actors": "Charlie Adler, Jeff Bennett, John DiMaggio, Jess Harnell",
+    "Plot": "After wrecking their house during a chase, Tom and Jerry enter a race around the world where the winner gets a new fancy house.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "N/A",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMGU4YTZkODEtODIyNi00ZWJkLWE4M2MtMjQxMWNhYmNmYjU2XkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.7/10"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "6.7",
+    "imdbVotes": "2,040",
+    "imdbID": "tt0487176",
+    "Type": "movie",
+    "DVD": "07 Feb 2006",
+    "BoxOffice": "N/A",
+    "Production": "Turner Entertainment",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "The Fast and the Furious",
+    "Year": "1954",
+    "Rated": "Approved",
+    "Released": "01 Nov 1954",
+    "Runtime": "73 min",
+    "Genre": "Crime, Drama, Mystery",
+    "Director": "John Ireland, Edward Sampson",
+    "Writer": "Jerome Odlum, Jean Howell, Roger Corman",
+    "Actors": "John Ireland, Dorothy Malone, Bruce Carlisle",
+    "Plot": "A trucker framed for murder breaks out of jail, takes a young woman hostage, and enters her sports car in cross-border road race hoping to get to Mexico before the police catch him.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "N/A",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BZmI3YmNhNzktOTMzNC00ODg4LTk3YmQtMGI2ZGQzNzcwZmRkXkEyXkFqcGdeQXVyMTQ2MjQyNDc@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "5.3/10"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "5.3",
+    "imdbVotes": "1,293",
+    "imdbID": "tt0046969",
+    "Type": "movie",
+    "DVD": "14 Jun 2011",
+    "BoxOffice": "N/A",
+    "Production": "Palo Alto Productions",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Fast and Furious",
+    "Year": "1939",
+    "Rated": "Passed",
+    "Released": "06 Oct 1939",
+    "Runtime": "73 min",
+    "Genre": "Comedy, Crime, Mystery",
+    "Director": "Busby Berkeley",
+    "Writer": "Harry Kurnitz",
+    "Actors": "Franchot Tone, Ann Sothern, Ruth Hussey",
+    "Plot": "Rare book dealers Joel and Garda take a summertime jaunt to the seashore where he becomes involved in a beauty pageant as investor and judge much to her chagrin.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "N/A",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMjAyNTQ1NjA3Ml5BMl5BanBnXkFtZTgwOTIyNjIxMzE@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.1/10"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "6.1",
+    "imdbVotes": "782",
+    "imdbID": "tt0031298",
+    "Type": "movie",
+    "DVD": "N/A",
+    "BoxOffice": "N/A",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "The Fast and the Fierce",
+    "Year": "2017",
+    "Rated": "Not Rated",
+    "Released": "01 Apr 2017",
+    "Runtime": "86 min",
+    "Genre": "Action, Adventure, Crime",
+    "Director": "Ron Thornton",
+    "Writer": "Jacob Cooney, Bill Hanstock, Scotty Mullen",
+    "Actors": "Adrian Paul, Dominique Swain, Moose Ali Khan",
+    "Plot": "When terrorists plant a bomb on a commercial flight, the passengers aboard the plane must fight to keep the plane in the air and all the passengers alive: the bomb is rigged to detonate whenever the plane dips below 800 feet.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "N/A",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BODEzMTg0NGUtNDE1YS00NDg5LWE5NjctNjNkNmE3YmM0NTgzXkEyXkFqcGdeQXVyMDg1OTIzMg@@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "2.4/10"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "2.4",
+    "imdbVotes": "645",
+    "imdbID": "tt6580394",
+    "Type": "movie",
+    "DVD": "04 Apr 2017",
+    "BoxOffice": "N/A",
+    "Production": "The Asylum",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Fast and Loose",
+    "Year": "1939",
+    "Rated": "Passed",
+    "Released": "17 Feb 1939",
+    "Runtime": "80 min",
+    "Genre": "Comedy, Mystery, Crime",
+    "Director": "Edwin L. Marin",
+    "Writer": "Harry Kurnitz",
+    "Actors": "Robert Montgomery, Rosalind Russell, Reginald Owen",
+    "Plot": "Rare booksellers Joel and Garda Sloane are engaged to find who is stealing rare books from a private library.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "N/A",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNmRjN2NmYTktZWY2MS00YmMyLWJlZWMtYjAyZTA0OGY2ZTAzXkEyXkFqcGdeQXVyMTIxOTk5MzY@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.3/10"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "6.3",
+    "imdbVotes": "592",
+    "imdbID": "tt0031299",
+    "Type": "movie",
+    "DVD": "N/A",
+    "BoxOffice": "N/A",
+    "Production": "Metro-Goldwyn-Mayer",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Hard, Fast and Beautiful!",
+    "Year": "1951",
+    "Rated": "Passed",
+    "Released": "07 Feb 1952",
+    "Runtime": "78 min",
+    "Genre": "Drama, Romance, Sport",
+    "Director": "Ida Lupino",
+    "Writer": "Martha Wilkerson, John R. Tunis",
+    "Actors": "Claire Trevor, Sally Forrest, Carleton G. Young",
+    "Plot": "Tennis prodigy Florence Farley is torn between romance and her mother's ambitions.",
+    "Language": "English",
+    "Country": "United States",
+    "Awards": "N/A",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BZTM4YWQ1M2QtZjQ5MC00OGM1LTk4YzgtNTc3OGMyODNjYWQxXkEyXkFqcGdeQXVyMTQ3Njg3MQ@@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.2/10"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "6.2",
+    "imdbVotes": "556",
+    "imdbID": "tt0043619",
+    "Type": "movie",
+    "DVD": "01 Dec 2009",
+    "BoxOffice": "N/A",
+    "Production": "The Filmakers Group",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Fast and the Furious: Tokyo Drift - The Japanese Way",
+    "Year": "2006",
+    "Rated": "N/A",
+    "Released": "26 Sep 2006",
+    "Runtime": "10 min",
+    "Genre": "Short, Action",
+    "Director": "Jim Bacon",
+    "Writer": "N/A",
+    "Actors": "Justin Lin, Brian Tee, Lucas Black, Sanja Milkovic Hays",
+    "Plot": "Related are the difficulties and surprising ease that was found working with the Japanese crew. The Japanese citizens and their modes of dress were also educating to all.",
+    "Language": "English",
+    "Country": "USA",
+    "Awards": "N/A",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ2NTMxODEyNV5BMl5BanBnXkFtZTcwMDgxMjA0MQ@@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.6/10"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "6.6",
+    "imdbVotes": "553",
+    "imdbID": "tt0878117",
+    "Type": "movie",
+    "DVD": "N/A",
+    "BoxOffice": "N/A",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Tomer Ve-Hasrutim",
+    "Year": "2001",
+    "Rated": "N/A",
+    "Released": "N/A",
+    "Runtime": "57 min",
+    "Genre": "Documentary",
+    "Director": "Tomer Heymann",
+    "Writer": "Tomer Heymann",
+    "Actors": "Idan Alterman, Aviv Geffen, Tomer Heymann",
+    "Plot": "Documentary about the relationship between the mild-mannered filmmaker Tomer and a gang of tough, nihilistic estate-boys whom he is counseling and helping to put on a play.",
+    "Language": "Hebrew",
+    "Country": "Israel",
+    "Awards": "5 wins",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMjA0OTYwNDA1Nl5BMl5BanBnXkFtZTcwMzUzODQxNA@@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "7.1/10"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "7.1",
+    "imdbVotes": "50",
+    "imdbID": "tt0356135",
+    "Type": "movie",
+    "DVD": "N/A",
+    "BoxOffice": "N/A",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+  },
+  {
+    "Title": "Tomer en Elias",
+    "Year": "2016",
+    "Rated": "N/A",
+    "Released": "08 Jul 2016",
+    "Runtime": "18 min",
+    "Genre": "Short, Drama",
+    "Director": "Cleo Julia Mullis",
+    "Writer": "Cleo Julia Mullis, Maartje Wortel (book)",
+    "Actors": "Noah de Kruijf, Mingus Claessen, Catalijn Willemsen, Thomas Bijsterbosch",
+    "Plot": "Coming of age film about Sven, a boy who feels trapped in his own family which only consists of duos. His brother Alex in return tries to keep Sven by his side through the same methods his parents use.",
+    "Language": "Dutch",
+    "Country": "Netherlands",
+    "Awards": "N/A",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BYmQyZmJhOGYtODM1YS00MmM0LTk5MGUtNWE2ZDg2MzE1MzQ2XkEyXkFqcGdeQXVyNjc3NTYxNDI@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "7.1/10"
+      }
+    ],
+    "Metascore": "N/A",
+    "imdbRating": "7.1",
+    "imdbVotes": "44",
+    "imdbID": "tt5838534",
+    "Type": "movie",
+    "DVD": "N/A",
+    "BoxOffice": "N/A",
+    "Production": "N/A",
+    "Website": "N/A",
+    "Response": "True"
+  }
+]

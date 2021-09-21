@@ -283,18 +283,6 @@
   visibility: hidden;
   transition: var(--transition-300);
 
-  &:hover {
-    background-color: var(--color-main);
-    .media__controller--title {
-      a {
-        color: var(--color-leftnav);
-      }
-    }
-    .icon {
-      color: var(--color-leftnav);
-    }
-  }
-
   &--wrapper {
     display: flex;
     align-items: center;
@@ -315,6 +303,7 @@
     }
 
     .title--anchor {
+      transition: var(--transition-300);
       color: var(--color-main);
       text-decoration: none;
     }

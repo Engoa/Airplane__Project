@@ -1,7 +1,7 @@
 (() => {
   const drawWeatherHeader = () => {
     if (!WeatherService.data) return;
-    let { timezone, temp, weather, current } = WeatherService.data;
+    let { timezone, current } = WeatherService.data;
 
     // If / exists, add a space to the name of the country
     if (timezone.includes('/')) {
@@ -9,9 +9,7 @@
     }
 
     // Header section
-    let date = unix(current.dt, 'DD/MM/YY');
     $('.weather__header h1').html(timezone);
-    // $('.weather__header p').html(date);
     fitty('.weather__header h1', { multiLine: true, maxSize: 100, minSize: 80 });
 
     drawMainCardHeader();

@@ -1,32 +1,65 @@
-const MOVIE_SEARCH_API = (search) =>
-  `http://www.omdbapi.com/?apikey=48004f8a&s=${search}&page=1`;
-const MOVIE_API = (title) => `http://www.omdbapi.com/?apikey=48004f8a&t=${title}&page=1`;
+const FUSE_OPTIONS = {
+  // isCaseSensitive: false,
+  // includeScore: false,
+  // shouldSort: true,
+  includeMatches: true,
+  // findAllMatches: false,
+  // minMatchCharLength: 3,
+  // location: 0,
+  threshold: 0.3,
+  // distance: 100,
+  // useExtendedSearch: false,
+  // ignoreLocation: false,
+  // ignoreFieldNorm: false,
+  keys: ['Title'],
+};
+
 const MovieService = {
-  //DATA MEMBERS
+  // DATA MEMBERS
+  $fuse: null,
   movie: null,
   results: [],
   selectedID: null,
-  
 
-  // METHODS
-  async searchAllMovies(search) {
-    this.results = await fetch(MOVIE_SEARCH_API(search)).then((res) => res.json());
-
-    document.dispatchEvent(new CustomEvent('movie-searched'));
+  // GETTERS
+  get selectedMovie() {
+    return this.getMovieById(this.selectedID);
   },
 
-  async fetchByTitle(title) {
-    return await fetch(MOVIE_API(title)).then((res) => res.json());
+  // METHODS
+  getMovieById(id) {
+    return this.results.find((movie) => movie.imdbID === id);
   },
 
   async select(imdbId) {
     this.selectedID = imdbId;
     this.movie = await this.fetchByTitle(this.selectedID);
+
     document.dispatchEvent(new CustomEvent('movie-selected'));
+  },
+
+  async fetchAllMovies() {
+    this.results = await fetch('../assets/jsons/movies.json').then((res) => res.json());
+    this.$fuse = new Fuse(this.results, FUSE_OPTIONS);
+
+    document.dispatchEvent(new CustomEvent('movie-search-done'));
   },
 };
 
 (async () => {
-  await MovieService.searchAllMovies('game');
+  await MovieService.fetchAllMovies();
   console.log(MovieService.results);
 })();
+
+// GET ALL MOVIES BY ID
+
+// (async () => {
+//   await MovieService.fetchAllMovies();
+//   const allMovies = [];
+
+//   for (const result of MovieService.results) {
+//     allMovies.push(MovieService.fetchByTitle(result.imdbID));
+//   }
+
+//   console.log(allMovies);
+// })();
