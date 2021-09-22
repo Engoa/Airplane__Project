@@ -87,7 +87,6 @@
 
   &-cards {
     transition: var(--transition-300);
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,8 +105,8 @@
       position: relative;
       transition: var(--transition-300);
       height: 190px;
-      overflow: hidden;
       border-radius: 1rem;
+      overflow: hidden;
 
       &::before {
         content: '';
@@ -119,6 +118,7 @@
         transition: var(--transition-300);
       }
 
+      &.selected-movie,
       &:hover {
         &::before {
           width: 55%;
@@ -129,6 +129,7 @@
         .movie-cards-card-title {
           opacity: 1;
         }
+        transform: scale(1.05);
       }
 
       &-right {
@@ -194,7 +195,8 @@
   height: 87%;
   width: 750px;
   max-height: 750px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   z-index: 10;
   border-radius: 1rem;
 
@@ -202,14 +204,10 @@
 
   &:hover {
     .movie__service__data {
-      background-color: var(--color-main-movie);
-      color: var(--color-leftnav);
       h5 {
-        color: var(--color-leftnav);
-
         &::before {
-          background-color: var(--color-leftnav);
           width: 100%;
+          transform-origin: 0 0;
         }
       }
     }
@@ -226,17 +224,30 @@
   &__top {
     display: flex;
     align-items: flex-start;
-    height: 45%;
     position: relative;
 
     &--image {
       width: 100%;
       position: relative;
-      img {
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .poster-image {
+        object-fit: contain;
+        z-index: 5;
+        padding: 1rem 0;
+      }
+
+      .blurred-image {
+        object-fit: cover;
+        object-position: center;
         width: 100%;
         height: 100%;
-        object-fit: content;
-        pointer-events: none;
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        filter: blur(5px);
       }
       &::before {
         content: '';
@@ -254,11 +265,13 @@
       position: absolute;
       bottom: 2.5rem;
       left: 2rem;
+      z-index: 5;
 
       &-title {
         max-width: 500px;
+
         h3 {
-          color: var(--color-white);
+          color: var(--color-red);
           text-transform: uppercase;
           font-size: 2.5rem;
           font-weight: bold;
@@ -296,6 +309,7 @@
       right: 2rem;
       cursor: pointer;
       transition: var(--transition-300);
+      z-index: 5;
 
       .genre-text {
         transition: var(--transition-300);
@@ -318,6 +332,7 @@
   }
   &__data {
     padding: 1.5rem;
+    padding-bottom: 5rem;
     width: 100%;
     color: var(--color-main);
     transition: var(--transition-300);
@@ -342,8 +357,7 @@
         width: 0%;
         height: 1px;
         bottom: -0.2rem;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
         transition: var(--transition-300);
       }
     }
