@@ -191,20 +191,29 @@
   top: 54%;
   left: 35%;
   transform: translate(-50%, -50%);
-  height: 86%;
+  height: 87%;
   width: 850px;
-  overflow: hidden;
+  overflow: scroll;
   z-index: 10;
 
-  display: none;
-  
+  display: none; //For navigating from home to movies
+
+  &::-webkit-scrollbar {
+    width: 0.01px;
+  }
+  &::-webkit-scrollbar-track,
+  &::-webkit-scrollbar-thumb,
+  &::-webkit-scrollbar-thumb:hover {
+    opacity: 0;
+  }
+
   &:hover {
     .movie__service__data {
-      background-color: var(--color-main);
+      background-color: var(--color-main-movie);
       color: var(--color-leftnav);
       h5 {
         color: var(--color-leftnav);
-        
+
         &::before {
           background-color: var(--color-leftnav);
           width: 100%;
@@ -313,13 +322,13 @@
   &__data {
     padding: 1.5rem;
     width: 100%;
-    height: 100%;
     color: var(--color-main);
     transition: var(--transition-300);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    background-color: var(--color-leftnav);
 
     h5 {
       font-size: 1.5rem;

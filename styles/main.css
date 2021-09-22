@@ -258,6 +258,7 @@
 .bglight {
   --color-white: rgb(255, 255, 255);
   --color-main: rgba(9, 9, 32, 0.918);
+  --color-main-movie: rgba(9, 9, 32, 0.918);
   --color-leftnav: rgba(255, 255, 255, 0.932);
   --color-lefticons: rgba(9, 9, 32, 0.918);
   --color-topicons: rgba(9, 9, 32, 0.918);
@@ -280,6 +281,7 @@
 .bgdark {
   --color-white: rgb(255, 255, 255);
   --color-main: rgba(255, 255, 255, 0.932);
+  --color-main-movie: rgba(255, 255, 255, 0.74);
   --color-leftnav: rgb(9, 9, 32);
   --color-lefticons: rgba(9, 9, 32, 0.918);
   --color-topicons: rgba(9, 9, 32, 0.918);
@@ -1896,15 +1898,23 @@
   left: 35%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 86%;
+  height: 87%;
   width: 850px;
-  overflow: hidden;
+  overflow: scroll;
   z-index: 10;
   display: none;
 }
 
+.movie__service::-webkit-scrollbar {
+  width: 0.01px;
+}
+
+.movie__service::-webkit-scrollbar-track, .movie__service::-webkit-scrollbar-thumb, .movie__service::-webkit-scrollbar-thumb:hover {
+  opacity: 0;
+}
+
 .movie__service:hover .movie__service__data {
-  background-color: var(--color-main);
+  background-color: var(--color-main-movie);
   color: var(--color-leftnav);
 }
 
@@ -2040,7 +2050,6 @@
 .movie__service__data {
   padding: 1.5rem;
   width: 100%;
-  height: 100%;
   color: var(--color-main);
   -webkit-transition: var(--transition-300);
   transition: var(--transition-300);
@@ -2055,6 +2064,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 0.5rem;
+  background-color: var(--color-leftnav);
 }
 
 .movie__service__data h5 {
