@@ -52,5 +52,4 @@ const MovieService = {
 
 (async () => {
   await MovieService.fetchAllMovies();
-  console.log(MovieService.results)
 })();

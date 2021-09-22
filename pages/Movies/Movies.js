@@ -23,7 +23,7 @@
     const movieList = searchResults ?? MovieService.results;
     movieList.forEach((movie, index) => {
       movieSearchData.innerHTML += `
-      <div class="whitecard whitecard--small movie-cards-card" data-id="${movie.imdbID}">
+      <div class="whitecard whitecard--small movie-cards-card" data-id="${movie.imdbID}" >
         <div class="movie-cards-card-right">
           <div class="movie-cards-card-image">
             <img src="${movie.Poster}" alt="Movie Image" />
@@ -62,8 +62,8 @@
   };
 
   const drawMainMovieCard = () => {
+    if (!MovieService.selectedMovie) return;
     $('.render-movie-service').html(`
-<div class="movie__service__wrapper">
   <div class="movie__service__top">
     <div class="movie__service__top--image">
       <img src="${MovieService.selectedMovie.Poster}" alt="Movie Image" />
@@ -82,11 +82,8 @@
       <span class="genre-text">${MovieService.selectedMovie.Genre}</span>
     </div>
   </div>
-
   <div class="movie__service__data">
   <div class="movie__service__data-top">
- 
-  
     <div class="movie__service__data-left">
       <div class="movie__service__data-left-actors">
         <h5>Actors</h5>
@@ -137,7 +134,6 @@
        <span>${MovieService.selectedMovie.Metascore} / 100</span>
       </div>
   </div>
-</div>
 
           `);
     //Fitty for the main movie card tittle

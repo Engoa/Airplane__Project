@@ -192,20 +192,13 @@
   left: 35%;
   transform: translate(-50%, -50%);
   height: 87%;
-  width: 850px;
+  width: 750px;
+  max-height: 750px;
   overflow: scroll;
   z-index: 10;
+  border-radius: 1rem;
 
   display: none; //For navigating from home to movies
-
-  &::-webkit-scrollbar {
-    width: 0.01px;
-  }
-  &::-webkit-scrollbar-track,
-  &::-webkit-scrollbar-thumb,
-  &::-webkit-scrollbar-thumb:hover {
-    opacity: 0;
-  }
 
   &:hover {
     .movie__service__data {
@@ -220,15 +213,14 @@
         }
       }
     }
-    .movie__service__top-header-title {
-      h3 {
-        color: var(--color-red);
-      }
-    }
   }
-  &__wrapper {
-    background-color: var(--color-leftnav);
-    height: 100%;
+  &::-webkit-scrollbar {
+    width: 0.01px;
+  }
+  &::-webkit-scrollbar-track,
+  &::-webkit-scrollbar-thumb,
+  &::-webkit-scrollbar-thumb:hover {
+    opacity: 0;
   }
 
   &__top {
@@ -253,6 +245,7 @@
         height: 100%;
         width: 100%;
         background: var(--bg-fade-movie);
+        opacity: 0.85;
       }
     }
 
@@ -269,7 +262,7 @@
           text-transform: uppercase;
           font-size: 2.5rem;
           font-weight: bold;
-          transition: var(--transition-300);
+          transition: color 300ms linear;
         }
       }
 
@@ -282,9 +275,10 @@
           transition: var(--transition-300);
           color: var(--color-white);
           text-transform: lowercase;
-          font-size: 1.05rem;
+          font-size: 1rem;
           font-weight: bold;
           text-align: right;
+          opacity: 0.8;
         }
       }
       #movie-rating {
@@ -311,10 +305,13 @@
         font-size: 0.8rem;
         font-weight: bold;
         opacity: 0.85;
-        color: var(--color-leftnav);
-        background-color: var(--color-red);
+        color: var(--color-main);
+        background-color: var(--color-leftnav);
+        box-shadow: var(--box-shadow-weather);
+        opacity: 0.85;
         &:hover {
-          transform: scale(1.02);
+          transform: scale(1.025);
+          opacity: 1;
         }
       }
     }
@@ -329,7 +326,6 @@
     align-items: center;
     gap: 0.5rem;
     background-color: var(--color-leftnav);
-
     h5 {
       font-size: 1.5rem;
       text-transform: uppercase;
@@ -343,7 +339,7 @@
         position: absolute;
         content: '';
         background-color: var(--color-main);
-        width: 80%;
+        width: 0%;
         height: 1px;
         bottom: -0.2rem;
         left: 50%;

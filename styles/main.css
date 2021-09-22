@@ -281,7 +281,7 @@
 .bgdark {
   --color-white: rgb(255, 255, 255);
   --color-main: rgba(255, 255, 255, 0.932);
-  --color-main-movie: rgba(255, 255, 255, 0.74);
+  --color-main-movie: rgba(179, 179, 179, 0.616);
   --color-leftnav: rgb(9, 9, 32);
   --color-lefticons: rgba(9, 9, 32, 0.918);
   --color-topicons: rgba(9, 9, 32, 0.918);
@@ -1899,18 +1899,12 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   height: 87%;
-  width: 850px;
+  width: 750px;
+  max-height: 750px;
   overflow: scroll;
   z-index: 10;
+  border-radius: 1rem;
   display: none;
-}
-
-.movie__service::-webkit-scrollbar {
-  width: 0.01px;
-}
-
-.movie__service::-webkit-scrollbar-track, .movie__service::-webkit-scrollbar-thumb, .movie__service::-webkit-scrollbar-thumb:hover {
-  opacity: 0;
 }
 
 .movie__service:hover .movie__service__data {
@@ -1927,13 +1921,12 @@
   width: 100%;
 }
 
-.movie__service:hover .movie__service__top-header-title h3 {
-  color: var(--color-red);
+.movie__service::-webkit-scrollbar {
+  width: 0.01px;
 }
 
-.movie__service__wrapper {
-  background-color: var(--color-leftnav);
-  height: 100%;
+.movie__service::-webkit-scrollbar-track, .movie__service::-webkit-scrollbar-thumb, .movie__service::-webkit-scrollbar-thumb:hover {
+  opacity: 0;
 }
 
 .movie__service__top {
@@ -1967,6 +1960,7 @@
   height: 100%;
   width: 100%;
   background: var(--bg-fade-movie);
+  opacity: 0.85;
 }
 
 .movie__service__top-header {
@@ -1985,8 +1979,8 @@
   text-transform: uppercase;
   font-size: 2.5rem;
   font-weight: bold;
-  -webkit-transition: var(--transition-300);
-  transition: var(--transition-300);
+  -webkit-transition: color 300ms linear;
+  transition: color 300ms linear;
 }
 
 .movie__service__top-header-runtime {
@@ -2001,9 +1995,10 @@
   transition: var(--transition-300);
   color: var(--color-white);
   text-transform: lowercase;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: bold;
   text-align: right;
+  opacity: 0.8;
 }
 
 .movie__service__top-header #movie-rating {
@@ -2038,13 +2033,17 @@
   font-size: 0.8rem;
   font-weight: bold;
   opacity: 0.85;
-  color: var(--color-leftnav);
-  background-color: var(--color-red);
+  color: var(--color-main);
+  background-color: var(--color-leftnav);
+  -webkit-box-shadow: var(--box-shadow-weather);
+          box-shadow: var(--box-shadow-weather);
+  opacity: 0.85;
 }
 
 .movie__service__top-genre .genre-text:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+  opacity: 1;
 }
 
 .movie__service__data {
@@ -2082,7 +2081,7 @@
   position: absolute;
   content: '';
   background-color: var(--color-main);
-  width: 80%;
+  width: 0%;
   height: 1px;
   bottom: -0.2rem;
   left: 50%;
