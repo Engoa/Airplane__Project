@@ -35,7 +35,7 @@
           `;
     fitty('#fitty-title2', { multiLine: true });
 
-    // Audio Wave on Home check if playing or not 
+    // Audio Wave on Home check if playing or not
     if (!MediaPlayer.isPlaying) {
       $('.boxContainer').css('display', 'none');
     } else {
@@ -43,7 +43,7 @@
     }
   };
 
-  const renderWeatherCards = () => {
+  const drawHomeWeatherCard = () => {
     if (!WeatherService.data) return;
 
     const {
@@ -77,13 +77,45 @@
     fitty('#fitty-title3', { multiLine: true });
   };
 
-  drawHomeMediaCard();
+  const drawHomeMovieCard = () => {
+    const drawMovieCard = document.querySelector('.render--homecard-movie');
+    if (!MovieService.selectedMovie || !drawMovieCard) return;
+    drawMovieCard.innerHTML = `
+       <a href="#Movies" class="card--anchor">
+        <div class="homecards__weather__temperature">
+          <div class="homecards__weather__degrees homecards__movies__details">
+            <div>
+              <h2 class="degree movie--name" id="fitty-title4">${MovieService.selectedMovie.Title}</h2>
+            </div>
+            <div>
+              <span class="degree--description movie--duration">${MovieService.selectedMovie.Runtime}</span>
+            </div>
+            <div>
+              <i class="fas fa-play card--icon"></i>
+            </div>
+          </div>
+          <div class="homecards__weather__image homecards__movies--image">
+            <img src="${MovieService.selectedMovie.Poster}" alt="temperature image" />
+          </div>
+        </div>
+      </a>
+      `;
+    fitty('#fitty-title4', { multiLine: true });
+  };
 
-  renderWeatherCards();
+  drawHomeMediaCard();
+  drawHomeWeatherCard();
+  drawHomeMovieCard();
   document.addEventListener('on-weather-init', () => {
-    renderWeatherCards();
+    drawHomeWeatherCard();
   });
   document.addEventListener('song-selected', () => {
     drawHomeMediaCard();
+  });
+
+  ['movie-selected', 'movie-search-done'].forEach((item) => {
+    document.addEventListener(item, () => {
+      drawHomeMovieCard();
+    });
   });
 })();

@@ -214,6 +214,11 @@
       left: unset;
       right: 0%;
     }
+    &--image {
+      img {
+        min-width: 100%;
+      }
+    }
 
     .movie--name {
       font-size: 1.5rem;

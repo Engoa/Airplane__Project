@@ -20,6 +20,7 @@ const MovieService = {
   movie: null,
   results: [],
   selectedID: null,
+  MovieCard: $('.movie__service__wrapper'),
 
   // GETTERS
   get selectedMovie() {
@@ -33,33 +34,22 @@ const MovieService = {
 
   async select(imdbId) {
     this.selectedID = imdbId;
-    this.movie = await this.fetchAllMovies(this.selectedID);
-
+    setLS('selected-movie', this.selectedID);
     document.dispatchEvent(new CustomEvent('movie-selected'));
   },
 
   async fetchAllMovies() {
     this.results = await fetch('../assets/jsons/movies.json').then((res) => res.json());
     this.$fuse = new Fuse(this.results, FUSE_OPTIONS);
-
+    if (getLS('selected-movie')) {
+      this.selectedID = getLS('selected-movie');
+    } else {
+      this.selectedID = this.results[0].imdbID;
+    }
     document.dispatchEvent(new CustomEvent('movie-search-done'));
   },
 };
 
 (async () => {
   await MovieService.fetchAllMovies();
-  console.log(MovieService.results);
 })();
-
-// GET ALL MOVIES BY ID
-
-// (async () => {
-//   await MovieService.fetchAllMovies();
-//   const allMovies = [];
-
-//   for (const result of MovieService.results) {
-//     allMovies.push(MovieService.fetchByTitle(result.imdbID));
-//   }
-
-//   console.log(allMovies);
-// })();

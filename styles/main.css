@@ -274,7 +274,7 @@
       rgba(223, 0, 235, 0.1) 100%
     );
   --bg-fade: linear-gradient(to bottom, rgba(255, 255, 255, 0.856) 30%, transparent 100%);
-  --bg-fade-movie: linear-gradient(to top, rgb(146, 146, 146) 0%, transparent 85%);
+  --bg-fade-movie: linear-gradient(to top, rgb(146, 146, 146) 0%, transparent 100%);
 }
 
 .bgdark {
@@ -289,7 +289,7 @@
   --color-red: rgb(201, 20, 80);
   --bg-gradient: fixed linear-gradient(315deg, #000000 50%, #2f358ad2 100%);
   --bg-fade: linear-gradient(to bottom, #000000cc 0%, transparent 100%);
-  --bg-fade-movie: linear-gradient(to top, rgb(9, 9, 32) 0%, transparent 85%);
+  --bg-fade-movie: linear-gradient(to top, rgb(9, 9, 32) 0%, transparent 100%);
 }
 
 :root {
@@ -587,6 +587,10 @@
   background: var(--color-main) !important;
   left: unset;
   right: 0%;
+}
+
+.homecards__movies--image img {
+  min-width: 100%;
 }
 
 .homecards__movies .movie--name {
@@ -1777,9 +1781,9 @@
   position: relative;
   -webkit-transition: var(--transition-300);
   transition: var(--transition-300);
-  height: 200px;
+  height: 190px;
   overflow: hidden;
-  border-radius: unset;
+  border-radius: 1rem;
 }
 
 .movie-cards-card::before {
@@ -1791,11 +1795,6 @@
   height: 100%;
   -webkit-transition: var(--transition-300);
   transition: var(--transition-300);
-}
-
-.movie-cards-card:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
 }
 
 .movie-cards-card:hover::before {
@@ -1853,7 +1852,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 0.2rem;
+  gap: 0.5rem;
   font-weight: bold;
   z-index: 5;
   -webkit-transition: var(--transition-300);
@@ -1863,15 +1862,38 @@
 
 .movie-cards-card-title {
   opacity: 0.7;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .movie-cards-card-type, .movie-cards-card-year {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .movie-cards-card-genre, .movie-cards-card-duration {
   font-size: 0.8rem;
+}
+
+.movie-cards .movie-cards-card2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.movie-cards .movie-cards-card2::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: unset;
+  background-color: var(--color-red);
+  width: 8px;
+  height: 100%;
+  -webkit-transition: var(--transition-300);
+  transition: var(--transition-300);
+}
+
+.movie-cards .movie-cards-card2:hover::before {
+  width: 55%;
 }
 
 .no-result-wrapper {
@@ -1891,7 +1913,7 @@
   left: 35%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 82%;
+  height: 85%;
   width: 850px;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -1921,7 +1943,7 @@
 
 .movie__service__top--image img {
   width: 100%;
-  height: 220px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1947,7 +1969,7 @@
 .movie__service__top-title h3 {
   color: var(--color-white);
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
@@ -2010,7 +2032,6 @@
           flex-direction: column;
   color: var(--color-main);
   gap: 1rem;
-  margin-top: 1rem;
   font-size: 0.9rem;
   -webkit-transition: var(--transition-300);
   transition: var(--transition-300);
@@ -2038,6 +2059,13 @@
   opacity: 0;
 }
 
+.movie__service__data h5 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
 .movie__service__data__actors-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2061,13 +2089,6 @@
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 0.5rem;
-}
-
-.movie__service__data__actors-wrapper .actors-text h5 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  opacity: 0.7;
 }
 
 .movie__service__data__content-wrapper {
@@ -2099,11 +2120,18 @@
   gap: 0.5rem;
 }
 
-.movie__service__data__content-wrapper .content-text h5 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  opacity: 0.7;
+.movie__service__data__plot-wrapper {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .movie__service__data__plot-wrapper .plot-text {
@@ -2118,13 +2146,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0.5rem;
-}
-
-.movie__service__data__plot-wrapper .plot-text h5 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  opacity: 0.7;
 }
 
 .movie__service__data__awards-wrapper {
@@ -2151,13 +2172,6 @@
   gap: 0.5rem;
 }
 
-.movie__service__data__awards-wrapper .awards-text h5 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  opacity: 0.7;
-}
-
 .movie__service__data__score-wrapper .score-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2170,14 +2184,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0.5rem;
+  text-align: center;
 }
 
-.movie__service__data__score-wrapper .score-text h5 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
+.movie__service__data__score-wrapper .score-text span {
   font-weight: bold;
-  opacity: 0.7;
-  text-align: center;
+  font-size: 1.2rem;
 }
 
 html input::-webkit-outer-spin-button,
