@@ -4,11 +4,22 @@
       class="page__header movie__header render-movie-header"
       data-scroll
       data-scroll-speed="0.5"
-      data-scroll-delay="0.1">
+      data-scroll-delay="0.1"
+    >
       <h1 id="movie-header">Search</h1>
       <div class="movie__header__input--wrapper">
         <form class="movie-form">
-          <input type="text" id="movie-search" />
+          <button type="reset" id="movie-reset">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="input-wrapper">
+            <input type="text" id="movie-search" spellcheck="false" />
+            <div class="button-wrapper">
+              <button type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
         </form>
       </div>
     </div>

@@ -11,7 +11,7 @@ const FUSE_OPTIONS = {
   // useExtendedSearch: false,
   // ignoreLocation: false,
   // ignoreFieldNorm: false,
-  keys: ['Title'],
+  keys: ['Title', 'Genre', 'Type', 'Actors'],
 };
 
 const MovieService = {
@@ -33,7 +33,7 @@ const MovieService = {
 
   async select(imdbId) {
     this.selectedID = imdbId;
-    this.movie = await this.fetchByTitle(this.selectedID);
+    this.movie = await this.fetchAllMovies(this.selectedID);
 
     document.dispatchEvent(new CustomEvent('movie-selected'));
   },
