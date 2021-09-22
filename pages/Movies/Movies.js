@@ -181,9 +181,8 @@
     $LocoScroll.update();
   });
 
-  drawMainMovieCard();
   document.addEventListener('movie-selected', () => {
-    // drawMainMovieCard();
+    drawMainMovieCard();
   });
   $LocoScroll.update();
 })();
