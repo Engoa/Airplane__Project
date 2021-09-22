@@ -2,6 +2,7 @@
 const airplane = $('#airplane-img');
 const mediaPlayer = $('.media__player');
 const weatherApp = $('.weather__app');
+const movieApp = $('.movie__service');
 
 let $LocoScroll = null;
 let isShutDown = false;
@@ -9,6 +10,7 @@ document.addEventListener('route-update', (event) => {
   handleHomePageTransition(event.detail);
   handleMediaPageTransition(event.detail);
   handleWeatherPageTransition(event.detail);
+  handleMoviePageTransition(event.detail);
 
   if ($LocoScroll) {
     return $LocoScroll.update();
@@ -44,6 +46,14 @@ const handleWeatherPageTransition = ({ to, from }) => {
     weatherApp.fadeIn();
   }
 };
+const handleMoviePageTransition = ({ to, from }) => {
+  if (from === 'Movies') {
+    movieApp.fadeOut();
+  }
+  if (to === 'Movies') {
+    movieApp.fadeIn();
+  }
+};
 
 const shutDownScreen = () => {
   if (!isShutDown) {
@@ -73,4 +83,3 @@ const isDarkTheme = JSON.parse(localStorage.getItem('darkTheme'));
 if (isDarkTheme) {
   document.body.classList.add('bgdark');
 }
-

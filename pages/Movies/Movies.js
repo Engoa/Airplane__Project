@@ -53,8 +53,10 @@
   const formElement = document.querySelector('.movie-form');
   const movieHeader = document.querySelector('#movie-header');
   const searchInput = document.querySelector('#movie-search');
+
+  // On search make Reset button appear and disapear
   $('#movie-reset').click(() => {
-    $('#movie-reset').css('display', 'none');
+    $('#movie-reset').hide();
     drawMovieSearchCards();
     $('#movie-header').html('Search');
   });
@@ -67,12 +69,20 @@
     const mappedResults = MovieService.$fuse.search(searchInput.value).map(({ item }) => item);
     console.log(mappedResults);
 
+    // Display search results and Reset button
     if (mappedResults.length > 1) {
       drawMovieSearchCards(mappedResults);
-      $('#movie-reset').css('display', 'block');
+      $('#movie-reset').show();
     } else {
       drawNoResults();
-      $('#movie-reset').css('display', 'block');
+      $('#movie-reset').show();
+    }
+
+    // If Input is empty, draw all movie cards
+    if (!searchInput.value) {
+      drawMovieSearchCards();
+      $('#movie-header').html('Search');
+      $('#movie-reset').hide();
     }
   });
 
@@ -86,11 +96,11 @@
   //   drawMovieSearchCards();
   // });
 
-  const movieCard = document.querySelector('.movie-cards-card');
-  movieCard.forEach((card) => {
-    card.addEventListener('click', () => {
-      MovieService.select(card.dataset.imdbId);
-    });
-  });
+  // const movieCard = document.querySelector('.movie-cards-card');
+  // movieCard.forEach((card) => {
+  //   card.addEventListener('click', () => {
+  //     MovieService.select(card.dataset.imdbId);
+  //   });
+  // });
   $LocoScroll.update();
 })();
