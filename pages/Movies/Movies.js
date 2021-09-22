@@ -23,9 +23,7 @@
     const movieList = searchResults ?? MovieService.results;
     movieList.forEach((movie, index) => {
       movieSearchData.innerHTML += `
-      <div class="whitecard whitecard--small movie-cards-card ${
-        index % 2 !== 0 ? 'movie-cards-card2' : ''
-      }"data-id="${movie.imdbID}">
+      <div class="whitecard whitecard--small movie-cards-card" data-id="${movie.imdbID}">
         <div class="movie-cards-card-right">
           <div class="movie-cards-card-image">
             <img src="${movie.Poster}" alt="Movie Image" />
@@ -51,8 +49,9 @@
         </div>
       </div>
     `;
-      fitty('.movie-card-fitty', { multiLine: true, minSize: 10 });
+      fitty('.movie-card-fitty', { multiLine: true });
     });
+
     const movieCard = document.querySelectorAll('.movie-cards-card');
     movieCard.forEach((card) =>
       card.addEventListener('click', () => {
@@ -64,70 +63,87 @@
 
   const drawMainMovieCard = () => {
     $('.render-movie-service').html(`
-    <div class="movie__service__wrapper">
-    <div class="movie__service__top">
-            <div class="movie__service__top--image">
-              <img src="${MovieService.selectedMovie.Poster}" alt="Movie Image" />
-            </div>
-            <div class="movie__service__top-title">
-              <h3>${MovieService.selectedMovie.Title}</h3>
-              <h5>${MovieService.selectedMovie.Runtime}</h5>
-              <h5>${MovieService.selectedMovie.Year}</h5>
-            </div>
-            <div class="movie__service__top-genre">
-              <span class="genre-text">${MovieService.selectedMovie.Genre}</span>
-            </div>
-          </div>
-          <div class="movie__service__data">
-            <div class="movie__service__data__actors-wrapper">
-              <div class="actors-text">
-                <h5>Main Actors</h5>
-                <span>${MovieService.selectedMovie.Actors}</span>
-              </div>
-            </div>
-            <div class="movie__service__data__content-wrapper">
-              <div class="content-text">
-                <h5>Details</h5>
-                <span>Producer - ${
-                  !MovieService.selectedMovie.Production
-                    ? MovieService.selectedMovie.Writer
-                    : MovieService.selectedMovie.Production
-                }</span>
-                <span>Box Office - ${
-                  !MovieService.selectedMovie.BoxOffice
-                    ? 'Unknown'
-                    : MovieService.selectedMovie.BoxOffice
-                }</span>
-                <span>State - ${MovieService.selectedMovie.Country}</span>
-              </div>
-            </div>
-            <div class="movie__service__data__plot-wrapper">
-              <div class="plot-text">
-                <h5>PLOT</h5>
-                <p>
-                 ${MovieService.selectedMovie.Plot}
-                </p>
-              </div>
-            </div>
-            <div class="movie__service__data__awards-wrapper">
-              <div class="awards-text">
-                <h5>Awards & Score</h5>
-                <span>Nominations - ${MovieService.selectedMovie.Awards}</span>
-                <span>IMDb Rating - ${MovieService.selectedMovie.imdbRating}</span>
-                <span>IMDb Votes - ${MovieService.selectedMovie.imdbVotes}</span>
-              </div>
-            </div>
-            <div class="movie__service__data__score-wrapper">
-              <div class="score-text">
-                <h5>Metascore</h5>
-                <div>
-                  <span>${MovieService.selectedMovie.Metascore}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
+<div class="movie__service__wrapper">
+  <div class="movie__service__top">
+    <div class="movie__service__top--image">
+      <img src="${MovieService.selectedMovie.Poster}" alt="Movie Image" />
+    </div>
+    <div class="movie__service__top-header">
+      <div class="movie__service__top-header-title">
+        <h3 id="movie-main-title">${MovieService.selectedMovie.Title}</h3>
+      </div>
+      <div class="movie__service__top-header-runtime">
+        <h5>${MovieService.selectedMovie.Runtime}</h5>
+        <h5>${MovieService.selectedMovie.Year}</h5>
+        <h5 id="movie-rating">${MovieService.selectedMovie.Rated}</h5>
+      </div>
+    </div>
+    <div class="movie__service__top-genre">
+      <span class="genre-text">${MovieService.selectedMovie.Genre}</span>
+    </div>
+  </div>
+
+  <div class="movie__service__data">
+  <div class="movie__service__data-top">
+ 
+  
+    <div class="movie__service__data-left">
+      <div class="movie__service__data-left-actors">
+        <h5>Actors</h5>
+        <span><strong><span>Main Actors - </span></strong>${
+          MovieService.selectedMovie.Actors
+        }</span>
+      </div>
+      <div class="movie__service__data-left-details">
+        <h5>Details</h5>
+        <span
+          ><strong>Producer</strong> - ${
+            !MovieService.selectedMovie.Production
+              ? 'N/A'
+              : MovieService.selectedMovie.Production
+          }</span
+        >
+        <span><strong>Writer</strong> - ${
+          !MovieService.selectedMovie.Writer ? 'Unknown' : MovieService.selectedMovie.Writer
+        }</span>
+        <span
+          ><strong>Box Office</strong> - ${
+            !MovieService.selectedMovie.BoxOffice
+              ? 'Unknown'
+              : MovieService.selectedMovie.BoxOffice
+          }</span
+        >
+        <span><strong>State</strong> - ${MovieService.selectedMovie.Country}</span>
+      </div>
+      </div>
+      <div class="movie__service__data-right">
+        <div class="movie__service__data-right-awards">
+          <h5 class='awards-header'>Awards & Score</h5>
+          <span><strong>Nominations</strong> - ${MovieService.selectedMovie.Awards}</span>
+          <span
+            ><strong>IMDb Rating</strong> - ${MovieService.selectedMovie.imdbRating} / 10</span
+          >
+          <span><strong>IMDb Votes</strong> - ${MovieService.selectedMovie.imdbVotes}</span>
+         
+        </div>
+      </div>
+      </div>
+      <div class="movie__service__data-plot">
+        <h5>PLOT</h5>
+        <p>${MovieService.selectedMovie.Plot}</p>
+      </div>
+      <div class="movie__service__data-metacritic">
+        <h5>Metacritic</h5>
+       <span>${MovieService.selectedMovie.Metascore} / 100</span>
+      </div>
+  </div>
+</div>
+
           `);
+    //Fitty for the main movie card tittle
+    fitty('#movie-main-title', { multiLine: true, minSize: 40, maxSize: 100 });
+
+    // On genre tag click, set the values to the input box
     $('.genre-text').click(() => {
       searchInput.value = MovieService.selectedMovie.Genre;
     });
@@ -165,8 +181,9 @@
     $LocoScroll.update();
   });
 
+  drawMainMovieCard();
   document.addEventListener('movie-selected', () => {
-    drawMainMovieCard();
+    // drawMainMovieCard();
   });
   $LocoScroll.update();
 })();

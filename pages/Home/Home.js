@@ -86,12 +86,13 @@
           <div class="homecards__weather__degrees homecards__movies__details">
             <div>
               <h2 class="degree movie--name" id="fitty-title4">${MovieService.selectedMovie.Title}</h2>
+              <span class="degree--description movie--year">${MovieService.selectedMovie.Year}</span>
             </div>
             <div>
               <span class="degree--description movie--duration">${MovieService.selectedMovie.Runtime}</span>
             </div>
             <div>
-              <i class="fas fa-play card--icon"></i>
+              <i class="fas fa-video card--icon"></i>
             </div>
           </div>
           <div class="homecards__weather__image homecards__movies--image">

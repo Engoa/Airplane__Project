@@ -18,7 +18,7 @@
       rgba(223, 0, 235, 0.1) 100%
     );
   --bg-fade: linear-gradient(to bottom, rgba(255, 255, 255, 0.856) 30%, transparent 100%);
-  --bg-fade-movie: linear-gradient(to top, rgb(146, 146, 146) 0%, transparent 100%);
+  --bg-fade-movie: linear-gradient(to top, rgb(0, 0, 0) 0%, transparent 100%);
 }
 .bgdark {
   --color-white: rgb(255, 255, 255);
@@ -32,7 +32,7 @@
   --color-red: rgb(201, 20, 80);
   --bg-gradient: fixed linear-gradient(315deg, #000000 50%, #2f358ad2 100%);
   --bg-fade: linear-gradient(to bottom, #000000cc 0%, transparent 100%);
-  --bg-fade-movie: linear-gradient(to top, rgb(9, 9, 32) 0%, transparent 100%);
+  --bg-fade-movie: linear-gradient(to top, rgb(8, 8, 26) 0%, transparent 100%);
 }
 
 :root {
