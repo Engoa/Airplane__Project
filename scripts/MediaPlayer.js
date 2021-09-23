@@ -116,7 +116,11 @@ const MediaPlayer = {
       this.itunes[id] = song;
     }
 
+    // Add preview link to audio tag
     this.$audio.querySelector('source').src = song.previewUrl;
+
+    // Add track link to Itunes image
+    document.querySelector('#itunes-link').href = song.trackViewUrl;
     this.$audio.load();
   },
 

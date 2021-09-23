@@ -198,9 +198,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     gap: 2rem;
     margin-top: 3rem;
     color: var(--color-leftnav);
+    .media__player__controllers {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
   }
   &__volume {
     display: flex;
@@ -210,13 +217,24 @@
     }
 
     .slider__volume {
-      flex: 0 0 20%;
+      flex: 0 0 30%;
     }
     .slider__seek {
       flex: 1;
     }
   }
+  .render-itunes {
+    img {
+      width: 100%;
+      max-width: 120px;
+      border-radius: 0.5rem;
+      transition: var(--transition-300);
 
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
   display: none;
 }
 

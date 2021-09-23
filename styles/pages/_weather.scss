@@ -73,7 +73,6 @@
           img {
             width: 100%;
             max-width: 75px;
-            
           }
         }
         &__temp {
@@ -103,7 +102,6 @@
     top: 53%;
     left: 35%;
     transform: translate(-50%, -50%);
-    height: 82%;
     width: 700px;
     border-radius: 2rem;
     overflow: hidden;
@@ -114,7 +112,7 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 1.5rem;
-      height: 100%;
+      gap: 2rem;
 
       &::before {
         content: '';

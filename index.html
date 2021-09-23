@@ -156,29 +156,36 @@
           </div>
         </div>
         <div class="media__player__bottom">
-          <div class="media__player__forward">
-            <i class="fas fa-random shuffle"></i>
+          <div class="media__player__controllers">
+            <div class="media__player__forward">
+              <i class="fas fa-random shuffle"></i>
+            </div>
+            <div class="media__player__volume">
+              <input
+                id="vol--tooltip"
+                type="range"
+                class="slider slider__volume"
+                max="100"
+                value="25"
+                min="0"
+                oninput="MediaPlayer.adjustVolume(event)"
+              />
+              <input
+                type="range"
+                class="slider slider__seek"
+                max="300"
+                min="0"
+                oninput="MediaPlayer.seek(event)"
+              />
+            </div>
+            <div class="media__player__forward repeat" onclick="MediaPlayer.toggleLoop()">
+              <i class="fas fa-redo-alt"></i>
+            </div>
           </div>
-          <div class="media__player__volume">
-            <input
-              id="vol--tooltip"
-              type="range"
-              class="slider slider__volume"
-              max="100"
-              value="25"
-              min="0"
-              oninput="MediaPlayer.adjustVolume(event)"
-            />
-            <input
-              type="range"
-              class="slider slider__seek"
-              max="300"
-              min="0"
-              oninput="MediaPlayer.seek(event)"
-            />
-          </div>
-          <div class="media__player__forward repeat" onclick="MediaPlayer.toggleLoop()">
-            <i class="fas fa-redo-alt"></i>
+          <div class="render-itunes">
+            <a id="itunes-link" href="">
+              <img src="../../assets/images/itunesdownload.png" />
+            </a>
           </div>
         </div>
 

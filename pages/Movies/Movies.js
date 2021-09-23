@@ -13,7 +13,7 @@
     `;
 
     $LocoScroll.update();
-    fitty('#no-result-text', { multiLine: true, maxSize: 150, minSize: 80 });
+    fitty('#no-result-text', { multiLine: true, maxSize: 30, minSize: 16 });
   };
 
   const drawMovieSearchCards = (searchResults) => {
@@ -70,8 +70,12 @@
     $('.render-movie-service').html(`
   <div class="movie__service__top">
   <div class="movie__service__top--image">
-    <img class="poster-image" src="${MovieService.selectedMovie.Poster}" alt="Movie Image" />
-    <img class="blurred-image" src="${MovieService.selectedMovie.Poster}" alt="Movie Image" />
+    <img draggable='false' class="poster-image" src="${
+      MovieService.selectedMovie.Poster
+    }" alt="Movie Image" />
+    <img draggable='false' class="blurred-image" src="${
+      MovieService.selectedMovie.Poster
+    }" alt="Movie Image" />
   </div>
   <div class="movie__service__top-header">
     <div class="movie__service__top-header-title">
@@ -161,6 +165,7 @@
 
   drawMovieSearchCards();
   drawSelectedMovieCard();
+  drawMainMovieCard();
 
   formElement.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -195,5 +200,6 @@
 
     $LocoScroll.update();
   });
+
   $LocoScroll.update();
 })();

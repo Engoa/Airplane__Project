@@ -902,9 +902,27 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 2rem;
   margin-top: 3rem;
   color: var(--color-leftnav);
+}
+
+.media__player__bottom .media__player__controllers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
 }
 
 .media__player__volume {
@@ -920,14 +938,27 @@
 
 .media__player__volume .slider__volume {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 20%;
-          flex: 0 0 20%;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
 }
 
 .media__player__volume .slider__seek {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.media__player .render-itunes img {
+  width: 100%;
+  max-width: 120px;
+  border-radius: 0.5rem;
+  -webkit-transition: var(--transition-300);
+  transition: var(--transition-300);
+}
+
+.media__player .render-itunes img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .songcard {
@@ -1222,7 +1253,6 @@
   left: 35%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 82%;
   width: 700px;
   border-radius: 2rem;
   overflow: hidden;
@@ -1241,7 +1271,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.5rem;
-  height: 100%;
+  gap: 2rem;
 }
 
 .weather__app__container::before {
@@ -1827,26 +1857,10 @@
   width: 45%;
 }
 
-.movie-cards-card-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 100%;
-  z-index: 5;
-}
-
 .movie-cards-card-image img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: center;
-     object-fit: center;
+  -o-object-fit: cover;
+     object-fit: cover;
   pointer-events: none;
 }
 
@@ -1905,18 +1919,11 @@
           transform: translate(-50%, -50%);
   height: 87%;
   width: 750px;
-  max-height: 750px;
   overflow-y: scroll;
   overflow-x: hidden;
   z-index: 10;
   border-radius: 1rem;
   display: none;
-}
-
-.movie__service:hover .movie__service__data h5::before {
-  width: 100%;
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
 }
 
 .movie__service::-webkit-scrollbar {
@@ -1940,7 +1947,6 @@
 .movie__service__top--image {
   width: 100%;
   position: relative;
-  pointer-events: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1950,12 +1956,16 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .movie__service__top--image .poster-image {
   -o-object-fit: contain;
      object-fit: contain;
-  z-index: 5;
+  z-index: 1;
   padding: 1rem 0;
 }
 
@@ -1996,12 +2006,13 @@
 }
 
 .movie__service__top-header-title h3 {
-  color: var(--color-red);
+  color: var(--color-white);
   text-transform: uppercase;
   font-size: 2.5rem;
   font-weight: bold;
   -webkit-transition: color 300ms linear;
   transition: color 300ms linear;
+  text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.664);
 }
 
 .movie__service__top-header-runtime {
@@ -2104,7 +2115,7 @@
   position: absolute;
   content: '';
   background-color: var(--color-main);
-  width: 0%;
+  width: 100%;
   height: 1px;
   bottom: -0.2rem;
   left: 0;

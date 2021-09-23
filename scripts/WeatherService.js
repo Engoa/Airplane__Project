@@ -42,6 +42,24 @@ const WeatherService = {
 
       setLS('current-weather', this.data);
     }
+    setLS('current-weather', this.data);
+    // function getWithExpiry(key) {
+    //   const itemStr = localStorage.getItem('current-weather');
+    //   // if the item doesn't exist, return null
+    //   if (!itemStr) {
+    //     return null;
+    //   }
+    //   const item = JSON.parse(itemStr);
+    //   const now = new Date();
+    //   // compare the expiry time of the item with the current time
+    //   if (now.getTime() > item.expiry) {
+    //     // If the item is expired, delete the item from storage
+    //     // and return null
+    //     localStorage.removeItem('current-weather');
+    //     return null;
+    //   }
+    //   return item.value;
+    // }
 
     // KEEP LAST
     document.dispatchEvent(new CustomEvent('on-weather-init'));

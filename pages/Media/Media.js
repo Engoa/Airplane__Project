@@ -69,7 +69,6 @@
       `;
     });
   };
-
   const drawSelectedCard = () => {
     $(`.songcard.playing-now`).removeClass('playing-now');
     $(`.songcard[data-id=${MediaPlayer.selectedSong}]`).addClass('playing-now');
@@ -86,7 +85,6 @@
   };
 
   // On Click change media player image
-
   drawMediaHeader();
   drawMediaCards();
   drawMediaImage();
