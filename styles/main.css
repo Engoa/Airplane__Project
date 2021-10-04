@@ -1130,7 +1130,6 @@
 }
 
 .weather__daily .weather-cards {
-  cursor: pointer;
   -webkit-transition: var(--transition-300);
   transition: var(--transition-300);
   color: var(--color-main);
@@ -1158,6 +1157,7 @@
   overflow: hidden;
   -webkit-box-shadow: var(--box-shadow-weather);
           box-shadow: var(--box-shadow-weather);
+  cursor: default;
 }
 
 .weather__daily .weather-cards-card:hover {
@@ -1171,7 +1171,7 @@
 
 .weather__daily .weather-cards-card::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 8px;
   background-color: var(--color-red);
@@ -1254,6 +1254,7 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 700px;
+  max-height: 800px;
   border-radius: 2rem;
   overflow: hidden;
   z-index: 10;
@@ -1275,7 +1276,7 @@
 }
 
 .weather__app__container::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background-color: var(--color-leftnav);
@@ -1300,7 +1301,6 @@
   width: 100%;
   height: 20%;
   border-radius: 1rem;
-  cursor: pointer;
   -webkit-transition: var(--transition-300);
   transition: var(--transition-300);
   position: relative;
@@ -1311,7 +1311,7 @@
 
 .weather__app__current::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 40%;
   height: 8px;
   background-color: var(--color-red);
@@ -1427,7 +1427,6 @@
   min-width: 25%;
   -webkit-transition: var(--transition-300);
   transition: var(--transition-300);
-  cursor: pointer;
   padding: 1.5rem;
   opacity: 0.8;
   min-height: 200px;
@@ -1579,7 +1578,7 @@
 }
 
 .weather__stat__twilight--wrapper::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   width: 50%;
@@ -1589,7 +1588,7 @@
 }
 
 .weather__stat__twilight--wrapper::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   width: 50%;
@@ -1826,7 +1825,7 @@
 }
 
 .movie-cards-card::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   background-color: var(--color-red);
@@ -1984,7 +1983,7 @@
 }
 
 .movie__service__top--image::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -0.2rem;
   height: 100%;
@@ -2050,7 +2049,7 @@
           justify-content: center;
   position: absolute;
   top: 2rem;
-  right: 2rem;
+  right: 0.8rem;
   cursor: pointer;
   -webkit-transition: var(--transition-300);
   transition: var(--transition-300);
@@ -2113,7 +2112,7 @@
 
 .movie__service__data h5::before {
   position: absolute;
-  content: '';
+  content: "";
   background-color: var(--color-main);
   width: 100%;
   height: 1px;
@@ -2243,6 +2242,56 @@
   font-size: 1.6rem;
 }
 
+footer {
+  position: absolute;
+  bottom: 0.25rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+footer .engoa {
+  position: relative;
+}
+
+footer .engoa a {
+  color: var(--color-leftnav);
+  font-size: 0.75rem;
+  font-size: clamp(0.6rem, 1vw, 0.75rem);
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 0.7;
+  -webkit-transition: var(--transition-300);
+  transition: var(--transition-300);
+  z-index: -1;
+}
+
+footer .engoa:hover {
+  opacity: 1;
+  color: var(--color-red);
+}
+
+footer .engoa::before {
+  content: "";
+  position: absolute;
+  background: var(--color-leftnav);
+  width: 0%;
+  top: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  right: 0;
+  left: 0;
+  height: 2px;
+  z-index: 1;
+  -webkit-transition: var(--transition-300);
+  transition: var(--transition-300);
+  pointer-events: none;
+}
+
+footer .engoa:hover::before {
+  width: 100%;
+}
+
 html input::-webkit-outer-spin-button,
 html input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -2274,7 +2323,7 @@ a:hover {
 
 body {
   font-size: 16px !important;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   margin: 0;
   -webkit-transition: var(--transition-theme);
   transition: var(--transition-theme);
@@ -2308,7 +2357,7 @@ audio {
 }
 
 .app-bg::after {
-  content: '';
+  content: "";
   opacity: 0.8;
   inset: 0;
   position: absolute;
@@ -2450,7 +2499,7 @@ audio {
 }
 
 .leftnav nav::before, .leftnav nav::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   height: 60%;
@@ -2517,7 +2566,7 @@ audio {
 }
 
 .leftnav__links .link::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 5rem;
   height: 1px;
@@ -2622,7 +2671,7 @@ audio {
 }
 
 .top--nav__links .volume::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 2px;
   width: 0;

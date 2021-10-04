@@ -1,12 +1,12 @@
 // Page Transitions!
-const airplane = $('#airplane-img');
-const mediaPlayer = $('.media__player');
-const weatherApp = $('.weather__app');
-const movieApp = $('.movie__service');
+const airplane = $("#airplane-img");
+const mediaPlayer = $(".media__player");
+const weatherApp = $(".weather__app");
+const movieApp = $(".movie__service");
 
 let $LocoScroll = null;
 let isShutDown = false;
-document.addEventListener('route-update', (event) => {
+document.addEventListener("route-update", (event) => {
   handleHomePageTransition(event.detail);
   handleMediaPageTransition(event.detail);
   handleWeatherPageTransition(event.detail);
@@ -17,69 +17,69 @@ document.addEventListener('route-update', (event) => {
   }
 
   $LocoScroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
+    el: document.querySelector("[data-scroll-container]"),
     smooth: true,
   });
 });
 
 const handleHomePageTransition = ({ to, from }) => {
-  if (from === 'Home') {
+  if (from === "Home") {
     airplane.fadeOut();
   }
-  if (to === 'Home') {
+  if (to === "Home") {
     airplane.fadeIn();
   }
 };
 const handleMediaPageTransition = ({ to, from }) => {
-  if (from === 'Media') {
+  if (from === "Media") {
     mediaPlayer.fadeOut();
   }
-  if (to === 'Media') {
+  if (to === "Media") {
     mediaPlayer.fadeIn();
   }
 };
 const handleWeatherPageTransition = ({ to, from }) => {
-  if (from === 'Weather') {
+  if (from === "Weather") {
     weatherApp.fadeOut();
   }
-  if (to === 'Weather') {
+  if (to === "Weather") {
     weatherApp.fadeIn();
   }
 };
 const handleMoviePageTransition = ({ to, from }) => {
-  if (from === 'Movies') {
+  if (from === "Movies") {
     movieApp.fadeOut();
   }
-  if (to === 'Movies') {
+  if (to === "Movies") {
     movieApp.fadeIn();
   }
 };
 
 const shutDownScreen = () => {
   if (!isShutDown) {
-    $('.circle--clippath').css('clip-path', 'circle(150% at 0% 0%)');
-    $('.power').css('color', 'white');
+    $(".circle--clippath").css("clip-path", "circle(150% at 0% 0%)");
+    $(".power").css("color", "white");
     MediaPlayer.$audio.pause();
     isShutDown = true;
   } else {
-    $('.circle--clippath').css('clip-path', 'circle(0% at 0% 0%)');
-    $('.power').css('color', 'var(--color-topicons');
+    $(".circle--clippath").css("clip-path", "circle(0% at 0% 0%)");
+    $(".power").css("color", "var(--color-topicons");
     isShutDown = false;
   }
-  setLS('shutdown', isShutDown);
+  setLS("shutdown", isShutDown);
 };
 
-const themeBtn = document.querySelector('.themebtn');
-themeBtn.addEventListener('click', () => {
+const themeBtn = document.querySelector(".themebtn");
+themeBtn.addEventListener("click", () => {
   setTimeout(() => {
-    document.body.classList.toggle('bgdark');
-    let isLight = document.body.classList.contains('bgdark');
-    localStorage.setItem('darkTheme', isLight);
+    document.body.classList.toggle("bgdark");
+    let isLight = document.body.classList.contains("bgdark");
+    localStorage.setItem("darkTheme", JSON.stringify(isLight));
   }, 100);
 });
 
 // Save to Local Storage
-const isDarkTheme = JSON.parse(localStorage.getItem('darkTheme'));
+const isDarkTheme = JSON.parse(localStorage.getItem("darkTheme"));
 if (isDarkTheme) {
-  document.body.classList.add('bgdark');
+  document.body.classList.add("bgdark");
 }

@@ -1,10 +1,11 @@
-@import 'vendors/breakpoints';
-@import 'helpers/helpers';
-@import 'helpers/variables';
-@import 'pages/home';
-@import 'pages/media';
-@import 'pages/weather';
-@import 'pages/movies';
+@import "vendors/breakpoints";
+@import "helpers/helpers";
+@import "helpers/variables";
+@import "pages/home";
+@import "pages/media";
+@import "pages/weather";
+@import "pages/movies";
+@import "pages/footer";
 
 html {
   // scroll-behavior: smooth;
@@ -39,7 +40,7 @@ a {
 }
 body {
   font-size: 16px !important;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   margin: 0;
   transition: var(--transition-theme);
 }
@@ -81,7 +82,7 @@ audio {
   z-index: -1;
 
   &::after {
-    content: '';
+    content: "";
     opacity: 0.8;
     inset: 0;
     position: absolute;
@@ -196,7 +197,7 @@ audio {
 
     &::before,
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       inset: 0;
       height: 60%;
@@ -246,7 +247,7 @@ audio {
       }
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 5rem;
         height: 1px;
@@ -333,7 +334,7 @@ audio {
       }
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         height: 2px;
         width: 0;

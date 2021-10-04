@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Airplane</title>
     <link rel="stylesheet" href="/styles/main.css" />
-    <script src="https://kit.fontawesome.com/9a80e50f42.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/9a80e50f42.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
@@ -62,10 +65,22 @@
     <div data-scroll-container>
       <div class="app-bg">
         <div class="airplane" id="airplane-img">
-          <img class="airplane__image" src="/assets/images/airplane.png" alt="Plane Image" />
+          <img
+            class="airplane__image"
+            src="/assets/images/airplane.png"
+            alt="Plane Image"
+          />
         </div>
-        <img src="/assets/images/clouds.png" class="app-bg__clouds" alt="clouds" />
-        <img src="/assets/images/clouds.png" class="app-bg__clouds" alt="clouds" />
+        <img
+          src="/assets/images/clouds.png"
+          class="app-bg__clouds"
+          alt="clouds"
+        />
+        <img
+          src="/assets/images/clouds.png"
+          class="app-bg__clouds"
+          alt="clouds"
+        />
       </div>
 
       <div class="app-bg__dummy">
@@ -79,12 +94,19 @@
         <ul class="top--nav__links">
           <li>
             <a href="#"
-              ><img onload="SVGInject(this)" src="/assets/images/youtube-s.svg" alt="logo"
+              ><img
+                onload="SVGInject(this)"
+                src="/assets/images/youtube-s.svg"
+                alt="logo"
             /></a>
           </li>
 
           <li>
-            <button href="" class="topnav--link power" onclick="shutDownScreen()">
+            <button
+              href=""
+              class="topnav--link power"
+              onclick="shutDownScreen()"
+            >
               <i class="fas fa-power-off"></i>
             </button>
           </li>
@@ -94,7 +116,11 @@
             </button>
           </li>
           <li>
-            <button href="" class="topnav--link volume" onclick="MediaPlayer.toggleMute()">
+            <button
+              href=""
+              class="topnav--link volume"
+              onclick="MediaPlayer.toggleMute()"
+            >
               <i class="fas fa-volume-up"></i>
             </button>
           </li>
@@ -140,14 +166,20 @@
 
       <div class="media__player">
         <div class="media--container">
-          <div class="media__player__backward" onclick="MediaPlayer.previousSong()">
+          <div
+            class="media__player__backward"
+            onclick="MediaPlayer.previousSong()"
+          >
             <i class="fas fa-step-backward"></i>
           </div>
 
           <div class="media__player__player" onclick="MediaPlayer.toggle()">
             <div class="player-icon--wrapper">
               <i class="fas fa-play player-icon icon-played"></i>
-              <i class="fas fa-pause player-icon icon-paused" style="display: none"></i>
+              <i
+                class="fas fa-pause player-icon icon-paused"
+                style="display: none"
+              ></i>
             </div>
             <div class="render--media--image"></div>
           </div>
@@ -178,7 +210,10 @@
                 oninput="MediaPlayer.seek(event)"
               />
             </div>
-            <div class="media__player__forward repeat" onclick="MediaPlayer.toggleLoop()">
+            <div
+              class="media__player__forward repeat"
+              onclick="MediaPlayer.toggleLoop()"
+            >
               <i class="fas fa-redo-alt"></i>
             </div>
           </div>
@@ -207,9 +242,15 @@
             ></i>
             <div onclick="MediaPlayer.toggle()">
               <i class="fas fa-play icon-played playing icon"> </i>
-              <i class="fas fa-pause icon-paused paused icon" style="display: none"></i>
+              <i
+                class="fas fa-pause icon-paused paused icon"
+                style="display: none"
+              ></i>
             </div>
-            <i class="fas fa-backward fa-rotate-180 icon" onclick="MediaPlayer.nextSong()"></i>
+            <i
+              class="fas fa-backward fa-rotate-180 icon"
+              onclick="MediaPlayer.nextSong()"
+            ></i>
           </div>
         </div>
       </div>
@@ -218,6 +259,13 @@
 
       <div id="app" data-scroll-section></div>
     </div>
+    <footer>
+      <div class="engoa">
+        <a href="https://www.linkedin.com/in/idobenzaken/"
+          ><span class="engoa__text">By Engoa</span>
+        </a>
+      </div>
+    </footer>
     <script src="/scripts/vendors/locomotive-scroll.min.js"></script>
     <script src="/scripts/helpers.js" defer></script>
     <script src="/scripts/MediaPlayer.js" defer></script>

@@ -9,7 +9,6 @@
     gap: 1rem;
     margin-top: 1.5rem;
     .weather-cards {
-      cursor: pointer;
       transition: var(--transition-300);
       color: var(--color-main);
       &:hover {
@@ -25,6 +24,7 @@
         position: relative;
         overflow: hidden;
         box-shadow: var(--box-shadow-weather);
+        cursor: default;
 
         &:hover {
           &::before {
@@ -35,7 +35,7 @@
         }
         &::before {
           position: absolute;
-          content: '';
+          content: "";
           width: 100%;
           height: 8px;
           background-color: var(--color-red);
@@ -103,6 +103,7 @@
     left: 35%;
     transform: translate(-50%, -50%);
     width: 700px;
+    max-height: 800px;
     border-radius: 2rem;
     overflow: hidden;
     z-index: 10;
@@ -115,7 +116,7 @@
       gap: 2rem;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         inset: 0;
         background-color: var(--color-leftnav);
@@ -133,14 +134,14 @@
       width: 100%;
       height: 20%;
       border-radius: 1rem;
-      cursor: pointer;
+
       transition: var(--transition-300);
       position: relative;
       overflow: hidden;
       box-shadow: var(--box-shadow-weather);
       &::before {
         position: absolute;
-        content: '';
+        content: "";
         width: 40%;
         height: 8px;
         background-color: var(--color-red);
@@ -233,7 +234,7 @@
   flex: 1;
   min-width: 25%;
   transition: var(--transition-300);
-  cursor: pointer;
+
   padding: 1.5rem;
   opacity: 0.8;
   min-height: 200px;
@@ -343,7 +344,7 @@
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       width: 50%;
@@ -352,7 +353,7 @@
       z-index: -1;
     }
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       right: 0;
       width: 50%;

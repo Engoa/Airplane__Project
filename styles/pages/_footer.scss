@@ -1,0 +1,44 @@
+footer {
+  position: absolute;
+  bottom: 0.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .engoa {
+    position: relative;
+
+    a {
+      color: var(--color-leftnav);
+      font-size: 0.75rem;
+      font-size: clamp(0.6rem, 1vw, 0.75rem);
+      font-weight: bold;
+      text-decoration: none;
+      opacity: 0.7;
+      transition: var(--transition-300);
+      z-index: -1;
+    }
+    &:hover {
+      opacity: 1;
+      color: var(--color-red);
+    }
+    &::before {
+      //Line on Linkedin link
+      content: "";
+      position: absolute;
+      background: var(--color-leftnav);
+      width: 0%;
+      top: 50%;
+      transform: translateY(50%);
+      right: 0;
+      left: 0;
+      height: 2px;
+      z-index: 1;
+      transition: var(--transition-300);
+      pointer-events: none;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+  }
+}

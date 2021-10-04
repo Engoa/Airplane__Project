@@ -1,10 +1,10 @@
 (() => {
-  const formElement = document.querySelector('.movie-form');
-  const movieHeader = document.querySelector('#movie-header');
-  const searchInput = document.querySelector('#movie-search');
+  const formElement = document.querySelector(".movie-form");
+  const movieHeader = document.querySelector("#movie-header");
+  const searchInput = document.querySelector("#movie-search");
 
   const drawNoResults = () => {
-    const noResultsHeader = document.querySelector('.render-movie-cards');
+    const noResultsHeader = document.querySelector(".render-movie-cards");
     noResultsHeader.innerHTML = `
     
     <div class="no-result-wrapper">
@@ -13,12 +13,12 @@
     `;
 
     $LocoScroll.update();
-    fitty('#no-result-text', { multiLine: true, maxSize: 30, minSize: 16 });
+    fitty("#no-result-text", { multiLine: true, maxSize: 30, minSize: 16 });
   };
 
   const drawMovieSearchCards = (searchResults) => {
-    const movieSearchData = document.querySelector('.render-movie-cards');
-    movieSearchData.innerHTML = '';
+    const movieSearchData = document.querySelector(".render-movie-cards");
+    movieSearchData.innerHTML = "";
 
     const movieList = searchResults ?? MovieService.results;
     movieList.forEach((movie, index) => {
@@ -49,25 +49,27 @@
         </div>
       </div>
     `;
-      fitty('.movie-card-fitty', { multiLine: true });
+      fitty(".movie-card-fitty", { multiLine: true });
     });
 
-    const movieCard = document.querySelectorAll('.movie-cards-card');
+    const movieCard = document.querySelectorAll(".movie-cards-card");
     movieCard.forEach((card) =>
-      card.addEventListener('click', () => {
+      card.addEventListener("click", () => {
         MovieService.select(card.dataset.id);
       })
     );
     $LocoScroll.update();
   };
   const drawSelectedMovieCard = () => {
-    $(`.movie-cards-card.selected-movie`).removeClass('selected-movie');
-    $(`.movie-cards-card[data-id=${MovieService.selectedID}]`).addClass('selected-movie');
+    $(`.movie-cards-card.selected-movie`).removeClass("selected-movie");
+    $(`.movie-cards-card[data-id=${MovieService.selectedID}]`).addClass(
+      "selected-movie"
+    );
   };
 
   const drawMainMovieCard = () => {
     if (!MovieService.selectedMovie) return;
-    $('.render-movie-service').html(`
+    $(".render-movie-service").html(`
   <div class="movie__service__top">
   <div class="movie__service__top--image">
     <img draggable='false' class="poster-image" src="${
@@ -107,33 +109,43 @@
         <span
           ><strong>Producer</strong> - ${
             !MovieService.selectedMovie.Production
-              ? 'N/A'
+              ? "N/A"
               : MovieService.selectedMovie.Production
           }</span
         >
         <span
           ><strong>Writer</strong> - ${
-            !MovieService.selectedMovie.Writer ? 'Unknown' : MovieService.selectedMovie.Writer
+            !MovieService.selectedMovie.Writer
+              ? "Unknown"
+              : MovieService.selectedMovie.Writer
           }</span
         >
         <span
           ><strong>Box Office</strong> - ${
             !MovieService.selectedMovie.BoxOffice
-              ? 'Unknown'
+              ? "Unknown"
               : MovieService.selectedMovie.BoxOffice
           }</span
         >
-        <span><strong>State</strong> - ${MovieService.selectedMovie.Country}</span>
+        <span><strong>State</strong> - ${
+          MovieService.selectedMovie.Country
+        }</span>
       </div>
     </div>
     <div class="movie__service__data-right">
       <div class="movie__service__data-right-awards">
         <h5 class="awards-header">Awards & Score</h5>
-        <span><strong>Nominations</strong> - ${MovieService.selectedMovie.Awards}</span>
+        <span><strong>Nominations</strong> - ${
+          MovieService.selectedMovie.Awards
+        }</span>
         <span
-          ><strong>IMDb Rating</strong> - ${MovieService.selectedMovie.imdbRating} / 10</span
+          ><strong>IMDb Rating</strong> - ${
+            MovieService.selectedMovie.imdbRating
+          } / 10</span
         >
-        <span><strong>IMDb Votes</strong> - ${MovieService.selectedMovie.imdbVotes}</span>
+        <span><strong>IMDb Votes</strong> - ${
+          MovieService.selectedMovie.imdbVotes
+        }</span>
       </div>
     </div>
   </div>
@@ -148,55 +160,61 @@
 </div>
   `);
     //Fitty for the main movie card tittle
-    fitty('#movie-main-title', { multiLine: true, minSize: 40, maxSize: 100 });
+    fitty("#movie-main-title", { multiLine: true, minSize: 40, maxSize: 100 });
 
     // On genre tag click, set the values to the input box
-    $('.genre-text').click(() => {
+    $(".genre-text").click(() => {
       searchInput.value = MovieService.selectedMovie.Genre;
     });
   };
 
   // On search make Reset button appear and disapear
-  $('#movie-reset').click(() => {
-    $('#movie-reset').hide();
+  $("#movie-reset").click(() => {
+    $("#movie-reset").hide();
     drawMovieSearchCards();
-    $('#movie-header').html('Search');
+    $("#movie-header").html("Search");
   });
 
   drawMovieSearchCards();
   drawSelectedMovieCard();
   drawMainMovieCard();
 
-  formElement.addEventListener('submit', (e) => {
+  formElement.addEventListener("submit", (e) => {
     e.preventDefault();
     movieHeader.innerHTML = searchInput.value;
-    const mappedResults = MovieService.$fuse.search(searchInput.value).map(({ item }) => item);
+    const mappedResults = MovieService.$fuse
+      .search(searchInput.value)
+      .map(({ item }) => item);
 
     // Display search results and Reset button
     if (mappedResults.length > 1) {
       drawMovieSearchCards(mappedResults);
-      $('#movie-reset').show();
+      $("#movie-reset").show();
     } else {
       drawNoResults();
-      $('#movie-reset').show();
+      $("#movie-reset").show();
     }
 
     // If Input is empty, draw all movie cards
     if (!searchInput.value) {
       drawMovieSearchCards();
-      $('#movie-header').html('Search');
-      $('#movie-reset').hide();
+      $("#movie-header").html("Search");
+      $("#movie-reset").hide();
     }
     $LocoScroll.update();
   });
 
-  document.addEventListener('movie-selected', () => {
+  document.addEventListener("movie-selected", () => {
     drawMainMovieCard();
     drawSelectedMovieCard();
 
     // when hovering on movie main card, stop locomotive, so it won't scroll twice
-    $('.render-movie-service').on('mouseenter', () => $LocoScroll.stop());
-    $('.render-movie-service').on('mouseleave', () => $LocoScroll.start());
+    $(".render-movie-service").on("mouseenter", () => {
+      $LocoScroll.stop();
+    });
+    $(".render-movie-service").on("mouseleave", () => {
+      $LocoScroll.start();
+    });
 
     $LocoScroll.update();
   });
