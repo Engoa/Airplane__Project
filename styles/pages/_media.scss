@@ -51,7 +51,7 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       width: 8px;
       height: 100%;
       background-color: var(--color-red);
@@ -330,13 +330,14 @@
     font-size: 0.9rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
     justify-content: center;
-    cursor: pointer;
+    gap: 1rem;
   }
   .icon {
+    cursor: pointer;
     transition: var(--transition-300);
     color: var(--color-main);
+    font-size: 1rem;
     &:hover {
       color: var(--color-red);
     }

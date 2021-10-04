@@ -700,7 +700,7 @@
 
 .media .media__content::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 8px;
   height: 100%;
   background-color: var(--color-red);
@@ -1081,17 +1081,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  cursor: pointer;
+  gap: 1rem;
 }
 
 .media__controller .icon {
+  cursor: pointer;
   -webkit-transition: var(--transition-300);
   transition: var(--transition-300);
   color: var(--color-main);
+  font-size: 1rem;
 }
 
 .media__controller .icon:hover {
@@ -2275,21 +2276,22 @@ footer .engoa::before {
   content: "";
   position: absolute;
   background: var(--color-leftnav);
-  width: 0%;
+  -webkit-transform: scale(0) translateY(-50%);
+          transform: scale(0) translateY(-50%);
+  inset: 0;
   top: 50%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  right: 0;
-  left: 0;
   height: 2px;
   z-index: 1;
   -webkit-transition: var(--transition-300);
   transition: var(--transition-300);
   pointer-events: none;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 footer .engoa:hover::before {
-  width: 100%;
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
 }
 
 html input::-webkit-outer-spin-button,

@@ -26,19 +26,18 @@ footer {
       content: "";
       position: absolute;
       background: var(--color-leftnav);
-      width: 0%;
+      transform: scale(0) translateY(-50%);
+      inset: 0;
       top: 50%;
-      transform: translateY(50%);
-      right: 0;
-      left: 0;
       height: 2px;
       z-index: 1;
       transition: var(--transition-300);
       pointer-events: none;
+      transform-origin: center;
     }
 
     &:hover::before {
-      width: 100%;
+      transform: scale(1.13);
     }
   }
 }
