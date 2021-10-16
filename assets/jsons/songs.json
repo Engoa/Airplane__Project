@@ -103,5 +103,13 @@
     "cover_img": "https://is4-ssl.mzstatic.com/image/thumb/Music125/v4/c4/bf/35/c4bf355b-134b-be67-ae8d-c16025aa6146/7290115399349.png/500x500bb.webp",
     "itunes_id": "1565731369",
     "rtl": true
+  },
+  {
+    "id": "tulia_nikupange",
+    "title": "Tulia NiKupange",
+    "author": "Matata",
+    "cover_img": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/21/df/36/21df364a-8aca-d6bb-2256-1f61f0cc7bed/artwork.jpg/500x500bb.webp",
+    "itunes_id": "1589029096",
+    "rtl": false
   }
 ]
